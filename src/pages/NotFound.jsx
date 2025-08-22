@@ -1,10 +1,11 @@
+import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
 export const NotFound = () => {
     return (
         <div>
             <Navbar />
-            <div className="flex-col flex h-screen w-screen items-center justify-center">
+            <div className="flex-col flex h-screen w-full items-center justify-center">
                 <div
                     className="text-3xl"
                 >
@@ -15,6 +16,7 @@ export const NotFound = () => {
                     Please use the Navbar to go back to a valid page
                 </div>
             </div>
+            <Footer />
         </div>
     )
 };

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'primeicons/primeicons.css';
 
 :root {
   --dark-navy: #384959;
@@ -7,10 +8,6 @@
   --shark-blue: #6a89a7;
   --white: #FFFFFF;
   --off-white: #FAFAFA;
-}
-
-body {
-  background-color: var(--off-white);
 }
 
 html {
@@ -48,7 +45,10 @@ html {
   }
 }
 
-.text-glow-name {
-  position: relative;
-  text-shadow: 0 0 20px rgba(40, 74, 158, 0.7);
+.glass-shadow {
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(255, 255, 255, 1);
 }
