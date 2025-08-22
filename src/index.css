@@ -1,70 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --dark-navy: #384959;
+  --cyan: #88bdf2;
+  --torqouise: #bdddfc;
+  --shark-blue: #6a89a7;
+  --white: #FFFFFF;
+  --off-white: #FAFAFA;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: var(--off-white);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+html {
+  scroll-behavior: smooth;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.container {
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (width >= 640px) {
+  .container {
+    max-width: 640px;
   }
-  a:hover {
-    color: #747bff;
+}
+@media (width >= 768px) {
+  .container {
+    max-width: 768px;
   }
-  button {
-    background-color: #f9f9f9;
+}
+@media (width >= 1024px) {
+  .container {
+    max-width: 1024px;
   }
+}
+@media (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (width >= 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.text-glow-name {
+  position: relative;
+  text-shadow: 0 0 20px rgba(40, 74, 158, 0.7);
 }
