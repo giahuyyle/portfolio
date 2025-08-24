@@ -10,9 +10,9 @@ const navItems = [
 
 export const Navbar = () => {
     return (
-        <nav className="fixed w-full flex z-40 items-center justify-center">
-            <div className="flex items-center justify-between mt-5">
-                <div className="flex space-x-3 sm:space-x-5 font-semibold">
+        <nav className="fixed w-full flex z-40 items-center justify-center bg-transparent backdrop-blur-md border-b border-zinc-200/50 px-4 sm:px-6 lg:px-8 py-3">
+            <div className="flex items-center justify-between">
+                <div className="flex space-x-3 sm:space-x-10 font-semibold">
                     {navItems.map((item, key) => (
                         <a
                             key={key}
