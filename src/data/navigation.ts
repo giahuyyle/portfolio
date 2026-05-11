@@ -1,0 +1,11 @@
+export const moreLinks = ["Resume", "Tutorials", "Notes", "Terminal"];
+
+export const navLinks = ["About", "Posts", "Projects"];
+
+export const socialLinks = [
+    { label: "GitHub", href: "https://github.com/giahuyyle", icon: "github" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/huylegia", icon: "linkedin" },
+    { label: "Email", href: "mailto:huyyyylegia@gmail.com", icon: "mail" },
+] as const;
+
+export type SocialIconName = (typeof socialLinks)[number]["icon"];
