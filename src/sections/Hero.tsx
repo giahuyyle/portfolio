@@ -1,7 +1,72 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ExperiencePreview from "../components/ExperiencePreview";
 import { experienceItems, type ExperienceItem } from "../data/experience";
 import { socialLinks, type SocialIconName } from "../data/navigation";
+
+type TechLogoName =
+    | "aws"
+    | "firebase"
+    | "google-cloud"
+    | "java"
+    | "javascript"
+    | "python"
+    | "react"
+    | "typescript";
+
+const heroTechBubbles: {
+    className: string;
+    label: string;
+    logo: TechLogoName;
+}[] = [
+    {
+        className:
+            "left-8 top-0 size-20 rotate-[-8deg] text-[#61dafb] sm:size-24",
+        label: "React",
+        logo: "react",
+    },
+    {
+        className:
+            "right-1 top-[6.25rem] size-[4.75rem] rotate-[7deg] text-[#3178c6] sm:size-20",
+        label: "TypeScript",
+        logo: "typescript",
+    },
+    {
+        className:
+            "left-0 top-32 size-[4.5rem] rotate-[9deg] text-[#3776ab] sm:size-20",
+        label: "Python",
+        logo: "python",
+    },
+    {
+        className:
+            "left-[68%] top-6 size-[4.25rem] -translate-x-1/2 rotate-[-6deg] text-[#f7df1e] sm:size-[4.75rem]",
+        label: "JavaScript",
+        logo: "javascript",
+    },
+    {
+        className:
+            "left-16 bottom-12 size-[4.5rem] rotate-[-5deg] text-[#e76f00] sm:size-20",
+        label: "Java",
+        logo: "java",
+    },
+    {
+        className:
+            "right-0 bottom-16 size-[4.5rem] rotate-[10deg] text-[#ffca28] sm:size-20",
+        label: "Firebase",
+        logo: "firebase",
+    },
+    {
+        className:
+            "left-[45%] bottom-0 size-[4.75rem] rotate-[4deg] text-[#4285f4] sm:size-[5.25rem]",
+        label: "Google Cloud",
+        logo: "google-cloud",
+    },
+    {
+        className:
+            "left-[39%] top-[8.5rem] size-[4.5rem] rotate-[-10deg] text-[#ff9900] sm:size-20",
+        label: "AWS",
+        logo: "aws",
+    },
+];
 
 function SocialIcon({ icon }: { icon: SocialIconName }) {
     if (icon === "github") {
@@ -47,18 +112,245 @@ function SocialIcon({ icon }: { icon: SocialIconName }) {
     );
 }
 
+function TechLogo({ logo }: { logo: TechLogoName }) {
+    if (logo === "react") {
+        return (
+            <svg
+                className="size-7"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.6"
+                aria-hidden="true"
+            >
+                <ellipse cx="24" cy="24" rx="20" ry="7.5" />
+                <ellipse
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="7.5"
+                    transform="rotate(60 24 24)"
+                />
+                <ellipse
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="7.5"
+                    transform="rotate(120 24 24)"
+                />
+                <circle cx="24" cy="24" r="3.6" fill="currentColor" />
+            </svg>
+        );
+    }
+
+    if (logo === "python") {
+        return (
+            <svg
+                className="size-8"
+                viewBox="0 0 64 64"
+                fill="none"
+                aria-hidden="true"
+            >
+                <path
+                    d="M31.5 6c-10.2 0-9.6 4.4-9.6 4.4v4.6h9.8v1.4H18c-4.7 0-8.8 2.8-10.1 8.2-1.5 6.2-1.6 10.1 0 16.6 1.2 4.8 4 8.2 8.7 8.2h5.6v-7.9c0-5.3 4.6-10 10.1-10h9.6c4.5 0 8.1-3.7 8.1-8.2V10.4S51.2 6 31.5 6Z"
+                    fill="#3776ab"
+                />
+                <path
+                    d="M32.5 58c10.2 0 9.6-4.4 9.6-4.4V49h-9.8v-1.4H46c4.7 0 8.8-2.8 10.1-8.2 1.5-6.2 1.6-10.1 0-16.6-1.2-4.8-4-8.2-8.7-8.2h-5.6v7.9c0 5.3-4.6 10-10.1 10h-9.6c-4.5 0-8.1 3.7-8.1 8.2v12.9S12.8 58 32.5 58Z"
+                    fill="#ffd43b"
+                />
+                <circle cx="27.4" cy="12.3" r="2.3" fill="white" />
+                <circle cx="36.6" cy="51.7" r="2.3" fill="#17233f" />
+            </svg>
+        );
+    }
+
+    if (logo === "javascript") {
+        return (
+            <span className="grid size-7 place-items-center rounded-sm bg-[#f7df1e] text-sm font-bold text-[#17233f]">
+                JS
+            </span>
+        );
+    }
+
+    if (logo === "typescript") {
+        return (
+            <span className="grid size-7 place-items-center rounded-sm bg-[#3178c6] text-sm font-bold text-white">
+                TS
+            </span>
+        );
+    }
+
+    if (logo === "java") {
+        return (
+            <svg
+                className="size-7"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+            >
+                <path
+                    d="M18 10c3 2.4-3 4.5 0 7"
+                    stroke="#f89820"
+                    strokeWidth="3"
+                />
+                <path
+                    d="M25 8c4 3-4 5 0 8"
+                    stroke="#f89820"
+                    strokeWidth="3"
+                />
+                <path
+                    d="M15 22h18v8a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7v-8Z"
+                    fill="#5382a1"
+                    stroke="#17233f"
+                    strokeWidth="2"
+                />
+                <path
+                    d="M33 25h3.5a3.5 3.5 0 0 1 0 7H33"
+                    stroke="#17233f"
+                    strokeWidth="2.4"
+                />
+                <path d="M12 39h24" stroke="#17233f" strokeWidth="2.4" />
+            </svg>
+        );
+    }
+
+    if (logo === "firebase") {
+        return (
+            <svg
+                className="size-8"
+                viewBox="0 0 48 48"
+                fill="none"
+                aria-hidden="true"
+            >
+                <path d="M8 38 14 6l8 15 5-10 13 27H8Z" fill="#ffa000" />
+                <path d="m22 21-14 17 19-27 3 16-8-6Z" fill="#ffca28" />
+                <path d="m30 27-8-6 18 17-10-11Z" fill="#f57c00" />
+            </svg>
+        );
+    }
+
+    if (logo === "google-cloud") {
+        return (
+            <svg
+                className="size-8"
+                viewBox="0 0 64 48"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+            >
+                <path
+                    d="M21 38h28a10 10 0 0 0 1-20 17 17 0 0 0-31-5"
+                    stroke="#4285f4"
+                    strokeWidth="7"
+                />
+                <path
+                    d="M18 13A17 17 0 0 0 9 30"
+                    stroke="#34a853"
+                    strokeWidth="7"
+                />
+                <path
+                    d="M21 38H11a8 8 0 0 1-2-15"
+                    stroke="#fbbc05"
+                    strokeWidth="7"
+                />
+                <path
+                    d="M50 18a17 17 0 0 0-31-5"
+                    stroke="#ea4335"
+                    strokeWidth="7"
+                />
+            </svg>
+        );
+    }
+
+    return (
+        <svg
+            className="size-8"
+            viewBox="0 0 64 48"
+            fill="none"
+            aria-hidden="true"
+        >
+            <path
+                d="M18 34c7 5 23 5 31-1"
+                stroke="#ff9900"
+                strokeLinecap="round"
+                strokeWidth="4"
+            />
+            <path
+                d="M47 31 52 32.5 48.5 36"
+                stroke="#ff9900"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+            />
+            <text
+                x="8"
+                y="24"
+                fill="#17233f"
+                fontFamily="Arial, Helvetica, sans-serif"
+                fontSize="18"
+                fontWeight="800"
+                letterSpacing="-1"
+            >
+                AWS
+            </text>
+        </svg>
+    );
+}
+
 function Hero() {
     const [activeExperienceId, setActiveExperienceId] = useState<
         string | null
     >(null);
+    const [previewExperienceId, setPreviewExperienceId] = useState<
+        string | null
+    >(null);
+    const [isPreviewClosing, setIsPreviewClosing] = useState(false);
 
-    const activeExperience = experienceItems.find(
-        (item) => item.id === activeExperienceId,
+    const previewExperience = experienceItems.find(
+        (item) => item.id === previewExperienceId,
     );
     const educationItems = experienceItems.filter(
         (item) => item.id === "ualberta",
     );
     const workItems = experienceItems.filter((item) => item.id !== "ualberta");
+
+    useEffect(() => {
+        if (!isPreviewClosing) {
+            return undefined;
+        }
+
+        const timeout = window.setTimeout(() => {
+            setPreviewExperienceId(null);
+            setIsPreviewClosing(false);
+        }, 220);
+
+        return () => window.clearTimeout(timeout);
+    }, [isPreviewClosing]);
+
+    const closeExperiencePreview = () => {
+        if (!previewExperienceId) {
+            return;
+        }
+
+        setActiveExperienceId(null);
+        setIsPreviewClosing(true);
+    };
+
+    const handleExperienceClick = (itemId: string) => {
+        if (activeExperienceId === itemId) {
+            closeExperiencePreview();
+            return;
+        }
+
+        setPreviewExperienceId(itemId);
+        setActiveExperienceId(itemId);
+        setIsPreviewClosing(false);
+    };
 
     const renderExperienceButton = (
         item: ExperienceItem,
@@ -71,11 +363,7 @@ function Hero() {
                     : "hover:text-(--hero-accent)"
             }`}
             key={item.company}
-            onClick={() =>
-                setActiveExperienceId((current) =>
-                    current === item.id ? null : item.id,
-                )
-            }
+            onClick={() => handleExperienceClick(item.id)}
             type="button"
             aria-expanded={activeExperienceId === item.id}
         >
@@ -84,8 +372,22 @@ function Hero() {
                     /
                 </span>
             )}
-            <span className="grid size-8 place-items-center rounded-full bg-(--hero-text) text-[10px] font-semibold text-white">
-                {item.logoLabel}
+            <span
+                className={`grid place-items-center overflow-hidden text-[10px] font-semibold ${
+                    item.logoSrc
+                        ? "h-11 w-16 rounded-md"
+                        : "size-8 rounded-full bg-(--hero-text) text-white"
+                }`}
+            >
+                {item.logoSrc ? (
+                    <img
+                        className="max-h-10 max-w-15 object-contain drop-shadow-sm"
+                        src={item.logoSrc}
+                        alt={`${item.company} logo`}
+                    />
+                ) : (
+                    item.logoLabel
+                )}
             </span>
             <span className="whitespace-nowrap text-(--hero-text)">
                 {item.company}
@@ -107,31 +409,44 @@ function Hero() {
                             </h1>
 
                             <p className="mt-6 max-w-2xl text-base font-medium leading-8 tracking-tight text-(--hero-muted) sm:text-lg">
-                                I&apos;m a full-stack developer building
-                                polished web experiences with{" "}
+                                I&apos;m currently a student at{" "}
+                                <a
+                                    className="hero-link"
+                                    href="https://www.ualberta.ca/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    UofA
+                                </a>
+                                . I&apos;m most comfortable building full-stack
+                                applications with{" "}
                                 <a
                                     className="hero-link"
                                     href="https://react.dev/"
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
                                     React
                                 </a>
                                 ,{" "}
+                                <span className="text-(--hero-text)">
+                                    JS/TS
+                                </span>
+                                , and{" "}
                                 <a
                                     className="hero-link"
-                                    href="https://vite.dev/"
+                                    href="https://www.python.org/"
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    Vite
+                                    Python
                                 </a>
-                                ,{" "}
-                                <a
-                                    className="hero-link"
-                                    href="https://tailwindcss.com/"
-                                >
-                                    Tailwind CSS
-                                </a>{" "}
-                                and modern TypeScript. I care about fast
-                                interfaces, clean systems, and details that make
-                                software feel sharp.
+                                , especially Django, FastAPI, and Flask. I&apos;ve
+                                also built web, app, and mobile projects with
+                                Java. Right now, I&apos;m working on
+                                AI-integrated software that applies AI/ML to
+                                automate daily tasks that would otherwise take
+                                too much time.
                             </p>
                         </div>
 
@@ -171,13 +486,24 @@ function Hero() {
                         </nav>
                     </div>
 
-                    <figure className="justify-self-center lg:justify-self-end">
-                        <div className="overflow-hidden rounded-xl border border-white/70 bg-white/40 p-2 shadow-2xl shadow-slate-900/10 backdrop-blur-xl">
-                            <img
-                                className="aspect-[4/5] w-60 rounded-lg object-cover sm:w-64 lg:w-72"
-                                src="/image/hero.jpeg"
-                                alt="Huy Le"
-                            />
+                    <figure
+                        className="justify-self-center lg:justify-self-end"
+                        aria-label="Technology stack"
+                    >
+                        <div className="tech-cloud relative h-[22.5rem] w-[min(25rem,calc(100vw-3rem))]">
+                            {heroTechBubbles.map((tech) => (
+                                <span
+                                    className={`tech-bubble absolute flex items-center justify-center rounded-2xl border border-white/55 bg-white/45 shadow-xl shadow-slate-900/10 backdrop-blur-xl ${tech.className}`}
+                                    key={tech.label}
+                                    aria-label={tech.label}
+                                    title={tech.label}
+                                >
+                                    <TechLogo logo={tech.logo} />
+                                    <span className="sr-only">
+                                        {tech.label}
+                                    </span>
+                                </span>
+                            ))}
                         </div>
                     </figure>
                 </div>
@@ -206,11 +532,13 @@ function Hero() {
                     </div>
                 </div>
 
-                {activeExperience && (
+                {previewExperience && (
                     <ExperiencePreview
-                        company={activeExperience.company}
-                        detail={activeExperience.detail}
-                        preview={activeExperience.preview}
+                        company={previewExperience.company}
+                        detail={previewExperience.detail}
+                        isClosing={isPreviewClosing}
+                        onClose={closeExperiencePreview}
+                        preview={previewExperience.preview}
                     />
                 )}
             </div>

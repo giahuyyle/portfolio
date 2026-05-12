@@ -3,22 +3,33 @@ import type { ExperiencePreviewData } from "../data/experience";
 type ExperiencePreviewProps = {
     company: string;
     detail: string;
+    isClosing: boolean;
+    onClose: () => void;
     preview: ExperiencePreviewData;
 };
 
 function ExperiencePreview({
     company,
     detail,
+    isClosing,
+    onClose,
     preview,
 }: ExperiencePreviewProps) {
     return (
         <section
-            className="experience-preview mt-10 overflow-hidden rounded-xl border border-white/60 bg-white/50 shadow-2xl shadow-slate-900/10 backdrop-blur-xl"
+            className={`experience-preview mt-10 overflow-hidden rounded-xl border border-white/60 bg-white/50 shadow-2xl shadow-slate-900/10 backdrop-blur-xl ${
+                isClosing ? "experience-preview-closing" : ""
+            }`}
             aria-label={`${company} preview`}
         >
             <div className="flex items-center justify-between border-b border-slate-900/10 bg-white/55 px-4 py-3 text-xs font-medium text-(--hero-soft)">
                 <div className="flex items-center gap-2">
-                    <span className="size-3 rounded-full bg-[#ff5f57]" />
+                    <button
+                        className="size-3 cursor-pointer rounded-full bg-[#ff5f57] transition hover:scale-110 hover:shadow-[0_0_0_4px_rgba(255,95,87,0.16)]"
+                        onClick={onClose}
+                        type="button"
+                        aria-label="Close experience preview"
+                    />
                     <span className="size-3 rounded-full bg-[#ffbd2e]" />
                     <span className="size-3 rounded-full bg-[#28c840]" />
                 </div>

@@ -12,6 +12,7 @@ export type ExperienceItem = {
     detail: string;
     id: string;
     logoLabel: string;
+    logoSrc?: string;
     preview: ExperiencePreviewData;
 };
 
@@ -21,6 +22,7 @@ export const experienceItems: ExperienceItem[] = [
         company: "University of Alberta",
         detail: "B.Sc. Computing Science + Mathematics | Sep 2023 - Present",
         logoLabel: "UA",
+        logoSrc: "/image/ualberta-logo.png",
         preview: {
             activeFile: "degree.md",
             codeLines: [
@@ -44,6 +46,7 @@ export const experienceItems: ExperienceItem[] = [
         company: "FPT Software",
         detail: "Applied AI/ML Software Developer Intern | May 2025 - Aug 2025",
         logoLabel: "FPT",
+        logoSrc: "/image/FPT_Software_Logo.png",
         preview: {
             activeFile: "ai-ml-internship.ts",
             codeLines: [
@@ -63,6 +66,7 @@ export const experienceItems: ExperienceItem[] = [
         company: "CodeDream Education",
         detail: "Software Developer Intern | Jun 2024 - Aug 2024",
         logoLabel: "CD",
+        logoSrc: "/image/codedream-logo.png",
         preview: {
             activeFile: "education-platform.tsx",
             codeLines: [
@@ -86,6 +90,7 @@ export const experienceItems: ExperienceItem[] = [
         company: "DIBIZ",
         detail: "Software Developer Intern | May 2023 - Sep 2023",
         logoLabel: "DB",
+        logoSrc: "/image/dibiz-logo.png",
         preview: {
             activeFile: "internship.ts",
             codeLines: [
