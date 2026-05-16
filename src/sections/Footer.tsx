@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { githubSnapshot } from "../data/github";
 import { socialLinks, type SocialIconName } from "../data/navigation";
 
-const footerStats = {
-    views: "1,303,174 views",
-    build: "448b603",
-};
+const featuredStars = Object.values(githubSnapshot.projects).reduce(
+    (total, project) => total + project.stars,
+    0,
+);
 
 function formatMountainTime() {
     return new Intl.DateTimeFormat("en-CA", {
@@ -14,6 +15,21 @@ function formatMountainTime() {
         second: "2-digit",
         timeZone: "America/Edmonton",
     }).format(new Date());
+}
+
+function formatSyncTime(value: string | null) {
+    if (!value) {
+        return "sync pending";
+    }
+
+    return new Intl.DateTimeFormat("en-CA", {
+        day: "numeric",
+        hour: "2-digit",
+        hour12: false,
+        minute: "2-digit",
+        month: "short",
+        timeZone: "America/Edmonton",
+    }).format(new Date(value));
 }
 
 function FooterIcon({ name }: { name: SocialIconName }) {
@@ -165,11 +181,17 @@ function Footer() {
                             </span>
                         </span>
                         <span className="text-(--hero-soft)">-</span>
-                        <span>{footerStats.views}</span>
+                        <span>
+                            {githubSnapshot.syncedAt
+                                ? `${featuredStars.toLocaleString()} stars`
+                                : "GitHub sync pending"}
+                        </span>
+                        <span className="text-(--hero-soft)">-</span>
+                        <span>{formatSyncTime(githubSnapshot.syncedAt)}</span>
                         <span className="text-(--hero-soft)">-</span>
                         <span className="inline-flex items-center gap-2">
                             <BranchIcon />
-                            {footerStats.build}
+                            {githubSnapshot.build.shortSha}
                         </span>
                         <span className="hidden text-(--hero-soft) sm:inline">
                             -

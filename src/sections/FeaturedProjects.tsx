@@ -24,7 +24,7 @@ function FeaturedProjects() {
                     {featuredProjects.map((project) => (
                         <article
                             className="project-card overflow-hidden rounded-xl border border-slate-900/10 bg-white/35 shadow-2xl shadow-slate-900/10"
-                            key={project.title}
+                            key={`${project.owner}/${project.repo}`}
                         >
                             <div className="project-preview bg-[#aeb9c4] p-8 sm:p-10">
                                 <div className="terminal-card">
@@ -54,16 +54,18 @@ function FeaturedProjects() {
 
                                     <div className="mt-12 flex items-end justify-between gap-4 text-sm text-white/50">
                                         <div className="flex -space-x-2">
-                                            {["H", "P", "A", "I"].map(
-                                                (label) => (
+                                            {project.tags
+                                                .slice(0, 4)
+                                                .map((tag) => (
                                                     <span
                                                         className="grid size-9 place-items-center rounded-full border-2 border-[#272a36] bg-(--hero-accent) text-xs font-semibold text-white"
-                                                        key={label}
+                                                        key={tag}
                                                     >
-                                                        {label}
+                                                        {tag
+                                                            .charAt(0)
+                                                            .toUpperCase()}
                                                     </span>
-                                                ),
-                                            )}
+                                                ))}
                                         </div>
                                         <span>{project.contributors}</span>
                                     </div>
@@ -77,6 +79,19 @@ function FeaturedProjects() {
                                 <p className="mt-5 text-base font-medium leading-8 text-(--hero-muted)">
                                     {project.description}
                                 </p>
+                                <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold text-(--hero-muted)">
+                                    <span>
+                                        Updated{" "}
+                                        <span className="text-(--hero-accent)">
+                                            {project.lastPushed}
+                                        </span>
+                                    </span>
+                                    {project.language ? (
+                                        <span>{project.language}</span>
+                                    ) : null}
+                                    <span>{project.forks} forks</span>
+                                    <span>{project.openIssues} open</span>
+                                </div>
                                 <div className="mt-7 flex flex-wrap items-center gap-3">
                                     <TagIcon />
                                     {project.tags.map((tag) => (
@@ -88,6 +103,14 @@ function FeaturedProjects() {
                                         </span>
                                     ))}
                                 </div>
+                                <a
+                                    className="mt-7 inline-flex text-sm font-bold text-(--hero-accent) underline decoration-dashed underline-offset-6 transition hover:text-(--hero-text)"
+                                    href={project.href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    View repository -&gt;
+                                </a>
                             </div>
                         </article>
                     ))}

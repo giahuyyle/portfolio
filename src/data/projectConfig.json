@@ -1,0 +1,20 @@
+{
+    "featuredProjects": [
+        {
+            "contributors": "solo build",
+            "description": "A focused workflow for drafting, refining, and exporting tailored cover letters with less manual repetition.",
+            "owner": "giahuyyle",
+            "repo": "cover-pilot",
+            "tags": ["automation", "typescript", "latex", "productivity"],
+            "title": "Cover Pilot"
+        },
+        {
+            "contributors": "solo build",
+            "description": "A conversation-focused project for making spoken practice, feedback, and flow easier to work with.",
+            "owner": "giahuyyle",
+            "repo": "talkflow",
+            "tags": ["react", "typescript", "communication", "ai"],
+            "title": "Talkflow"
+        }
+    ]
+}
