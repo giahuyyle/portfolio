@@ -72,7 +72,7 @@ function Navbar({
         <>
             <header className="pointer-events-none fixed inset-x-0 top-0 z-40 px-5 pt-4 font-mono">
                 <nav
-                    className="liquid-navbar pointer-events-auto mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-5 text-[15px] font-medium tracking-[0.05em] text-(--hero-text)"
+                    className="liquid-navbar pointer-events-auto mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-5 text-[15px] font-medium tracking-wider text-(--hero-text)"
                     aria-label="Primary navigation"
                 >
                     <a
@@ -104,7 +104,7 @@ function Navbar({
                     </div>
 
                     <button
-                        className="cursor-pointer text-sm font-medium tracking-[0.05em] md:hidden"
+                        className="cursor-pointer text-sm font-medium tracking-wider md:hidden"
                         onClick={openMenu}
                         type="button"
                     >

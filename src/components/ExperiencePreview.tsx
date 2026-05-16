@@ -39,7 +39,7 @@ function ExperiencePreview({
                 <span>{company}</span>
             </div>
 
-            <div className="grid min-h-[360px] grid-cols-1 bg-[#f8fafc]/70 lg:grid-cols-[190px_minmax(0,1fr)_270px]">
+            <div className="grid min-h-90 grid-cols-1 bg-[#f8fafc]/70 lg:grid-cols-[190px_minmax(0,1fr)_270px]">
                 <aside className="border-b border-slate-900/10 bg-white/45 p-4 text-xs font-medium text-(--hero-muted) lg:border-b-0 lg:border-r">
                     <p className="mb-4 text-[10px] uppercase tracking-[0.18em] text-(--hero-soft)">
                         Portfolio-new

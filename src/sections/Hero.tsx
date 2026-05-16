@@ -498,7 +498,7 @@ function Hero() {
                         className="justify-self-center lg:justify-self-end"
                         aria-label="Technology stack"
                     >
-                        <div className="tech-cloud relative h-[22.5rem] w-[min(25rem,calc(100vw-3rem))]">
+                        <div className="tech-cloud relative h-90 w-[min(25rem,calc(100vw-3rem))]">
                             {heroTechBubbles.map((tech) => (
                                 <span
                                     className={`tech-bubble absolute flex items-center justify-center rounded-2xl border border-white/55 bg-white/45 shadow-xl shadow-slate-900/10 backdrop-blur-xl ${tech.className}`}
