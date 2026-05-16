@@ -6,6 +6,7 @@ type ExperiencePreviewProps = {
     isClosing: boolean;
     onClose: () => void;
     preview: ExperiencePreviewData;
+    websiteUrl: string;
 };
 
 function ExperiencePreview({
@@ -14,6 +15,7 @@ function ExperiencePreview({
     isClosing,
     onClose,
     preview,
+    websiteUrl,
 }: ExperiencePreviewProps) {
     return (
         <section
@@ -82,9 +84,33 @@ function ExperiencePreview({
                 </div>
 
                 <aside className="border-t border-slate-900/10 bg-white/45 p-4 lg:border-l lg:border-t-0">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-(--hero-soft)">
-                        Context
-                    </p>
+                    <div className="flex items-start justify-between gap-4">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-(--hero-soft)">
+                            Context
+                        </p>
+                        <a
+                            className="inline-flex cursor-pointer items-center gap-1.5 text-right text-xs font-semibold text-(--hero-accent) transition hover:text-(--hero-text)"
+                            href={websiteUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Visit Website
+                            <svg
+                                className="size-3.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                aria-hidden="true"
+                            >
+                                <path d="M15 3h6v6" />
+                                <path d="M10 14 21 3" />
+                                <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" />
+                            </svg>
+                        </a>
+                    </div>
                     <h3 className="mt-4 text-xl font-bold text-(--hero-text)">
                         {company}
                     </h3>

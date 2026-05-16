@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { placeholderCommits, placeholderPosts } from "../data/dashboard";
+import { socialLinks } from "../data/navigation";
 import type { ThemeName } from "../data/theme";
 
 type DashboardProps = {
@@ -34,6 +35,9 @@ function Dashboard({
     onThemeChange,
 }: DashboardProps) {
     const [mountainTime, setMountainTime] = useState(formatMountainTime);
+    const emailHref =
+        socialLinks.find((link) => link.href.startsWith("mailto:"))?.href ??
+        "mailto:huyyyylegia@gmail.com";
 
     useEffect(() => {
         const timer = window.setInterval(() => {
@@ -120,7 +124,7 @@ function Dashboard({
                         </p>
                         <a
                             className="mt-7 inline-flex w-full items-center justify-center gap-3 rounded-lg bg-(--hero-accent) px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/10 transition hover:opacity-90"
-                            href="mailto:hello@example.com"
+                            href={emailHref}
                         >
                             <CalendarIcon />
                             Book a Chat

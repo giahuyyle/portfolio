@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type NavbarProps = {
     accent: string;
@@ -38,6 +38,19 @@ function Navbar({
     const [menuOpen, setMenuOpen] = useState(false);
     const [currentDirectory, setCurrentDirectory] =
         useState(getCurrentDirectory);
+    const menuOpenerRef = useRef<HTMLElement | null>(null);
+
+    const openMenu = () => {
+        menuOpenerRef.current =
+            document.activeElement instanceof HTMLElement
+                ? document.activeElement
+                : null;
+        setMenuOpen(true);
+    };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
     useEffect(() => {
         const updateDirectory = () => setCurrentDirectory(getCurrentDirectory());
@@ -48,6 +61,12 @@ function Navbar({
             window.removeEventListener("popstate", updateDirectory);
         };
     }, []);
+
+    useEffect(() => {
+        if (!menuOpen) {
+            menuOpenerRef.current?.focus();
+        }
+    }, [menuOpen]);
 
     return (
         <>
@@ -77,7 +96,7 @@ function Navbar({
                         ))}
                         <button
                             className="cursor-pointer transition hover:text-(--hero-accent)"
-                            onClick={() => setMenuOpen(true)}
+                            onClick={openMenu}
                             type="button"
                         >
                             More...
@@ -86,7 +105,7 @@ function Navbar({
 
                     <button
                         className="cursor-pointer text-sm font-medium tracking-[0.05em] md:hidden"
-                        onClick={() => setMenuOpen(true)}
+                        onClick={openMenu}
                         type="button"
                     >
                         More...
@@ -99,6 +118,7 @@ function Navbar({
                     menuOpen ? "translate-x-0" : "translate-x-full"
                 }`}
                 aria-hidden={!menuOpen}
+                inert={!menuOpen}
             >
                 <div className="flex items-center justify-between border-b border-[rgba(23,35,63,0.12)] px-5 py-5">
                     <h2 className="text-xl font-bold text-(--hero-accent)">
@@ -106,7 +126,7 @@ function Navbar({
                     </h2>
                     <button
                         className="cursor-pointer text-3xl leading-none text-(--hero-muted) transition hover:text-(--hero-accent)"
-                        onClick={() => setMenuOpen(false)}
+                        onClick={closeMenu}
                         type="button"
                         aria-label="Close navigation"
                     >
@@ -180,7 +200,7 @@ function Navbar({
                                 className="block transition hover:text-(--hero-accent)"
                                 href={getPathForLink(link)}
                                 key={link}
-                                onClick={() => setMenuOpen(false)}
+                                onClick={closeMenu}
                             >
                                 {link}
                             </a>
@@ -197,7 +217,7 @@ function Navbar({
                                     className="block transition hover:text-(--hero-accent)"
                                     href={getPathForLink(link)}
                                     key={link}
-                                    onClick={() => setMenuOpen(false)}
+                                    onClick={closeMenu}
                                 >
                                     {link}
                                 </a>
@@ -210,7 +230,7 @@ function Navbar({
             {menuOpen && (
                 <button
                     className="fixed inset-0 z-40 cursor-default bg-slate-950/10 backdrop-blur-[2px]"
-                    onClick={() => setMenuOpen(false)}
+                    onClick={closeMenu}
                     type="button"
                     aria-label="Close navigation overlay"
                 />

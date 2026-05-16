@@ -462,8 +462,16 @@ function Hero() {
                                     <a
                                         className="flex items-center gap-2 transition hover:text-(--hero-accent)"
                                         href={link.href}
-                                        target="_blank"
-                                        rel="noreferrer"
+                                        target={
+                                            link.href.startsWith("mailto:")
+                                                ? undefined
+                                                : "_blank"
+                                        }
+                                        rel={
+                                            link.href.startsWith("mailto:")
+                                                ? undefined
+                                                : "noreferrer"
+                                        }
                                     >
                                         <SocialIcon icon={link.icon} />
                                         {link.label}
@@ -539,6 +547,7 @@ function Hero() {
                         isClosing={isPreviewClosing}
                         onClose={closeExperiencePreview}
                         preview={previewExperience.preview}
+                        websiteUrl={previewExperience.websiteUrl}
                     />
                 )}
             </div>

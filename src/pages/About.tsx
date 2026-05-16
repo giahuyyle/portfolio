@@ -61,7 +61,7 @@ function About() {
                         />
                     </figure>
 
-                    <div className="space-y-5 text-base font-medium leading-8 text-(--hero-muted) lg:max-h-[calc((min((100vw-3rem),72rem)-2.5rem)*0.85/2.55*4.45/4)] lg:overflow-hidden xl:text-lg xl:leading-9">
+                    <div className="space-y-5 text-base font-medium leading-8 text-(--hero-muted) xl:text-lg xl:leading-9">
                         <p>
                             Hey! I&apos;m Huy Le, a computing science and
                             mathematics student based in Edmonton, Alberta. I
