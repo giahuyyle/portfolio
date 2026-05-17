@@ -4,6 +4,7 @@ import projectConfig from "./projectConfig.json";
 type CuratedProject = {
     contributors: string;
     description: string;
+    detailDescription?: string;
     owner: string;
     repo: string;
     tags: string[];

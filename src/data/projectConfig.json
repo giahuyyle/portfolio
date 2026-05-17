@@ -3,6 +3,7 @@
         {
             "contributors": "solo build",
             "description": "A focused workflow for drafting, refining, and exporting tailored cover letters with less manual repetition.",
+            "detailDescription": "Cover Pilot is a placeholder detail page for now. This space will eventually pull a richer write-up from the repository, covering the problem, product decisions, implementation notes, and what changed over time. For the first version, it exists to prove the animated route flow and give the project room to expand beyond a compact card.",
             "owner": "giahuyyle",
             "repo": "cover-pilot",
             "tags": ["automation", "typescript", "latex", "productivity"],
@@ -11,10 +12,20 @@
         {
             "contributors": "solo build",
             "description": "A conversation-focused project for making spoken practice, feedback, and flow easier to work with.",
+            "detailDescription": "Talkflow is using placeholder detail copy until the repository has a dedicated description document. The final version can describe the interaction model, feedback loop, technical stack, and the user experience goals behind the project.",
             "owner": "giahuyyle",
             "repo": "talkflow",
             "tags": ["react", "typescript", "communication", "ai"],
             "title": "Talkflow"
+        },
+        {
+            "contributors": "solo build",
+            "description": "The portfolio site that brings together project work, GitHub activity, personal context, and interactive route transitions.",
+            "detailDescription": "Portfolio is the home for this site and its evolving interface experiments. This placeholder detail page can later describe the visual system, GitHub Actions data sync, lightweight routing approach, and project animation work.",
+            "owner": "giahuyyle",
+            "repo": "portfolio",
+            "tags": ["react", "typescript", "vite", "tailwind"],
+            "title": "Portfolio"
         }
     ]
 }

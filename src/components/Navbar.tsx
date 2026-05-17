@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import type { NavigateTo } from "../utils/routing";
 
 type NavbarProps = {
     accent: string;
@@ -6,10 +7,12 @@ type NavbarProps = {
     gridEnabled: boolean;
     moreLinks: string[];
     navLinks: string[];
+    pathname: string;
     swatches: string[];
     themeNames: string[];
     onAccentChange: (accent: string) => void;
     onGridChange: (enabled: boolean) => void;
+    onNavigate: NavigateTo;
     onThemeChange: (theme: string) => void;
 };
 
@@ -17,8 +20,8 @@ function getPathForLink(link: string) {
     return `/${link.toLowerCase().replaceAll(" ", "-")}`;
 }
 
-function getCurrentDirectory() {
-    const pathDirectory = window.location.pathname.replace(/^\/|\/$/g, "");
+function getDirectoryForPath(pathname: string) {
+    const pathDirectory = pathname.replace(/^\/|\/$/g, "");
 
     return pathDirectory ? `~/${pathDirectory}/` : "~/";
 }
@@ -29,16 +32,17 @@ function Navbar({
     gridEnabled,
     moreLinks,
     navLinks,
+    pathname,
     swatches,
     themeNames,
     onAccentChange,
     onGridChange,
+    onNavigate,
     onThemeChange,
 }: NavbarProps) {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [currentDirectory, setCurrentDirectory] =
-        useState(getCurrentDirectory);
     const menuOpenerRef = useRef<HTMLElement | null>(null);
+    const currentDirectory = getDirectoryForPath(pathname);
 
     const openMenu = () => {
         menuOpenerRef.current =
@@ -51,16 +55,6 @@ function Navbar({
     const closeMenu = () => {
         setMenuOpen(false);
     };
-
-    useEffect(() => {
-        const updateDirectory = () => setCurrentDirectory(getCurrentDirectory());
-
-        window.addEventListener("popstate", updateDirectory);
-
-        return () => {
-            window.removeEventListener("popstate", updateDirectory);
-        };
-    }, []);
 
     useEffect(() => {
         if (!menuOpen) {
@@ -78,6 +72,10 @@ function Navbar({
                     <a
                         className="flex items-center gap-2 transition hover:text-(--hero-accent)"
                         href="/"
+                        onClick={(event) => {
+                            event.preventDefault();
+                            onNavigate("/");
+                        }}
                         aria-label={`Current directory: ${currentDirectory}`}
                     >
                         <span>{currentDirectory}</span>
@@ -90,6 +88,10 @@ function Navbar({
                                 className="transition hover:text-(--hero-accent)"
                                 href={getPathForLink(link)}
                                 key={link}
+                                onClick={(event) => {
+                                    event.preventDefault();
+                                    onNavigate(getPathForLink(link));
+                                }}
                             >
                                 {link}
                             </a>
@@ -200,7 +202,11 @@ function Navbar({
                                 className="block transition hover:text-(--hero-accent)"
                                 href={getPathForLink(link)}
                                 key={link}
-                                onClick={closeMenu}
+                                onClick={(event) => {
+                                    event.preventDefault();
+                                    closeMenu();
+                                    onNavigate(getPathForLink(link));
+                                }}
                             >
                                 {link}
                             </a>
@@ -217,7 +223,11 @@ function Navbar({
                                     className="block transition hover:text-(--hero-accent)"
                                     href={getPathForLink(link)}
                                     key={link}
-                                    onClick={closeMenu}
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        closeMenu();
+                                        onNavigate(getPathForLink(link));
+                                    }}
                                 >
                                     {link}
                                 </a>
