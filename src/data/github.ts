@@ -1,6 +1,15 @@
 import snapshot from "./github.generated.json";
 
+export type GitHubContributorSnapshot = {
+    avatarUrl: string | null;
+    contributions: number;
+    login: string;
+    url: string;
+};
+
 export type GitHubProjectSnapshot = {
+    contributorCount: number;
+    contributors: GitHubContributorSnapshot[];
     description: string | null;
     forks: number;
     language: string | null;

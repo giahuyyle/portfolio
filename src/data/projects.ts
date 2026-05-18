@@ -1,4 +1,8 @@
-import { githubSnapshot, type GitHubProjectSnapshot } from "./github";
+import {
+    githubSnapshot,
+    type GitHubContributorSnapshot,
+    type GitHubProjectSnapshot,
+} from "./github";
 import projectConfig from "./projectConfig.json";
 
 type CuratedProject = {
@@ -12,6 +16,9 @@ type CuratedProject = {
 };
 
 export type FeaturedProject = CuratedProject & {
+    contributorCount: number;
+    contributorLabel: string;
+    contributorProfiles: GitHubContributorSnapshot[];
     forks: number;
     href: string;
     language: string | null;
@@ -57,6 +64,43 @@ function mergeTags(
     );
 }
 
+function getContributorLabel(
+    githubProject: GitHubProjectSnapshot | undefined,
+    fallback: string,
+) {
+    if (!githubProject) {
+        return fallback;
+    }
+
+    if (typeof githubProject.contributorCount !== "number") {
+        return fallback;
+    }
+
+    if (githubProject.contributorCount <= 1) {
+        return "solo build";
+    }
+
+    return `${githubProject.contributorCount} contributors`;
+}
+
+function getContributorProfiles(
+    project: CuratedProject,
+    githubProject: GitHubProjectSnapshot | undefined,
+) {
+    if (githubProject?.contributors?.length) {
+        return githubProject.contributors.slice(0, 4);
+    }
+
+    return [
+        {
+            avatarUrl: null,
+            contributions: 0,
+            login: project.owner,
+            url: `https://github.com/${project.owner}`,
+        },
+    ];
+}
+
 const configuredProjects = (projectConfig as ProjectConfig).featuredProjects;
 
 export const featuredProjects: FeaturedProject[] = configuredProjects.map(
@@ -65,6 +109,12 @@ export const featuredProjects: FeaturedProject[] = configuredProjects.map(
 
         return {
             ...project,
+            contributorCount: githubProject?.contributorCount ?? 1,
+            contributorLabel: getContributorLabel(
+                githubProject,
+                project.contributors,
+            ),
+            contributorProfiles: getContributorProfiles(project, githubProject),
             description: project.description || githubProject?.description || "",
             forks: githubProject?.forks ?? 0,
             href:

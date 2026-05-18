@@ -51,7 +51,7 @@ function comparableSnapshot(snapshot) {
     });
 }
 
-async function fetchRepo(owner, repo) {
+function getHeaders() {
     const headers = {
         Accept: "application/vnd.github+json",
         "User-Agent": "portfolio-github-sync",
@@ -62,8 +62,57 @@ async function fetchRepo(owner, repo) {
         headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
     }
 
+    return headers;
+}
+
+async function fetchGitHubJson(url, context) {
+    const response = await fetch(url, {
+        headers: getHeaders(),
+    });
+
+    if (!response.ok) {
+        let detail = `${response.status} ${response.statusText}`;
+
+        try {
+            const body = await response.json();
+            if (typeof body.message === "string") {
+                detail = `${detail}: ${body.message}`;
+            }
+        } catch {
+            // Keep the HTTP status as the useful failure detail.
+        }
+
+        throw new Error(`GitHub API request failed for ${context}: ${detail}`);
+    }
+
+    return response.json();
+}
+
+async function fetchRepoContributors(owner, repo) {
+    const contributors = await fetchGitHubJson(
+        `https://api.github.com/repos/${owner}/${repo}/contributors?per_page=100`,
+        `${owner}/${repo} contributors`,
+    );
+
+    if (!Array.isArray(contributors)) {
+        return [];
+    }
+
+    return contributors
+        .filter((contributor) => typeof contributor.login === "string")
+        .map((contributor) => ({
+            avatarUrl: contributor.avatar_url ?? null,
+            contributions: contributor.contributions ?? 0,
+            login: contributor.login,
+            url:
+                contributor.html_url ??
+                `https://github.com/${contributor.login}`,
+        }));
+}
+
+async function fetchRepo(owner, repo) {
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
-        headers,
+        headers: getHeaders(),
     });
 
     if (!response.ok) {
@@ -82,8 +131,11 @@ async function fetchRepo(owner, repo) {
     }
 
     const data = await response.json();
+    const contributors = await fetchRepoContributors(owner, repo);
 
     return {
+        contributorCount: contributors.length,
+        contributors,
         description: data.description ?? null,
         forks: data.forks_count ?? 0,
         language: data.language ?? null,

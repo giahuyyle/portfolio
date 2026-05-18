@@ -35,6 +35,10 @@ function TagIcon() {
     );
 }
 
+function getContributorInitial(login: string) {
+    return login.charAt(0).toUpperCase();
+}
+
 function ProjectCard({
     project,
     navigateTo,
@@ -119,16 +123,28 @@ function ProjectCard({
 
                     <div className="mt-12 flex items-end justify-between gap-4 text-sm text-white/50">
                         <div className="flex -space-x-2">
-                            {project.tags.slice(0, 4).map((tag) => (
-                                <span
-                                    className="grid size-9 place-items-center rounded-full border-2 border-[#272a36] bg-(--hero-accent) text-xs font-semibold text-white"
-                                    key={tag}
+                            {project.contributorProfiles.map((contributor) => (
+                                <a
+                                    className="grid size-9 place-items-center overflow-hidden rounded-full border-2 border-[#272a36] bg-(--hero-accent) text-xs font-semibold text-white transition hover:translate-y-[-1px]"
+                                    href={contributor.url}
+                                    key={contributor.login}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={`${contributor.login} on GitHub`}
                                 >
-                                    {tag.charAt(0).toUpperCase()}
-                                </span>
+                                    {contributor.avatarUrl ? (
+                                        <img
+                                            className="size-full object-cover"
+                                            src={contributor.avatarUrl}
+                                            alt=""
+                                        />
+                                    ) : (
+                                        getContributorInitial(contributor.login)
+                                    )}
+                                </a>
                             ))}
                         </div>
-                        <span>{project.contributors}</span>
+                        <span>{project.contributorLabel}</span>
                     </div>
                 </div>
             </div>

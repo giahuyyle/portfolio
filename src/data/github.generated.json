@@ -1,12 +1,27 @@
 {
-    "syncedAt": "2026-05-18T14:01:42.809Z",
+    "syncedAt": "2026-05-18T21:46:54.915Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "3b958800333fbe58777a5e8dd94425dbb628ad89",
-        "shortSha": "3b95880"
+        "sha": "de91aca7a8f523b4bf33c0f8e44804021bdad095",
+        "shortSha": "de91aca"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
+            "contributorCount": 2,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 66,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                },
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/93813570?v=4",
+                    "contributions": 1,
+                    "login": "vdc109",
+                    "url": "https://github.com/vdc109"
+                }
+            ],
             "description": null,
             "forks": 0,
             "language": "JavaScript",
@@ -19,6 +34,15 @@
             "url": "https://github.com/giahuyyle/cover-pilot"
         },
         "giahuyyle/talkflow": {
+            "contributorCount": 1,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 57,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                }
+            ],
             "description": null,
             "forks": 0,
             "language": "TypeScript",
@@ -31,12 +55,27 @@
             "url": "https://github.com/giahuyyle/talkflow"
         },
         "giahuyyle/portfolio": {
+            "contributorCount": 2,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 8,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                },
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
+                    "contributions": 3,
+                    "login": "github-actions[bot]",
+                    "url": "https://github.com/apps/github-actions"
+                }
+            ],
             "description": null,
             "forks": 0,
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-17T11:34:09Z",
+            "pushedAt": "2026-05-18T14:01:52Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
