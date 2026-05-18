@@ -10,7 +10,12 @@ import BackgroundPulses from "./components/BackgroundPulses";
 import Navbar from "./components/Navbar";
 import { moreLinks, navLinks } from "./data/navigation";
 import { featuredProjects } from "./data/projects";
-import { swatches, themes, type ThemeName } from "./data/theme";
+import {
+    defaultAccent,
+    swatches,
+    themes,
+    type ThemeName,
+} from "./data/theme";
 import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 import Projects from "./pages/Projects";
@@ -23,6 +28,50 @@ import {
     runRouteTransition,
     type NavigateOptions,
 } from "./utils/routing";
+
+const defaultThemeName: ThemeName = "Latte";
+const themeStorageKey = "portfolio-theme";
+const accentStorageKey = "portfolio-accent";
+
+function isThemeName(value: string | null): value is ThemeName {
+    return Boolean(value && value in themes);
+}
+
+function getStoredThemeName() {
+    if (typeof window === "undefined") {
+        return defaultThemeName;
+    }
+
+    try {
+        const storedTheme = window.localStorage.getItem(themeStorageKey);
+
+        if (isThemeName(storedTheme)) {
+            return storedTheme;
+        }
+    } catch {
+        return defaultThemeName;
+    }
+
+    return defaultThemeName;
+}
+
+function getStoredAccent() {
+    if (typeof window === "undefined") {
+        return defaultAccent;
+    }
+
+    try {
+        const storedAccent = window.localStorage.getItem(accentStorageKey);
+
+        if (storedAccent && swatches.includes(storedAccent)) {
+            return storedAccent;
+        }
+    } catch {
+        return defaultAccent;
+    }
+
+    return defaultAccent;
+}
 
 function BackButton({
     href,
@@ -54,8 +103,8 @@ function BackButton({
 }
 
 function App() {
-    const [themeName, setThemeName] = useState<ThemeName>("Latte");
-    const [accent, setAccent] = useState(themes.Latte.accent);
+    const [themeName, setThemeName] = useState<ThemeName>(getStoredThemeName);
+    const [accent, setAccent] = useState(getStoredAccent);
     const [gridEnabled, setGridEnabled] = useState(true);
     const [pathname, setPathname] = useState(window.location.pathname);
 
@@ -78,8 +127,23 @@ function App() {
         const nextTheme = name as ThemeName;
 
         setThemeName(nextTheme);
-        setAccent(themes[nextTheme].accent);
     };
+
+    useEffect(() => {
+        try {
+            window.localStorage.setItem(themeStorageKey, themeName);
+        } catch {
+            return;
+        }
+    }, [themeName]);
+
+    useEffect(() => {
+        try {
+            window.localStorage.setItem(accentStorageKey, accent);
+        } catch {
+            return;
+        }
+    }, [accent]);
 
     const commitRoute = useCallback(
         (path: string, options: NavigateOptions = {}) => {

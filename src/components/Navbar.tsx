@@ -141,12 +141,12 @@ function Navbar({
                         Theme
                     </p>
 
-                    <div className="grid grid-cols-3 rounded-md border border-[rgba(23,35,63,0.12)] p-1 text-xs font-medium text-(--hero-muted)">
+                    <div className="grid grid-cols-2 rounded-md border border-[rgba(23,35,63,0.12)] p-1 text-xs font-medium text-(--hero-muted)">
                         {themeNames.map((name) => (
                             <button
                                 className={`rounded px-2 py-2 transition ${
                                     activeTheme === name
-                                        ? "bg-white/70 text-(--hero-text) shadow-sm"
+                                        ? "bg-(--hero-accent) text-white shadow-sm"
                                         : "hover:text-(--hero-accent)"
                                 }`}
                                 key={name}

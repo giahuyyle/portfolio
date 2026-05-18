@@ -57,12 +57,12 @@ function Dashboard({
                             Theme
                         </h2>
 
-                        <div className="mt-6 grid grid-cols-3 rounded-lg border border-slate-900/10 p-1 text-sm font-medium text-(--hero-muted)">
+                        <div className="mt-6 grid grid-cols-2 rounded-lg border border-slate-900/10 p-1 text-sm font-medium text-(--hero-muted)">
                             {themeNames.map((name) => (
                                 <button
                                     className={`rounded-md px-3 py-2 transition ${
                                         activeTheme === name
-                                            ? "bg-white/80 text-(--hero-text) shadow-sm ring-1 ring-(--hero-accent)"
+                                            ? "bg-(--hero-accent) text-white shadow-sm ring-1 ring-(--hero-accent)"
                                             : "hover:text-(--hero-accent)"
                                     }`}
                                     key={name}
@@ -159,9 +159,6 @@ function Dashboard({
                                 <ActivityIcon />
                                 Recent Commits
                             </h2>
-                            <span className="text-sm font-medium text-(--hero-accent)">
-                                placeholder
-                            </span>
                         </div>
 
                         <div className="mt-6 space-y-3">
@@ -192,7 +189,7 @@ function Dashboard({
                         <div className="mt-6 flex items-center gap-3">
                             <a
                                 className="text-sm font-medium text-(--hero-accent) transition hover:text-(--hero-text)"
-                                href="https://github.com"
+                                href="https://github.com/giahuyyle"
                                 target="_blank"
                                 rel="noreferrer"
                             >
