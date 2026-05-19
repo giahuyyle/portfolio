@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import ExperiencePreview from "../components/ExperiencePreview";
 import { experienceItems, type ExperienceItem } from "../data/experience";
-import { socialLinks, type SocialIconName } from "../data/navigation";
+import {
+    resumeHref,
+    socialLinks,
+    type SocialIconName,
+} from "../data/navigation";
 
 type TechLogoName =
     | "aws"
@@ -490,6 +494,14 @@ function Hero() {
                                 href="/about"
                             >
                                 More about me -&gt;
+                            </a>
+                            <a
+                                className="rounded-full border border-(--hero-accent)/35 bg-(--hero-accent)/10 px-4 py-2 font-semibold text-(--hero-accent) transition hover:border-(--hero-accent) hover:bg-(--hero-accent) hover:text-white"
+                                href={resumeHref}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View my resume -&gt;
                             </a>
                         </nav>
                     </div>

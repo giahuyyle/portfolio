@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { resumeHref } from "../data/navigation";
 import type { NavigateTo } from "../utils/routing";
 
 type NavbarProps = {
@@ -17,7 +18,15 @@ type NavbarProps = {
 };
 
 function getPathForLink(link: string) {
+    if (link === "Resume") {
+        return resumeHref;
+    }
+
     return `/${link.toLowerCase().replaceAll(" ", "-")}`;
+}
+
+function isResumeLink(link: string) {
+    return link === "Resume";
 }
 
 function getDirectoryForPath(pathname: string) {
@@ -88,7 +97,15 @@ function Navbar({
                                 className="transition hover:text-(--hero-accent)"
                                 href={getPathForLink(link)}
                                 key={link}
+                                target={isResumeLink(link) ? "_blank" : undefined}
+                                rel={
+                                    isResumeLink(link) ? "noreferrer" : undefined
+                                }
                                 onClick={(event) => {
+                                    if (isResumeLink(link)) {
+                                        return;
+                                    }
+
                                     event.preventDefault();
                                     onNavigate(getPathForLink(link));
                                 }}
@@ -202,7 +219,16 @@ function Navbar({
                                 className="block transition hover:text-(--hero-accent)"
                                 href={getPathForLink(link)}
                                 key={link}
+                                target={isResumeLink(link) ? "_blank" : undefined}
+                                rel={
+                                    isResumeLink(link) ? "noreferrer" : undefined
+                                }
                                 onClick={(event) => {
+                                    if (isResumeLink(link)) {
+                                        closeMenu();
+                                        return;
+                                    }
+
                                     event.preventDefault();
                                     closeMenu();
                                     onNavigate(getPathForLink(link));
