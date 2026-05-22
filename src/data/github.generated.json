@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-05-21T13:33:00.456Z",
+    "syncedAt": "2026-05-22T00:38:20.577Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "054b96aeb9c8919d9febfcd25d52359216b60eb4",
@@ -65,7 +65,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 5,
+                    "contributions": 6,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 }
@@ -75,11 +75,38 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-20T18:32:46Z",
+            "pushedAt": "2026-05-21T13:33:08Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
             "url": "https://github.com/giahuyyle/portfolio"
+        },
+        "namhoangmai/ascension-app": {
+            "contributorCount": 2,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 7,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                },
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
+                    "contributions": 3,
+                    "login": "namhoangmai",
+                    "url": "https://github.com/namhoangmai"
+                }
+            ],
+            "description": null,
+            "forks": 0,
+            "language": "TypeScript",
+            "openIssues": 0,
+            "owner": "namhoangmai",
+            "pushedAt": "2026-05-22T00:34:58Z",
+            "repo": "ascension-app",
+            "stars": 0,
+            "topics": [],
+            "url": "https://github.com/namhoangmai/ascension-app"
         }
     }
 }

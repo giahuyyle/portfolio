@@ -26,6 +26,15 @@
             "repo": "portfolio",
             "tags": ["react", "typescript", "vite", "tailwind"],
             "title": "Portfolio"
+        },
+        {
+            "contributors": "fitness tracker",
+            "description": "A fitness tracking app for logging calories, nutrition, and exercise activity in one place.",
+            "detailDescription": "Ascension App helps users track calories, nutrition, and exercise activity through a focused fitness logging experience. This placeholder detail page can later describe the app goal, user flows, team responsibilities, implementation details, and lessons from the build.",
+            "owner": "namhoangmai",
+            "repo": "ascension-app",
+            "tags": ["fitness", "nutrition", "exercise", "tracking"],
+            "title": "Ascension App"
         }
     ]
 }
