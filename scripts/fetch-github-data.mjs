@@ -48,6 +48,7 @@ function comparableSnapshot(snapshot) {
     return JSON.stringify({
         build: snapshot.build,
         projects: snapshot.projects,
+        recentCommits: snapshot.recentCommits,
     });
 }
 
@@ -110,6 +111,50 @@ async function fetchRepoContributors(owner, repo) {
         }));
 }
 
+async function fetchRepoRecentCommits(owner, repo, projectTitle) {
+    const commits = await fetchGitHubJson(
+        `https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`,
+        `${owner}/${repo} commits`,
+    );
+
+    if (!Array.isArray(commits)) {
+        return [];
+    }
+
+    const commitDetails = await Promise.all(
+        commits
+            .filter(
+                (commit) =>
+                    typeof commit.sha === "string" &&
+                    commit.commit?.message !== syncCommitMessage,
+            )
+            .slice(0, 3)
+            .map((commit) =>
+                fetchGitHubJson(
+                    `https://api.github.com/repos/${owner}/${repo}/commits/${commit.sha}`,
+                    `${owner}/${repo} commit ${commit.sha}`,
+                ),
+            ),
+    );
+
+    return commitDetails.map((commit) => ({
+        additions: commit.stats?.additions ?? 0,
+        committedAt:
+            commit.commit?.committer?.date ?? commit.commit?.author?.date ?? null,
+        deletions: commit.stats?.deletions ?? 0,
+        message:
+            typeof commit.commit?.message === "string"
+                ? commit.commit.message.split("\n")[0]
+                : "Commit update",
+        project: projectTitle,
+        repo,
+        sha: typeof commit.sha === "string" ? commit.sha : null,
+        url:
+            commit.html_url ??
+            `https://github.com/${owner}/${repo}/commit/${commit.sha}`,
+    }));
+}
+
 async function fetchRepo(owner, repo) {
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
         headers: getHeaders(),
@@ -169,6 +214,32 @@ const projectEntries = await Promise.all(
         return [`${owner}/${repo}`, await fetchRepo(owner, repo)];
     }),
 );
+const recentCommitEntries = await Promise.all(
+    config.featuredProjects.map((project) =>
+        fetchRepoRecentCommits(
+            requireString(project.owner, "owner"),
+            requireString(project.repo, "repo"),
+            requireString(project.title, "title"),
+        ),
+    ),
+);
+const recentCommits = recentCommitEntries
+    .flat()
+    .sort((a, b) => {
+        if (!a.committedAt) {
+            return 1;
+        }
+
+        if (!b.committedAt) {
+            return -1;
+        }
+
+        return (
+            new Date(b.committedAt).getTime() -
+            new Date(a.committedAt).getTime()
+        );
+    })
+    .slice(0, 5);
 
 const sourceSha = getSourceSha();
 const previousSnapshot = await readPreviousSnapshot();
@@ -180,6 +251,7 @@ const nextSnapshot = {
         shortSha: sourceSha ? sourceSha.slice(0, 7) : "local",
     },
     projects: Object.fromEntries(projectEntries),
+    recentCommits,
 };
 
 if (
@@ -192,5 +264,5 @@ if (
 await writeFile(outputUrl, `${JSON.stringify(nextSnapshot, null, 4)}\n`);
 
 console.log(
-    `Synced ${projectEntries.length} GitHub repos to src/data/github.generated.json.`,
+    `Synced ${projectEntries.length} GitHub repos and ${recentCommits.length} commits to src/data/github.generated.json.`,
 );

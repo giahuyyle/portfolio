@@ -22,6 +22,17 @@ export type GitHubProjectSnapshot = {
     url: string;
 };
 
+export type GitHubRecentCommitSnapshot = {
+    additions: number;
+    committedAt: string | null;
+    deletions: number;
+    message: string;
+    project: string;
+    repo: string;
+    sha: string | null;
+    url: string;
+};
+
 export type GitHubSnapshot = {
     syncedAt: string | null;
     build: {
@@ -30,6 +41,7 @@ export type GitHubSnapshot = {
         shortSha: string;
     };
     projects: Record<string, GitHubProjectSnapshot>;
+    recentCommits: GitHubRecentCommitSnapshot[];
 };
 
 export const githubSnapshot = snapshot as GitHubSnapshot;

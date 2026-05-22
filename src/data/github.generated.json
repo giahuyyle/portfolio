@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-05-22T00:38:20.577Z",
+    "syncedAt": "2026-05-22T05:20:03.776Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "054b96aeb9c8919d9febfcd25d52359216b60eb4",
-        "shortSha": "054b96a"
+        "sha": "75adeac94b4be5d7801f291ed59ca7f916340952",
+        "shortSha": "75adeac"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -59,7 +59,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 12,
+                    "contributions": 15,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 },
@@ -75,7 +75,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-21T13:33:08Z",
+            "pushedAt": "2026-05-22T05:17:05Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -108,5 +108,57 @@
             "topics": [],
             "url": "https://github.com/namhoangmai/ascension-app"
         }
-    }
+    },
+    "recentCommits": [
+        {
+            "additions": 8,
+            "committedAt": "2026-05-22T05:17:01Z",
+            "deletions": 0,
+            "message": "fix: add Vercel rewrite for SPA routes",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "75adeac94b4be5d7801f291ed59ca7f916340952",
+            "url": "https://github.com/giahuyyle/portfolio/commit/75adeac94b4be5d7801f291ed59ca7f916340952"
+        },
+        {
+            "additions": 1,
+            "committedAt": "2026-05-22T01:01:36Z",
+            "deletions": 1,
+            "message": "feat: last sync to footer",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "acb54a306e4bf85a2c8b2ac3f4899f106643a6c1",
+            "url": "https://github.com/giahuyyle/portfolio/commit/acb54a306e4bf85a2c8b2ac3f4899f106643a6c1"
+        },
+        {
+            "additions": 39,
+            "committedAt": "2026-05-22T00:41:50Z",
+            "deletions": 3,
+            "message": "feat: add new project",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "50c0dd9a814a99ea81c7099081417d531dd31af9",
+            "url": "https://github.com/giahuyyle/portfolio/commit/50c0dd9a814a99ea81c7099081417d531dd31af9"
+        },
+        {
+            "additions": 2164,
+            "committedAt": "2026-05-22T00:34:58Z",
+            "deletions": 226,
+            "message": "Merge pull request #2 from namhoangmai/new-ui",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "d938e4a4ec74eea68eb7844b0e36c1c496adb367",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/d938e4a4ec74eea68eb7844b0e36c1c496adb367"
+        },
+        {
+            "additions": 3,
+            "committedAt": "2026-05-22T00:17:08Z",
+            "deletions": 37736,
+            "message": "gitignore: ignore .agents and remove from tracking",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
+        }
+    ]
 }

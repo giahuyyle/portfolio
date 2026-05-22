@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { placeholderCommits, placeholderPosts } from "../data/dashboard";
+import { githubSnapshot, type GitHubRecentCommitSnapshot } from "../data/github";
 import { socialLinks } from "../data/navigation";
 import type { ThemeName } from "../data/theme";
 
@@ -23,6 +24,17 @@ function formatMountainTime() {
         timeZone: "America/Edmonton",
     }).format(new Date());
 }
+
+const recentCommits: GitHubRecentCommitSnapshot[] =
+    githubSnapshot.recentCommits.length > 0
+        ? githubSnapshot.recentCommits
+        : placeholderCommits.map((commit) => ({
+              ...commit,
+              committedAt: null,
+              repo: "portfolio-new",
+              sha: null,
+              url: "https://github.com/giahuyyle",
+          }));
 
 function Dashboard({
     accent,
@@ -162,10 +174,13 @@ function Dashboard({
                         </div>
 
                         <div className="mt-6 space-y-3">
-                            {placeholderCommits.map((commit) => (
-                                <div
-                                    className="grid gap-2 text-sm font-medium text-(--hero-muted) sm:grid-cols-[minmax(0,1fr)_auto]"
-                                    key={`${commit.project}-${commit.message}`}
+                            {recentCommits.map((commit) => (
+                                <a
+                                    className="grid gap-2 text-sm font-medium text-(--hero-muted) transition hover:text-(--hero-accent) sm:grid-cols-[minmax(0,1fr)_auto]"
+                                    href={commit.url}
+                                    key={`${commit.repo}-${commit.sha ?? commit.message}`}
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <p className="truncate">
                                         <span className="text-(--hero-text)">
@@ -182,7 +197,7 @@ function Dashboard({
                                             -{commit.deletions}
                                         </span>
                                     </p>
-                                </div>
+                                </a>
                             ))}
                         </div>
 
