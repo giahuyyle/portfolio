@@ -187,7 +187,7 @@ function Footer() {
                                 : "GitHub sync pending"}
                         </span>
                         <span className="text-(--hero-soft)">-</span>
-                        <span>{formatSyncTime(githubSnapshot.syncedAt)}</span>
+                        <span>last synced: {formatSyncTime(githubSnapshot.syncedAt)}</span>
                         <span className="text-(--hero-soft)">-</span>
                         <span className="inline-flex items-center gap-2">
                             <BranchIcon />
