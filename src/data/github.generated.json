@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-05-22T05:20:03.776Z",
+    "syncedAt": "2026-05-22T12:35:17.616Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "75adeac94b4be5d7801f291ed59ca7f916340952",
-        "shortSha": "75adeac"
+        "sha": "887202dd76cef94e149433ab1781f0299a9febef",
+        "shortSha": "887202d"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -59,7 +59,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 15,
+                    "contributions": 16,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 },
@@ -75,7 +75,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-22T05:17:05Z",
+            "pushedAt": "2026-05-22T05:22:15Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -111,6 +111,16 @@
     },
     "recentCommits": [
         {
+            "additions": 163,
+            "committedAt": "2026-05-22T05:22:08Z",
+            "deletions": 12,
+            "message": "feat: sync recent commits with GitHub data",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "887202dd76cef94e149433ab1781f0299a9febef",
+            "url": "https://github.com/giahuyyle/portfolio/commit/887202dd76cef94e149433ab1781f0299a9febef"
+        },
+        {
             "additions": 8,
             "committedAt": "2026-05-22T05:17:01Z",
             "deletions": 0,
@@ -129,16 +139,6 @@
             "repo": "portfolio",
             "sha": "acb54a306e4bf85a2c8b2ac3f4899f106643a6c1",
             "url": "https://github.com/giahuyyle/portfolio/commit/acb54a306e4bf85a2c8b2ac3f4899f106643a6c1"
-        },
-        {
-            "additions": 39,
-            "committedAt": "2026-05-22T00:41:50Z",
-            "deletions": 3,
-            "message": "feat: add new project",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "50c0dd9a814a99ea81c7099081417d531dd31af9",
-            "url": "https://github.com/giahuyyle/portfolio/commit/50c0dd9a814a99ea81c7099081417d531dd31af9"
         },
         {
             "additions": 2164,
