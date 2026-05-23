@@ -1,3 +1,4 @@
+import { Buffer } from "node:buffer";
 import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 
@@ -111,6 +112,52 @@ async function fetchRepoContributors(owner, repo) {
         }));
 }
 
+async function fetchRepoDescriptionMarkdown(owner, repo, defaultBranch) {
+    const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/description.md?ref=${encodeURIComponent(defaultBranch)}`,
+        {
+            headers: getHeaders(),
+        },
+    );
+
+    if (response.status === 404) {
+        return null;
+    }
+
+    if (!response.ok) {
+        let detail = `${response.status} ${response.statusText}`;
+
+        try {
+            const body = await response.json();
+            if (typeof body.message === "string") {
+                detail = `${detail}: ${body.message}`;
+            }
+        } catch {
+            // Keep the HTTP status as the useful failure detail.
+        }
+
+        throw new Error(
+            `GitHub API request failed for ${owner}/${repo} description.md: ${detail}`,
+        );
+    }
+
+    const data = await response.json();
+
+    if (
+        data.type !== "file" ||
+        data.encoding !== "base64" ||
+        typeof data.content !== "string"
+    ) {
+        return null;
+    }
+
+    const markdown = Buffer.from(data.content.replace(/\s/g, ""), "base64")
+        .toString("utf8")
+        .trim();
+
+    return markdown.length > 0 ? markdown : null;
+}
+
 async function fetchRepoRecentCommits(owner, repo, projectTitle) {
     const commits = await fetchGitHubJson(
         `https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`,
@@ -177,11 +224,19 @@ async function fetchRepo(owner, repo) {
 
     const data = await response.json();
     const contributors = await fetchRepoContributors(owner, repo);
+    const defaultBranch =
+        typeof data.default_branch === "string" ? data.default_branch : "main";
+    const descriptionMarkdown = await fetchRepoDescriptionMarkdown(
+        owner,
+        repo,
+        defaultBranch,
+    );
 
     return {
         contributorCount: contributors.length,
         contributors,
         description: data.description ?? null,
+        descriptionMarkdown,
         forks: data.forks_count ?? 0,
         language: data.language ?? null,
         openIssues: data.open_issues_count ?? 0,

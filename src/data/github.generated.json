@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-05-22T12:35:17.616Z",
+    "syncedAt": "2026-05-23T05:04:42.598Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "887202dd76cef94e149433ab1781f0299a9febef",
-        "shortSha": "887202d"
+        "sha": "93b629e9ab3765286bd937ea6ea183f3bcf72150",
+        "shortSha": "93b629e"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -11,7 +11,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 66,
+                    "contributions": 67,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 },
@@ -23,11 +23,12 @@
                 }
             ],
             "description": null,
+            "descriptionMarkdown": null,
             "forks": 0,
             "language": "JavaScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-09T05:53:18Z",
+            "pushedAt": "2026-05-23T03:48:21Z",
             "repo": "cover-pilot",
             "stars": 0,
             "topics": [],
@@ -44,6 +45,7 @@
                 }
             ],
             "description": null,
+            "descriptionMarkdown": null,
             "forks": 0,
             "language": "TypeScript",
             "openIssues": 0,
@@ -59,23 +61,24 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 16,
+                    "contributions": 17,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 6,
+                    "contributions": 7,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 }
             ],
             "description": null,
+            "descriptionMarkdown": "# Portfolio\n\nWelcome to the most self-referential project in my portfolio: the portfolio itself. This site is where my projects, GitHub activity, resume, personal context, and small interface experiments all get pulled into one place, wrapped in a mono-font, glassy, grid-heavy visual system.\n\n## The Journey\n\nWhat started as \"I need a portfolio site\" turned into a full React interface with custom route handling, animated transitions, theme persistence, accent controls, project detail pages, and enough spacing tweaks to make me question whether pixels should have opinions.\n\nThe goal is simple: make the site feel personal without turning it into a generic landing page. The execution, naturally, involved more refactoring than a simple portfolio probably deserves.\n\n## Technical Stack\n\n**Frontend:** React with TypeScript, because the site may be personal but the props still deserve boundaries.\n\n**Build Tooling:** Vite, keeping local development fast and the production build straightforward.\n\n**Styling:** Tailwind CSS 4 with a CSS variable theme system for the background, text, panels, grid, muted colors, and accent color.\n\n**Routing:** Lightweight route handling in `src/App.tsx` instead of a full router library, currently covering the home page, about page, projects page, project detail pages, and placeholders for the rest of the navigation.\n\n**Data:** Static project configuration merged with generated GitHub repository snapshots so project cards can show repo metadata without hardcoding every detail by hand.\n\n## Features That Probably Took Longer Than Expected\n\n**Theme Switching:** Latte, Frappe, Macchiato, and Mocha themes with persisted local preferences.\n\n**Accent Controls:** A set of selectable accent swatches that drive the site highlights and background pulses.\n\n**Grid Toggle:** Because sometimes the terminal-inspired grid is the vibe, and sometimes it needs to calm down.\n\n**Project Cards:** Featured work with tags, contributor labels, GitHub stats, and detail routes.\n\n**GitHub Sync:** A script that fetches repository metadata, contributors, and recent commits into `src/data/github.generated.json`.\n\n**Animated Navigation:** Small route transitions and navbar directory state so the site feels more like an interface than a pile of pages.\n\n**Responsive Layouts:** Home, about, projects, and detail views built to hold together across screen sizes without abandoning the visual language.\n\n## The Reality Check\n\nThis is still a portfolio, which means it will probably never be \"done.\" There will always be another section to polish, another project write-up to improve, another animation to tune down by 10%, and another reason to touch the theme variables.\n\nBut it does what it needs to do: it gives my work a home, keeps the codebase small enough to reason about, and leaves enough room for the site to evolve without needing to be rebuilt from scratch every time I change my mind.\n\nBuilt with React, TypeScript, Vite, Tailwind CSS, and a suspicious number of visual alignment decisions.",
             "forks": 0,
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-22T05:22:15Z",
+            "pushedAt": "2026-05-23T04:59:47Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -98,6 +101,7 @@
                 }
             ],
             "description": null,
+            "descriptionMarkdown": null,
             "forks": 0,
             "language": "TypeScript",
             "openIssues": 0,
@@ -110,6 +114,26 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 45,
+            "committedAt": "2026-05-23T04:59:42Z",
+            "deletions": 0,
+            "message": "chore: add description",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "93b629e9ab3765286bd937ea6ea183f3bcf72150",
+            "url": "https://github.com/giahuyyle/portfolio/commit/93b629e9ab3765286bd937ea6ea183f3bcf72150"
+        },
+        {
+            "additions": 1098,
+            "committedAt": "2026-05-23T03:48:17Z",
+            "deletions": 10,
+            "message": "feat(profile): add resume parser import flow",
+            "project": "Cover Pilot",
+            "repo": "cover-pilot",
+            "sha": "a898a0272bf3b1abf440bb1bf203011557af580c",
+            "url": "https://github.com/giahuyyle/cover-pilot/commit/a898a0272bf3b1abf440bb1bf203011557af580c"
+        },
         {
             "additions": 163,
             "committedAt": "2026-05-22T05:22:08Z",
@@ -131,16 +155,6 @@
             "url": "https://github.com/giahuyyle/portfolio/commit/75adeac94b4be5d7801f291ed59ca7f916340952"
         },
         {
-            "additions": 1,
-            "committedAt": "2026-05-22T01:01:36Z",
-            "deletions": 1,
-            "message": "feat: last sync to footer",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "acb54a306e4bf85a2c8b2ac3f4899f106643a6c1",
-            "url": "https://github.com/giahuyyle/portfolio/commit/acb54a306e4bf85a2c8b2ac3f4899f106643a6c1"
-        },
-        {
             "additions": 2164,
             "committedAt": "2026-05-22T00:34:58Z",
             "deletions": 226,
@@ -149,16 +163,6 @@
             "repo": "ascension-app",
             "sha": "d938e4a4ec74eea68eb7844b0e36c1c496adb367",
             "url": "https://github.com/namhoangmai/ascension-app/commit/d938e4a4ec74eea68eb7844b0e36c1c496adb367"
-        },
-        {
-            "additions": 3,
-            "committedAt": "2026-05-22T00:17:08Z",
-            "deletions": 37736,
-            "message": "gitignore: ignore .agents and remove from tracking",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
         }
     ]
 }

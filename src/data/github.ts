@@ -11,6 +11,7 @@ export type GitHubProjectSnapshot = {
     contributorCount: number;
     contributors: GitHubContributorSnapshot[];
     description: string | null;
+    descriptionMarkdown?: string | null;
     forks: number;
     language: string | null;
     openIssues: number;

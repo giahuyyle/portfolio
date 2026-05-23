@@ -116,6 +116,8 @@ export const featuredProjects: FeaturedProject[] = configuredProjects.map(
             ),
             contributorProfiles: getContributorProfiles(project, githubProject),
             description: project.description || githubProject?.description || "",
+            detailDescription:
+                githubProject?.descriptionMarkdown ?? project.detailDescription,
             forks: githubProject?.forks ?? 0,
             href:
                 githubProject?.url ??
