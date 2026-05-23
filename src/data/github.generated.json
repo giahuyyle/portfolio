@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-05-23T05:04:42.598Z",
+    "syncedAt": "2026-05-23T11:36:17.495Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "93b629e9ab3765286bd937ea6ea183f3bcf72150",
-        "shortSha": "93b629e"
+        "sha": "da0a18b88c9d42f2e592cb61a5e7049d37990e87",
+        "shortSha": "da0a18b"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -61,7 +61,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 17,
+                    "contributions": 18,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 },
@@ -78,7 +78,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-23T04:59:47Z",
+            "pushedAt": "2026-05-23T05:05:58Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -115,6 +115,16 @@
     },
     "recentCommits": [
         {
+            "additions": 279,
+            "committedAt": "2026-05-23T05:05:53Z",
+            "deletions": 31,
+            "message": "feat: load project detail descriptions from repo markdown",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "da0a18b88c9d42f2e592cb61a5e7049d37990e87",
+            "url": "https://github.com/giahuyyle/portfolio/commit/da0a18b88c9d42f2e592cb61a5e7049d37990e87"
+        },
+        {
             "additions": 45,
             "committedAt": "2026-05-23T04:59:42Z",
             "deletions": 0,
@@ -143,16 +153,6 @@
             "repo": "portfolio",
             "sha": "887202dd76cef94e149433ab1781f0299a9febef",
             "url": "https://github.com/giahuyyle/portfolio/commit/887202dd76cef94e149433ab1781f0299a9febef"
-        },
-        {
-            "additions": 8,
-            "committedAt": "2026-05-22T05:17:01Z",
-            "deletions": 0,
-            "message": "fix: add Vercel rewrite for SPA routes",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "75adeac94b4be5d7801f291ed59ca7f916340952",
-            "url": "https://github.com/giahuyyle/portfolio/commit/75adeac94b4be5d7801f291ed59ca7f916340952"
         },
         {
             "additions": 2164,
