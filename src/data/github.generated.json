@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-05-24T11:42:51.116Z",
+    "syncedAt": "2026-05-25T13:43:23.090Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "da0a18b88c9d42f2e592cb61a5e7049d37990e87",
@@ -67,7 +67,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 8,
+                    "contributions": 9,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 }
@@ -78,7 +78,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-23T11:36:27Z",
+            "pushedAt": "2026-05-24T11:43:01Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -145,16 +145,6 @@
             "url": "https://github.com/giahuyyle/cover-pilot/commit/a898a0272bf3b1abf440bb1bf203011557af580c"
         },
         {
-            "additions": 163,
-            "committedAt": "2026-05-22T05:22:08Z",
-            "deletions": 12,
-            "message": "feat: sync recent commits with GitHub data",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "887202dd76cef94e149433ab1781f0299a9febef",
-            "url": "https://github.com/giahuyyle/portfolio/commit/887202dd76cef94e149433ab1781f0299a9febef"
-        },
-        {
             "additions": 2164,
             "committedAt": "2026-05-22T00:34:58Z",
             "deletions": 226,
@@ -163,6 +153,16 @@
             "repo": "ascension-app",
             "sha": "d938e4a4ec74eea68eb7844b0e36c1c496adb367",
             "url": "https://github.com/namhoangmai/ascension-app/commit/d938e4a4ec74eea68eb7844b0e36c1c496adb367"
+        },
+        {
+            "additions": 3,
+            "committedAt": "2026-05-22T00:17:08Z",
+            "deletions": 37736,
+            "message": "gitignore: ignore .agents and remove from tracking",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
         }
     ]
 }
