@@ -176,12 +176,22 @@ async function fetchRepoRecentCommits(owner, repo, projectTitle) {
                     commit.commit?.message !== syncCommitMessage,
             )
             .slice(0, 3)
-            .map((commit) =>
-                fetchGitHubJson(
-                    `https://api.github.com/repos/${owner}/${repo}/commits/${commit.sha}`,
-                    `${owner}/${repo} commit ${commit.sha}`,
-                ),
-            ),
+            .map(async (commit) => {
+                try {
+                    return await fetchGitHubJson(
+                        `https://api.github.com/repos/${owner}/${repo}/commits/${commit.sha}`,
+                        `${owner}/${repo} commit ${commit.sha}`,
+                    );
+                } catch (error) {
+                    const message =
+                        error instanceof Error ? error.message : String(error);
+
+                    console.warn(
+                        `Skipping detailed stats for ${owner}/${repo} commit ${commit.sha}: ${message}`,
+                    );
+                    return commit;
+                }
+            }),
     );
 
     return commitDetails.map((commit) => ({
