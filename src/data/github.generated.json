@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-05-27T13:49:28.247Z",
+    "syncedAt": "2026-05-28T14:06:30.245Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
@@ -67,7 +67,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 10,
+                    "contributions": 11,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 }
@@ -78,7 +78,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-26T16:34:34Z",
+            "pushedAt": "2026-05-27T13:49:38Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -125,16 +125,6 @@
             "url": "https://github.com/giahuyyle/portfolio/commit/8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28"
         },
         {
-            "additions": 279,
-            "committedAt": "2026-05-23T05:05:53Z",
-            "deletions": 31,
-            "message": "feat: load project detail descriptions from repo markdown",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "da0a18b88c9d42f2e592cb61a5e7049d37990e87",
-            "url": "https://github.com/giahuyyle/portfolio/commit/da0a18b88c9d42f2e592cb61a5e7049d37990e87"
-        },
-        {
             "additions": 1098,
             "committedAt": "2026-05-23T03:48:17Z",
             "deletions": 10,
@@ -163,6 +153,16 @@
             "repo": "ascension-app",
             "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
             "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
+        },
+        {
+            "additions": 37,
+            "committedAt": "2026-05-22T00:09:05Z",
+            "deletions": 7,
+            "message": "feat: more animations to landing page",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "2a1dbbf6037ec344367ff301d7ee8b21864343b8",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/2a1dbbf6037ec344367ff301d7ee8b21864343b8"
         }
     ]
 }
