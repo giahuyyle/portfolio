@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-05-31T11:51:08.441Z",
+    "syncedAt": "2026-06-01T16:19:25.321Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
@@ -67,7 +67,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 14,
+                    "contributions": 15,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 }
@@ -78,7 +78,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-30T11:45:23Z",
+            "pushedAt": "2026-05-31T11:51:19Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -125,16 +125,6 @@
             "url": "https://github.com/namhoangmai/ascension-app/commit/f1c6a1f0c73e817ae740befeb3d353b7e5192c37"
         },
         {
-            "additions": 16,
-            "committedAt": "2026-05-26T16:34:29Z",
-            "deletions": 6,
-            "message": "fix: tolerate GitHub commit detail sync failures",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
-            "url": "https://github.com/giahuyyle/portfolio/commit/8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28"
-        },
-        {
             "additions": 1098,
             "committedAt": "2026-05-23T03:48:17Z",
             "deletions": 10,
@@ -163,6 +153,16 @@
             "repo": "ascension-app",
             "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
             "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
+        },
+        {
+            "additions": 394,
+            "committedAt": "2026-05-09T05:53:12Z",
+            "deletions": 70,
+            "message": "feat(frontend): dark mode",
+            "project": "Cover Pilot",
+            "repo": "cover-pilot",
+            "sha": "856d0eed9ae5d9356d0956140074d600fe637d40",
+            "url": "https://github.com/giahuyyle/cover-pilot/commit/856d0eed9ae5d9356d0956140074d600fe637d40"
         }
     ]
 }
