@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-06-02T14:32:35.206Z",
+    "syncedAt": "2026-06-03T15:05:15.063Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
@@ -11,7 +11,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 67,
+                    "contributions": 68,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 },
@@ -28,7 +28,7 @@
             "language": "JavaScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-05-23T03:48:21Z",
+            "pushedAt": "2026-06-03T00:31:24Z",
             "repo": "cover-pilot",
             "stars": 0,
             "topics": [],
@@ -67,7 +67,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 16,
+                    "contributions": 17,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 }
@@ -78,7 +78,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-06-01T16:19:35Z",
+            "pushedAt": "2026-06-02T14:32:45Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -114,6 +114,16 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 1659,
+            "committedAt": "2026-06-03T00:31:15Z",
+            "deletions": 675,
+            "message": "feat(profile): add AI-reviewed resume import flow",
+            "project": "Cover Pilot",
+            "repo": "cover-pilot",
+            "sha": "c86fc19d5c05a8cf0532a546f8ee98370e810e3d",
+            "url": "https://github.com/giahuyyle/cover-pilot/commit/c86fc19d5c05a8cf0532a546f8ee98370e810e3d"
+        },
         {
             "additions": 491,
             "committedAt": "2026-05-29T21:44:35Z",
@@ -153,16 +163,6 @@
             "repo": "ascension-app",
             "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
             "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
-        },
-        {
-            "additions": 394,
-            "committedAt": "2026-05-09T05:53:12Z",
-            "deletions": 70,
-            "message": "feat(frontend): dark mode",
-            "project": "Cover Pilot",
-            "repo": "cover-pilot",
-            "sha": "856d0eed9ae5d9356d0956140074d600fe637d40",
-            "url": "https://github.com/giahuyyle/cover-pilot/commit/856d0eed9ae5d9356d0956140074d600fe637d40"
         }
     ]
 }
