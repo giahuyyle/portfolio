@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-06-05T13:25:11.383Z",
+    "syncedAt": "2026-06-06T11:44:43.240Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
@@ -60,16 +60,16 @@
             "contributorCount": 2,
             "contributors": [
                 {
+                    "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
+                    "contributions": 20,
+                    "login": "github-actions[bot]",
+                    "url": "https://github.com/apps/github-actions"
+                },
+                {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
                     "contributions": 19,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
-                },
-                {
-                    "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 19,
-                    "login": "github-actions[bot]",
-                    "url": "https://github.com/apps/github-actions"
                 }
             ],
             "description": null,
@@ -78,7 +78,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-06-04T13:32:37Z",
+            "pushedAt": "2026-06-05T13:25:21Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -95,7 +95,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 4,
+                    "contributions": 5,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 }
@@ -106,7 +106,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-05-29T21:44:42Z",
+            "pushedAt": "2026-06-05T19:49:24Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -114,6 +114,16 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 1412,
+            "committedAt": "2026-06-05T19:49:17Z",
+            "deletions": 459,
+            "message": "Fix Nutrition page - can do manual calories tracking",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "d0212329e580a2966227b38561cf2a5b80ce1d25",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/d0212329e580a2966227b38561cf2a5b80ce1d25"
+        },
         {
             "additions": 1659,
             "committedAt": "2026-06-03T00:31:15Z",
@@ -153,16 +163,6 @@
             "repo": "ascension-app",
             "sha": "d938e4a4ec74eea68eb7844b0e36c1c496adb367",
             "url": "https://github.com/namhoangmai/ascension-app/commit/d938e4a4ec74eea68eb7844b0e36c1c496adb367"
-        },
-        {
-            "additions": 3,
-            "committedAt": "2026-05-22T00:17:08Z",
-            "deletions": 37736,
-            "message": "gitignore: ignore .agents and remove from tracking",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "1baa6e8fe1a7661d85854ee700e0e8dd68c576a7",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/1baa6e8fe1a7661d85854ee700e0e8dd68c576a7"
         }
     ]
 }
