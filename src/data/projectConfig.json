@@ -20,6 +20,15 @@
         },
         {
             "contributors": "solo build",
+            "description": "A registration-focused project for tracking air-related records and workflow status in one place.",
+            "detailDescription": "Air Reg is using placeholder detail copy until the repository has a dedicated description document. The final version can describe the product goal, registration workflow, technical stack, implementation details, and lessons from the build.",
+            "owner": "giahuyyle",
+            "repo": "air-reg",
+            "tags": ["tracking", "registration", "workflow", "typescript"],
+            "title": "Air Reg"
+        },
+        {
+            "contributors": "solo build",
             "description": "The portfolio site that brings together project work, GitHub activity, personal context, and interactive route transitions.",
             "detailDescription": "Portfolio is the home for this site and its evolving interface experiments. This placeholder detail page can later describe the visual system, GitHub Actions data sync, lightweight routing approach, and project animation work.",
             "owner": "giahuyyle",

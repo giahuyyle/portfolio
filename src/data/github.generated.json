@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-07-05T11:47:39.440Z",
+    "syncedAt": "2026-07-06T09:46:42.878Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
@@ -56,12 +56,34 @@
             "topics": [],
             "url": "https://github.com/giahuyyle/talkflow"
         },
+        "giahuyyle/air-reg": {
+            "contributorCount": 1,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 4,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                }
+            ],
+            "description": null,
+            "descriptionMarkdown": null,
+            "forks": 0,
+            "language": "HTML",
+            "openIssues": 0,
+            "owner": "giahuyyle",
+            "pushedAt": "2026-07-02T10:27:37Z",
+            "repo": "air-reg",
+            "stars": 0,
+            "topics": [],
+            "url": "https://github.com/giahuyyle/air-reg"
+        },
         "giahuyyle/portfolio": {
             "contributorCount": 2,
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 49,
+                    "contributions": 50,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -78,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-07-04T11:46:34Z",
+            "pushedAt": "2026-07-05T11:47:49Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -115,6 +137,36 @@
     },
     "recentCommits": [
         {
+            "additions": 900,
+            "committedAt": "2026-07-02T10:27:31Z",
+            "deletions": 3,
+            "message": "feat: simple UI",
+            "project": "Air Reg",
+            "repo": "air-reg",
+            "sha": "db32064c0b68ff4ea2b7d50592094e13b02f03fd",
+            "url": "https://github.com/giahuyyle/air-reg/commit/db32064c0b68ff4ea2b7d50592094e13b02f03fd"
+        },
+        {
+            "additions": 61,
+            "committedAt": "2026-07-02T08:36:57Z",
+            "deletions": 2,
+            "message": "chore: remove cache from git tree",
+            "project": "Air Reg",
+            "repo": "air-reg",
+            "sha": "019e51aa0c552ecdf7883394b7b9ba370a9e5645",
+            "url": "https://github.com/giahuyyle/air-reg/commit/019e51aa0c552ecdf7883394b7b9ba370a9e5645"
+        },
+        {
+            "additions": 133,
+            "committedAt": "2026-07-01T16:25:56Z",
+            "deletions": 5,
+            "message": "chore: init docker for project",
+            "project": "Air Reg",
+            "repo": "air-reg",
+            "sha": "4aa8583b3208494058049ce4b661423b256e1559",
+            "url": "https://github.com/giahuyyle/air-reg/commit/4aa8583b3208494058049ce4b661423b256e1559"
+        },
+        {
             "additions": 1412,
             "committedAt": "2026-06-05T19:49:17Z",
             "deletions": 459,
@@ -133,36 +185,6 @@
             "repo": "cover-pilot",
             "sha": "c86fc19d5c05a8cf0532a546f8ee98370e810e3d",
             "url": "https://github.com/giahuyyle/cover-pilot/commit/c86fc19d5c05a8cf0532a546f8ee98370e810e3d"
-        },
-        {
-            "additions": 491,
-            "committedAt": "2026-05-29T21:44:35Z",
-            "deletions": 106,
-            "message": "Fix Nutrition page",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "f1c6a1f0c73e817ae740befeb3d353b7e5192c37",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/f1c6a1f0c73e817ae740befeb3d353b7e5192c37"
-        },
-        {
-            "additions": 1098,
-            "committedAt": "2026-05-23T03:48:17Z",
-            "deletions": 10,
-            "message": "feat(profile): add resume parser import flow",
-            "project": "Cover Pilot",
-            "repo": "cover-pilot",
-            "sha": "a898a0272bf3b1abf440bb1bf203011557af580c",
-            "url": "https://github.com/giahuyyle/cover-pilot/commit/a898a0272bf3b1abf440bb1bf203011557af580c"
-        },
-        {
-            "additions": 2164,
-            "committedAt": "2026-05-22T00:34:58Z",
-            "deletions": 226,
-            "message": "Merge pull request #2 from namhoangmai/new-ui",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "d938e4a4ec74eea68eb7844b0e36c1c496adb367",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/d938e4a4ec74eea68eb7844b0e36c1c496adb367"
         }
     ]
 }
