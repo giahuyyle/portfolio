@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-07-11T11:19:33.893Z",
+    "syncedAt": "2026-07-12T11:31:38.015Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "628b0fc99b65a01b60b880670f817ec776192081",
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 54,
+                    "contributions": 55,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-07-10T12:37:29Z",
+            "pushedAt": "2026-07-11T11:19:44Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -136,16 +136,6 @@
         }
     },
     "recentCommits": [
-        {
-            "additions": 64,
-            "committedAt": "2026-07-06T09:46:52Z",
-            "deletions": 33,
-            "message": "feat: add new project",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "628b0fc99b65a01b60b880670f817ec776192081",
-            "url": "https://github.com/giahuyyle/portfolio/commit/628b0fc99b65a01b60b880670f817ec776192081"
-        },
         {
             "additions": 900,
             "committedAt": "2026-07-02T10:27:31Z",
@@ -185,6 +175,16 @@
             "repo": "ascension-app",
             "sha": "d0212329e580a2966227b38561cf2a5b80ce1d25",
             "url": "https://github.com/namhoangmai/ascension-app/commit/d0212329e580a2966227b38561cf2a5b80ce1d25"
+        },
+        {
+            "additions": 1659,
+            "committedAt": "2026-06-03T00:31:15Z",
+            "deletions": 675,
+            "message": "feat(profile): add AI-reviewed resume import flow",
+            "project": "Cover Pilot",
+            "repo": "cover-pilot",
+            "sha": "c86fc19d5c05a8cf0532a546f8ee98370e810e3d",
+            "url": "https://github.com/giahuyyle/cover-pilot/commit/c86fc19d5c05a8cf0532a546f8ee98370e810e3d"
         }
     ]
 }
