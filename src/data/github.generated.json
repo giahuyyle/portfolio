@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-07-17T11:40:59.720Z",
+    "syncedAt": "2026-07-18T11:17:52.503Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "628b0fc99b65a01b60b880670f817ec776192081",
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 60,
+                    "contributions": 61,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-07-16T11:54:28Z",
+            "pushedAt": "2026-07-17T11:41:09Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -117,7 +117,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 5,
+                    "contributions": 7,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 }
@@ -128,7 +128,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-06-05T19:49:24Z",
+            "pushedAt": "2026-07-17T22:04:17Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -136,6 +136,26 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 9,
+            "committedAt": "2026-07-17T22:04:09Z",
+            "deletions": 0,
+            "message": "format",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "fb772ca869297e3b5785b646992896591c32c11b",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/fb772ca869297e3b5785b646992896591c32c11b"
+        },
+        {
+            "additions": 5199,
+            "committedAt": "2026-07-17T21:38:03Z",
+            "deletions": 28,
+            "message": "Big changes",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "2f20fb439da164137dd5ea9128e2267fea410d44",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/2f20fb439da164137dd5ea9128e2267fea410d44"
+        },
         {
             "additions": 900,
             "committedAt": "2026-07-02T10:27:31Z",
@@ -165,26 +185,6 @@
             "repo": "air-reg",
             "sha": "4aa8583b3208494058049ce4b661423b256e1559",
             "url": "https://github.com/giahuyyle/air-reg/commit/4aa8583b3208494058049ce4b661423b256e1559"
-        },
-        {
-            "additions": 1412,
-            "committedAt": "2026-06-05T19:49:17Z",
-            "deletions": 459,
-            "message": "Fix Nutrition page - can do manual calories tracking",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "d0212329e580a2966227b38561cf2a5b80ce1d25",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/d0212329e580a2966227b38561cf2a5b80ce1d25"
-        },
-        {
-            "additions": 1659,
-            "committedAt": "2026-06-03T00:31:15Z",
-            "deletions": 675,
-            "message": "feat(profile): add AI-reviewed resume import flow",
-            "project": "Cover Pilot",
-            "repo": "cover-pilot",
-            "sha": "c86fc19d5c05a8cf0532a546f8ee98370e810e3d",
-            "url": "https://github.com/giahuyyle/cover-pilot/commit/c86fc19d5c05a8cf0532a546f8ee98370e810e3d"
         }
     ]
 }
