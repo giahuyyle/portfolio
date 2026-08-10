@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-08-09T10:52:40.846Z",
+    "syncedAt": "2026-08-10T11:26:25.859Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "628b0fc99b65a01b60b880670f817ec776192081",
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 83,
+                    "contributions": 84,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-08-08T10:51:37Z",
+            "pushedAt": "2026-08-09T10:52:51Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -110,16 +110,16 @@
             "contributorCount": 2,
             "contributors": [
                 {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
+                    "contributions": 11,
+                    "login": "namhoangmai",
+                    "url": "https://github.com/namhoangmai"
+                },
+                {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
                     "contributions": 7,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
-                },
-                {
-                    "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 7,
-                    "login": "namhoangmai",
-                    "url": "https://github.com/namhoangmai"
                 }
             ],
             "description": null,
@@ -128,7 +128,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-07-17T22:04:17Z",
+            "pushedAt": "2026-08-09T22:01:03Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -137,24 +137,34 @@
     },
     "recentCommits": [
         {
-            "additions": 9,
-            "committedAt": "2026-07-17T22:04:09Z",
-            "deletions": 0,
-            "message": "format",
+            "additions": 461,
+            "committedAt": "2026-08-09T22:00:58Z",
+            "deletions": 35,
+            "message": "STRENGHT TRACKING - fix database issues",
             "project": "Ascension App",
             "repo": "ascension-app",
-            "sha": "fb772ca869297e3b5785b646992896591c32c11b",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/fb772ca869297e3b5785b646992896591c32c11b"
+            "sha": "aa8961180d91d0a981c7036bf2c39c689ffdbbc8",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/aa8961180d91d0a981c7036bf2c39c689ffdbbc8"
         },
         {
-            "additions": 5199,
-            "committedAt": "2026-07-17T21:38:03Z",
-            "deletions": 28,
-            "message": "Big changes",
+            "additions": 695,
+            "committedAt": "2026-08-09T21:31:10Z",
+            "deletions": 296,
+            "message": "Profile - Fix invalid inputs error",
             "project": "Ascension App",
             "repo": "ascension-app",
-            "sha": "2f20fb439da164137dd5ea9128e2267fea410d44",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/2f20fb439da164137dd5ea9128e2267fea410d44"
+            "sha": "dec416daf5dd03340b46749849803be2a985d573",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/dec416daf5dd03340b46749849803be2a985d573"
+        },
+        {
+            "additions": 359,
+            "committedAt": "2026-08-09T21:12:35Z",
+            "deletions": 90,
+            "message": "Profile - Add crop pfp feature",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "4c5dbd33e03897575c145bf9511bcf3a28a42940",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/4c5dbd33e03897575c145bf9511bcf3a28a42940"
         },
         {
             "additions": 900,
@@ -175,16 +185,6 @@
             "repo": "air-reg",
             "sha": "019e51aa0c552ecdf7883394b7b9ba370a9e5645",
             "url": "https://github.com/giahuyyle/air-reg/commit/019e51aa0c552ecdf7883394b7b9ba370a9e5645"
-        },
-        {
-            "additions": 133,
-            "committedAt": "2026-07-01T16:25:56Z",
-            "deletions": 5,
-            "message": "chore: init docker for project",
-            "project": "Air Reg",
-            "repo": "air-reg",
-            "sha": "4aa8583b3208494058049ce4b661423b256e1559",
-            "url": "https://github.com/giahuyyle/air-reg/commit/4aa8583b3208494058049ce4b661423b256e1559"
         }
     ]
 }
