@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-07-06T09:46:42.878Z",
+    "syncedAt": "2026-08-12T11:10:21.223Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "8cf990ad4f02ceb52c6f04e606f7bf2e717f9b28",
-        "shortSha": "8cf990a"
+        "sha": "628b0fc99b65a01b60b880670f817ec776192081",
+        "shortSha": "628b0fc"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -83,13 +83,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 50,
+                    "contributions": 86,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 19,
+                    "contributions": 20,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-07-05T11:47:49Z",
+            "pushedAt": "2026-08-11T11:05:18Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -110,16 +110,16 @@
             "contributorCount": 2,
             "contributors": [
                 {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
+                    "contributions": 13,
+                    "login": "namhoangmai",
+                    "url": "https://github.com/namhoangmai"
+                },
+                {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
                     "contributions": 7,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
-                },
-                {
-                    "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 5,
-                    "login": "namhoangmai",
-                    "url": "https://github.com/namhoangmai"
                 }
             ],
             "description": null,
@@ -128,7 +128,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-06-05T19:49:24Z",
+            "pushedAt": "2026-08-10T18:21:42Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -136,6 +136,36 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 70,
+            "committedAt": "2026-08-10T18:21:37Z",
+            "deletions": 94,
+            "message": "Replace default template workouts",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "830d974e98027bf3b1938f71f0209667b3bbce10",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/830d974e98027bf3b1938f71f0209667b3bbce10"
+        },
+        {
+            "additions": 26,
+            "committedAt": "2026-08-10T18:12:57Z",
+            "deletions": 35,
+            "message": "STRENGTH TRACKING - delete exercises in workout overview",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "cf35ea11779356a93b29cc51a13c6b05966d309f",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/cf35ea11779356a93b29cc51a13c6b05966d309f"
+        },
+        {
+            "additions": 461,
+            "committedAt": "2026-08-09T22:00:58Z",
+            "deletions": 35,
+            "message": "STRENGHT TRACKING - fix database issues",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "aa8961180d91d0a981c7036bf2c39c689ffdbbc8",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/aa8961180d91d0a981c7036bf2c39c689ffdbbc8"
+        },
         {
             "additions": 900,
             "committedAt": "2026-07-02T10:27:31Z",
@@ -155,36 +185,6 @@
             "repo": "air-reg",
             "sha": "019e51aa0c552ecdf7883394b7b9ba370a9e5645",
             "url": "https://github.com/giahuyyle/air-reg/commit/019e51aa0c552ecdf7883394b7b9ba370a9e5645"
-        },
-        {
-            "additions": 133,
-            "committedAt": "2026-07-01T16:25:56Z",
-            "deletions": 5,
-            "message": "chore: init docker for project",
-            "project": "Air Reg",
-            "repo": "air-reg",
-            "sha": "4aa8583b3208494058049ce4b661423b256e1559",
-            "url": "https://github.com/giahuyyle/air-reg/commit/4aa8583b3208494058049ce4b661423b256e1559"
-        },
-        {
-            "additions": 1412,
-            "committedAt": "2026-06-05T19:49:17Z",
-            "deletions": 459,
-            "message": "Fix Nutrition page - can do manual calories tracking",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "d0212329e580a2966227b38561cf2a5b80ce1d25",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/d0212329e580a2966227b38561cf2a5b80ce1d25"
-        },
-        {
-            "additions": 1659,
-            "committedAt": "2026-06-03T00:31:15Z",
-            "deletions": 675,
-            "message": "feat(profile): add AI-reviewed resume import flow",
-            "project": "Cover Pilot",
-            "repo": "cover-pilot",
-            "sha": "c86fc19d5c05a8cf0532a546f8ee98370e810e3d",
-            "url": "https://github.com/giahuyyle/cover-pilot/commit/c86fc19d5c05a8cf0532a546f8ee98370e810e3d"
         }
     ]
 }
