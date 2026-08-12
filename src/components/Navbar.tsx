@@ -5,14 +5,12 @@ import type { NavigateTo } from "../utils/routing";
 type NavbarProps = {
     accent: string;
     activeTheme: string;
-    gridEnabled: boolean;
     moreLinks: string[];
     navLinks: string[];
     pathname: string;
     swatches: string[];
     themeNames: string[];
     onAccentChange: (accent: string) => void;
-    onGridChange: (enabled: boolean) => void;
     onNavigate: NavigateTo;
     onThemeChange: (theme: string) => void;
 };
@@ -38,14 +36,12 @@ function getDirectoryForPath(pathname: string) {
 function Navbar({
     accent,
     activeTheme,
-    gridEnabled,
     moreLinks,
     navLinks,
     pathname,
     swatches,
     themeNames,
     onAccentChange,
-    onGridChange,
     onNavigate,
     onThemeChange,
 }: NavbarProps) {
@@ -195,21 +191,6 @@ function Navbar({
                             />
                         ))}
                     </div>
-
-                    <label className="mt-4 flex cursor-pointer items-center gap-3 text-sm font-medium text-(--hero-muted)">
-                        <input
-                            checked={gridEnabled}
-                            className="size-5 accent-(--hero-accent)"
-                            onChange={(event) =>
-                                onGridChange(event.target.checked)
-                            }
-                            type="checkbox"
-                        />
-                        Background effect:
-                        <span className="text-(--hero-accent)">
-                            {gridEnabled ? "on" : "off"}
-                        </span>
-                    </label>
                 </div>
 
                 <div className="px-6 py-5">

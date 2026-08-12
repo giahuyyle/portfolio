@@ -1,4 +1,4 @@
-export const defaultAccent = "#5b6ee1";
+export const defaultAccent = "#e68d79";
 
 export const themes = {
     Latte: {
@@ -8,7 +8,6 @@ export const themes = {
         soft: "#8c8fa1",
         accent: defaultAccent,
         panel: "rgba(230, 233, 239, 0.88)",
-        grid: "rgba(91, 110, 225, 0.16)",
     },
     Frappe: {
         bg: "#303446",
@@ -17,7 +16,6 @@ export const themes = {
         soft: "#838ba7",
         accent: defaultAccent,
         panel: "rgba(41, 44, 60, 0.88)",
-        grid: "rgba(91, 110, 225, 0.18)",
     },
     Macchiato: {
         bg: "#24273a",
@@ -26,7 +24,6 @@ export const themes = {
         soft: "#8087a2",
         accent: defaultAccent,
         panel: "rgba(30, 32, 48, 0.88)",
-        grid: "rgba(91, 110, 225, 0.18)",
     },
     Mocha: {
         bg: "#1e1e2e",
@@ -35,13 +32,11 @@ export const themes = {
         soft: "#7f849c",
         accent: defaultAccent,
         panel: "rgba(24, 24, 37, 0.88)",
-        grid: "rgba(91, 110, 225, 0.18)",
     },
 };
 
 export const swatches = [
     defaultAccent,
-    "#e68d79",
     "#dc858d",
     "#dd77d6",
     "#9257e8",

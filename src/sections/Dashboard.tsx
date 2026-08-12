@@ -7,11 +7,9 @@ import type { ThemeName } from "../data/theme";
 type DashboardProps = {
     accent: string;
     activeTheme: ThemeName;
-    gridEnabled: boolean;
     swatches: string[];
     themeNames: string[];
     onAccentChange: (accent: string) => void;
-    onGridChange: (enabled: boolean) => void;
     onThemeChange: (theme: string) => void;
 };
 
@@ -39,11 +37,9 @@ const recentCommits: GitHubRecentCommitSnapshot[] =
 function Dashboard({
     accent,
     activeTheme,
-    gridEnabled,
     swatches,
     themeNames,
     onAccentChange,
-    onGridChange,
     onThemeChange,
 }: DashboardProps) {
     const [mountainTime, setMountainTime] = useState(formatMountainTime);
@@ -108,21 +104,6 @@ function Dashboard({
                                 />
                             ))}
                         </div>
-
-                        <label className="mt-6 flex cursor-pointer items-center gap-3 text-sm font-medium text-(--hero-muted)">
-                            <input
-                                checked={gridEnabled}
-                                className="size-5 accent-(--hero-accent)"
-                                onChange={(event) =>
-                                    onGridChange(event.target.checked)
-                                }
-                                type="checkbox"
-                            />
-                            Background effect:
-                            <span className="text-(--hero-accent)">
-                                {gridEnabled ? "on" : "off"}
-                            </span>
-                        </label>
                     </article>
 
                     <article className="dashboard-card">

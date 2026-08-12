@@ -17,98 +17,8 @@ body {
     background: var(--hero-bg, #f7f9fc);
 }
 
-.hero-grid {
-    background-color: var(--hero-bg);
-    background-image:
-        linear-gradient(var(--hero-grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--hero-grid) 1px, transparent 1px);
-    background-size: 38px 38px;
-}
-
 .hero-flat {
     background: var(--hero-bg);
-}
-
-.pulse-shell {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-}
-
-.pulse-shell > section,
-.pulse-shell > footer {
-    position: relative;
-    z-index: 1;
-}
-
-.background-pulses {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.background-pulse {
-    position: absolute;
-    left: var(--pulse-x);
-    top: var(--pulse-y);
-    width: var(--pulse-size);
-    aspect-ratio: 1;
-    border-radius: 999px;
-    background: var(--hero-accent);
-    box-shadow:
-        0 0 0 5px color-mix(in srgb, var(--hero-accent) 10%, transparent),
-        0 0 8px color-mix(in srgb, var(--hero-accent) 58%, transparent),
-        0 0 18px color-mix(in srgb, var(--hero-accent) 32%, transparent);
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.7);
-    animation: background-pulse-dot 1.8s ease-out forwards;
-}
-
-.background-pulse::after {
-    content: "";
-    position: absolute;
-    inset: -0.35rem;
-    border-radius: inherit;
-    border: 1px solid color-mix(in srgb, var(--hero-accent) 72%, transparent);
-    box-shadow:
-        0 0 10px color-mix(in srgb, var(--hero-accent) 48%, transparent),
-        inset 0 0 8px color-mix(in srgb, var(--hero-accent) 32%, transparent);
-    animation: background-pulse-ring 1.8s ease-out forwards;
-}
-
-@keyframes background-pulse-dot {
-    0% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.7);
-    }
-
-    16%,
-    52% {
-        opacity: 0.95;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.9);
-    }
-}
-
-@keyframes background-pulse-ring {
-    0% {
-        opacity: 0;
-        transform: scale(0.55);
-    }
-
-    18% {
-        opacity: 0.86;
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(1.08);
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -116,7 +26,6 @@ body {
         scroll-behavior: auto;
     }
 
-    .background-pulse,
     .service-indicator::after,
     .experience-preview,
     .terminal-cursor {
@@ -191,26 +100,6 @@ body {
     100% {
         opacity: 0;
     }
-}
-
-.tech-cloud {
-    filter: drop-shadow(0 24px 45px rgba(23, 35, 63, 0.08));
-}
-
-.tech-bubble {
-    scale: 0.96;
-    transition:
-        border-color 160ms ease,
-        box-shadow 160ms ease,
-        scale 180ms ease;
-}
-
-.tech-bubble:hover {
-    border-color: color-mix(in srgb, var(--hero-accent) 65%, transparent);
-    box-shadow:
-        0 16px 38px rgba(23, 35, 63, 0.14),
-        0 0 0 1px color-mix(in srgb, var(--hero-accent) 18%, transparent);
-    scale: 1.08;
 }
 
 .experience-preview {

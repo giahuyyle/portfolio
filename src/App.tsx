@@ -6,7 +6,6 @@ import {
     useState,
     type CSSProperties,
 } from "react";
-import BackgroundPulses from "./components/BackgroundPulses";
 import Navbar from "./components/Navbar";
 import { moreLinks, navLinks } from "./data/navigation";
 import { featuredProjects } from "./data/projects";
@@ -105,7 +104,6 @@ function BackButton({
 function App() {
     const [themeName, setThemeName] = useState<ThemeName>(getStoredThemeName);
     const [accent, setAccent] = useState(getStoredAccent);
-    const [gridEnabled, setGridEnabled] = useState(true);
     const [pathname, setPathname] = useState(window.location.pathname);
 
     const theme = themes[themeName];
@@ -118,7 +116,6 @@ function App() {
                 "--hero-soft": theme.soft,
                 "--hero-accent": accent,
                 "--hero-panel": theme.panel,
-                "--hero-grid": theme.grid,
             }) as CSSProperties,
         [accent, theme],
     );
@@ -216,30 +213,22 @@ function App() {
         : undefined;
     const isProjectDetail = Boolean(projectRouteMatch);
     const isProjectsRoute = route === "/projects" || isProjectDetail;
-    const showGrid = gridEnabled && !isProjectsRoute;
-
     return (
         <main
-            className={`min-h-screen text-(--hero-text) ${
-                showGrid ? "hero-grid" : "hero-flat"
-            } ${showGrid ? "pulse-shell" : ""} ${
+            className={`hero-flat min-h-screen text-(--hero-text) ${
                 isProjectsRoute ? "projects-route-surface" : ""
             }`}
             style={themeStyle}
         >
-            {showGrid && <BackgroundPulses />}
-
             <Navbar
                 accent={accent}
                 activeTheme={themeName}
-                gridEnabled={gridEnabled}
                 moreLinks={moreLinks}
                 navLinks={navLinks}
                 pathname={pathname}
                 swatches={swatches}
                 themeNames={Object.keys(themes)}
                 onAccentChange={setAccent}
-                onGridChange={setGridEnabled}
                 onNavigate={navigateTo}
                 onThemeChange={handleThemeChange}
             />
@@ -262,11 +251,9 @@ function App() {
                         <Dashboard
                             accent={accent}
                             activeTheme={themeName}
-                            gridEnabled={gridEnabled}
                             swatches={swatches}
                             themeNames={Object.keys(themes)}
                             onAccentChange={setAccent}
-                            onGridChange={setGridEnabled}
                             onThemeChange={handleThemeChange}
                         />
                     </>
