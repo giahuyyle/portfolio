@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-08-12T11:10:21.223Z",
+    "syncedAt": "2026-08-13T11:11:08.735Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "628b0fc99b65a01b60b880670f817ec776192081",
-        "shortSha": "628b0fc"
+        "sha": "328dc8f449e1db89d846e5feab9a16c2f7ce6c83",
+        "shortSha": "328dc8f"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -83,13 +83,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 86,
+                    "contributions": 87,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 20,
+                    "contributions": 22,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-08-11T11:05:18Z",
+            "pushedAt": "2026-08-12T14:36:37Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -137,6 +137,26 @@
     },
     "recentCommits": [
         {
+            "additions": 43,
+            "committedAt": "2026-08-12T14:35:03Z",
+            "deletions": 43,
+            "message": "Merge remote-tracking branch 'origin/main'",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "328dc8f449e1db89d846e5feab9a16c2f7ce6c83",
+            "url": "https://github.com/giahuyyle/portfolio/commit/328dc8f449e1db89d846e5feab9a16c2f7ce6c83"
+        },
+        {
+            "additions": 16,
+            "committedAt": "2026-08-12T14:30:27Z",
+            "deletions": 550,
+            "message": "refactor(ui): simplify hero and remove grid background effects",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "378cc3488f7b186966baf3599e4334cbbf027bfd",
+            "url": "https://github.com/giahuyyle/portfolio/commit/378cc3488f7b186966baf3599e4334cbbf027bfd"
+        },
+        {
             "additions": 70,
             "committedAt": "2026-08-10T18:21:37Z",
             "deletions": 94,
@@ -165,26 +185,6 @@
             "repo": "ascension-app",
             "sha": "aa8961180d91d0a981c7036bf2c39c689ffdbbc8",
             "url": "https://github.com/namhoangmai/ascension-app/commit/aa8961180d91d0a981c7036bf2c39c689ffdbbc8"
-        },
-        {
-            "additions": 900,
-            "committedAt": "2026-07-02T10:27:31Z",
-            "deletions": 3,
-            "message": "feat: simple UI",
-            "project": "Air Reg",
-            "repo": "air-reg",
-            "sha": "db32064c0b68ff4ea2b7d50592094e13b02f03fd",
-            "url": "https://github.com/giahuyyle/air-reg/commit/db32064c0b68ff4ea2b7d50592094e13b02f03fd"
-        },
-        {
-            "additions": 61,
-            "committedAt": "2026-07-02T08:36:57Z",
-            "deletions": 2,
-            "message": "chore: remove cache from git tree",
-            "project": "Air Reg",
-            "repo": "air-reg",
-            "sha": "019e51aa0c552ecdf7883394b7b9ba370a9e5645",
-            "url": "https://github.com/giahuyyle/air-reg/commit/019e51aa0c552ecdf7883394b7b9ba370a9e5645"
         }
     ]
 }
