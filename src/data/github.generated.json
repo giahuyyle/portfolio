@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-08-16T10:40:13.220Z",
+    "syncedAt": "2026-08-17T10:48:25.207Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "328dc8f449e1db89d846e5feab9a16c2f7ce6c83",
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 90,
+                    "contributions": 91,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-08-15T10:39:40Z",
+            "pushedAt": "2026-08-16T10:40:23Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -147,16 +147,6 @@
             "url": "https://github.com/giahuyyle/portfolio/commit/328dc8f449e1db89d846e5feab9a16c2f7ce6c83"
         },
         {
-            "additions": 16,
-            "committedAt": "2026-08-12T14:30:27Z",
-            "deletions": 550,
-            "message": "refactor(ui): simplify hero and remove grid background effects",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "378cc3488f7b186966baf3599e4334cbbf027bfd",
-            "url": "https://github.com/giahuyyle/portfolio/commit/378cc3488f7b186966baf3599e4334cbbf027bfd"
-        },
-        {
             "additions": 70,
             "committedAt": "2026-08-10T18:21:37Z",
             "deletions": 94,
@@ -185,6 +175,16 @@
             "repo": "ascension-app",
             "sha": "aa8961180d91d0a981c7036bf2c39c689ffdbbc8",
             "url": "https://github.com/namhoangmai/ascension-app/commit/aa8961180d91d0a981c7036bf2c39c689ffdbbc8"
+        },
+        {
+            "additions": 900,
+            "committedAt": "2026-07-02T10:27:31Z",
+            "deletions": 3,
+            "message": "feat: simple UI",
+            "project": "Air Reg",
+            "repo": "air-reg",
+            "sha": "db32064c0b68ff4ea2b7d50592094e13b02f03fd",
+            "url": "https://github.com/giahuyyle/air-reg/commit/db32064c0b68ff4ea2b7d50592094e13b02f03fd"
         }
     ]
 }
