@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-08-17T10:48:25.207Z",
+    "syncedAt": "2026-08-18T10:46:52.693Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "328dc8f449e1db89d846e5feab9a16c2f7ce6c83",
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 91,
+                    "contributions": 92,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -100,7 +100,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-08-16T10:40:23Z",
+            "pushedAt": "2026-08-17T10:48:35Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -136,16 +136,6 @@
         }
     },
     "recentCommits": [
-        {
-            "additions": 43,
-            "committedAt": "2026-08-12T14:35:03Z",
-            "deletions": 43,
-            "message": "Merge remote-tracking branch 'origin/main'",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "328dc8f449e1db89d846e5feab9a16c2f7ce6c83",
-            "url": "https://github.com/giahuyyle/portfolio/commit/328dc8f449e1db89d846e5feab9a16c2f7ce6c83"
-        },
         {
             "additions": 70,
             "committedAt": "2026-08-10T18:21:37Z",
@@ -185,6 +175,16 @@
             "repo": "air-reg",
             "sha": "db32064c0b68ff4ea2b7d50592094e13b02f03fd",
             "url": "https://github.com/giahuyyle/air-reg/commit/db32064c0b68ff4ea2b7d50592094e13b02f03fd"
+        },
+        {
+            "additions": 61,
+            "committedAt": "2026-07-02T08:36:57Z",
+            "deletions": 2,
+            "message": "chore: remove cache from git tree",
+            "project": "Air Reg",
+            "repo": "air-reg",
+            "sha": "019e51aa0c552ecdf7883394b7b9ba370a9e5645",
+            "url": "https://github.com/giahuyyle/air-reg/commit/019e51aa0c552ecdf7883394b7b9ba370a9e5645"
         }
     ]
 }
