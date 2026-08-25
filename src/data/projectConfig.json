@@ -29,6 +29,15 @@
         },
         {
             "contributors": "solo build",
+            "description": "A Fantasy Premier League project for tracking football data, team decisions, and season context.",
+            "detailDescription": "FPL is using placeholder detail copy until the repository has a dedicated description document. The final version can describe the Fantasy Premier League workflow, data sources, tracking model, technical stack, and lessons from the build.",
+            "owner": "giahuyyle",
+            "repo": "fpl",
+            "tags": ["fpl", "fantasy football", "tracking", "python"],
+            "title": "FPL"
+        },
+        {
+            "contributors": "solo build",
             "description": "The portfolio site that brings together project work, GitHub activity, personal context, and interactive route transitions.",
             "detailDescription": "Portfolio is the home for this site and its evolving interface experiments. This placeholder detail page can later describe the visual system, GitHub Actions data sync, lightweight routing approach, and project animation work.",
             "owner": "giahuyyle",
