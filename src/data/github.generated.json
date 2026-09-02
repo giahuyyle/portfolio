@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-08-24T10:53:42.955Z",
+    "syncedAt": "2026-09-02T14:34:37.315Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "328dc8f449e1db89d846e5feab9a16c2f7ce6c83",
-        "shortSha": "328dc8f"
+        "sha": "6b44add79b2875653d643a78515ce683522ef5e1",
+        "shortSha": "6b44add"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -78,18 +78,40 @@
             "topics": [],
             "url": "https://github.com/giahuyyle/air-reg"
         },
+        "giahuyyle/fpl": {
+            "contributorCount": 1,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 28,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                }
+            ],
+            "description": null,
+            "descriptionMarkdown": null,
+            "forks": 0,
+            "language": "Python",
+            "openIssues": 0,
+            "owner": "giahuyyle",
+            "pushedAt": "2026-09-02T08:02:24Z",
+            "repo": "fpl",
+            "stars": 0,
+            "topics": [],
+            "url": "https://github.com/giahuyyle/fpl"
+        },
         "giahuyyle/portfolio": {
             "contributorCount": 2,
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 98,
+                    "contributions": 99,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 22,
+                    "contributions": 23,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -100,7 +122,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-08-23T10:41:41Z",
+            "pushedAt": "2026-08-25T11:06:49Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -137,6 +159,46 @@
     },
     "recentCommits": [
         {
+            "additions": 25,
+            "committedAt": "2026-09-02T08:00:38Z",
+            "deletions": 0,
+            "message": "fix(server): support nested SPA routes",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "8acffa774f97b307847f171b3d615e7375bf123b",
+            "url": "https://github.com/giahuyyle/fpl/commit/8acffa774f97b307847f171b3d615e7375bf123b"
+        },
+        {
+            "additions": 93,
+            "committedAt": "2026-09-02T08:00:29Z",
+            "deletions": 64,
+            "message": "feat(routing): add squad routes and authenticated redirects",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "34a4cafab1499249059b0ae0a1929cbddfdb0ae6",
+            "url": "https://github.com/giahuyyle/fpl/commit/34a4cafab1499249059b0ae0a1929cbddfdb0ae6"
+        },
+        {
+            "additions": 886,
+            "committedAt": "2026-09-02T08:00:15Z",
+            "deletions": 0,
+            "message": "feat(squad-ui): assemble route-specific squad screens",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "c07d2a580ae9fc9a16a2f91f71e7fbdc6061bd22",
+            "url": "https://github.com/giahuyyle/fpl/commit/c07d2a580ae9fc9a16a2f91f71e7fbdc6061bd22"
+        },
+        {
+            "additions": 9,
+            "committedAt": "2026-08-25T11:06:44Z",
+            "deletions": 0,
+            "message": "chore: add fpl tracking",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "6b44add79b2875653d643a78515ce683522ef5e1",
+            "url": "https://github.com/giahuyyle/portfolio/commit/6b44add79b2875653d643a78515ce683522ef5e1"
+        },
+        {
             "additions": 70,
             "committedAt": "2026-08-10T18:21:37Z",
             "deletions": 94,
@@ -145,46 +207,6 @@
             "repo": "ascension-app",
             "sha": "830d974e98027bf3b1938f71f0209667b3bbce10",
             "url": "https://github.com/namhoangmai/ascension-app/commit/830d974e98027bf3b1938f71f0209667b3bbce10"
-        },
-        {
-            "additions": 26,
-            "committedAt": "2026-08-10T18:12:57Z",
-            "deletions": 35,
-            "message": "STRENGTH TRACKING - delete exercises in workout overview",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "cf35ea11779356a93b29cc51a13c6b05966d309f",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/cf35ea11779356a93b29cc51a13c6b05966d309f"
-        },
-        {
-            "additions": 461,
-            "committedAt": "2026-08-09T22:00:58Z",
-            "deletions": 35,
-            "message": "STRENGHT TRACKING - fix database issues",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "aa8961180d91d0a981c7036bf2c39c689ffdbbc8",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/aa8961180d91d0a981c7036bf2c39c689ffdbbc8"
-        },
-        {
-            "additions": 900,
-            "committedAt": "2026-07-02T10:27:31Z",
-            "deletions": 3,
-            "message": "feat: simple UI",
-            "project": "Air Reg",
-            "repo": "air-reg",
-            "sha": "db32064c0b68ff4ea2b7d50592094e13b02f03fd",
-            "url": "https://github.com/giahuyyle/air-reg/commit/db32064c0b68ff4ea2b7d50592094e13b02f03fd"
-        },
-        {
-            "additions": 61,
-            "committedAt": "2026-07-02T08:36:57Z",
-            "deletions": 2,
-            "message": "chore: remove cache from git tree",
-            "project": "Air Reg",
-            "repo": "air-reg",
-            "sha": "019e51aa0c552ecdf7883394b7b9ba370a9e5645",
-            "url": "https://github.com/giahuyyle/air-reg/commit/019e51aa0c552ecdf7883394b7b9ba370a9e5645"
         }
     ]
 }

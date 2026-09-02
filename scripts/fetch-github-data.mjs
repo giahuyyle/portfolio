@@ -260,6 +260,7 @@ async function fetchRepo(owner, repo) {
 }
 
 const config = await readJson(configUrl);
+const previousSnapshot = await readPreviousSnapshot();
 
 if (!Array.isArray(config.featuredProjects)) {
     throw new Error("projectConfig.json must include a featuredProjects array.");
@@ -271,25 +272,55 @@ if (!process.env.GITHUB_TOKEN) {
     );
 }
 
-const projectEntries = await Promise.all(
+const projectSnapshots = await Promise.all(
     config.featuredProjects.map(async (project) => {
         const owner = requireString(project.owner, "owner");
         const repo = requireString(project.repo, "repo");
+        const title = requireString(project.title, "title");
+        const key = `${owner}/${repo}`;
+        const cachedProject = previousSnapshot?.projects?.[key];
+        const cachedCommits = Array.isArray(previousSnapshot?.recentCommits)
+            ? previousSnapshot.recentCommits.filter(
+                  (commit) =>
+                      commit?.project === title && commit?.repo === repo,
+              )
+            : [];
 
-        return [`${owner}/${repo}`, await fetchRepo(owner, repo)];
+        let projectSnapshot;
+
+        try {
+            projectSnapshot = await fetchRepo(owner, repo);
+        } catch (error) {
+            if (!cachedProject) {
+                throw error;
+            }
+
+            const message = error instanceof Error ? error.message : String(error);
+            console.warn(`Using cached data for ${key}: ${message}`);
+
+            return {
+                commits: cachedCommits,
+                key,
+                project: cachedProject,
+            };
+        }
+
+        let commits;
+
+        try {
+            commits = await fetchRepoRecentCommits(owner, repo, title);
+        } catch (error) {
+            const message = error instanceof Error ? error.message : String(error);
+            console.warn(`Using cached commits for ${key}: ${message}`);
+            commits = cachedCommits;
+        }
+
+        return { commits, key, project: projectSnapshot };
     }),
 );
-const recentCommitEntries = await Promise.all(
-    config.featuredProjects.map((project) =>
-        fetchRepoRecentCommits(
-            requireString(project.owner, "owner"),
-            requireString(project.repo, "repo"),
-            requireString(project.title, "title"),
-        ),
-    ),
-);
-const recentCommits = recentCommitEntries
-    .flat()
+const projectEntries = projectSnapshots.map(({ key, project }) => [key, project]);
+const recentCommits = projectSnapshots
+    .flatMap(({ commits }) => commits)
     .sort((a, b) => {
         if (!a.committedAt) {
             return 1;
@@ -307,7 +338,6 @@ const recentCommits = recentCommitEntries
     .slice(0, 5);
 
 const sourceSha = getSourceSha();
-const previousSnapshot = await readPreviousSnapshot();
 const nextSnapshot = {
     syncedAt: new Date().toISOString(),
     build: {
