@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-09-02T14:34:37.315Z",
+    "syncedAt": "2026-09-05T13:27:22.122Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "6b44add79b2875653d643a78515ce683522ef5e1",
-        "shortSha": "6b44add"
+        "sha": "94d5652d49e1c838cdc01e8dcafb3244b47b9813",
+        "shortSha": "94d5652"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 28,
+                    "contributions": 29,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -94,7 +94,7 @@
             "language": "Python",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-02T08:02:24Z",
+            "pushedAt": "2026-09-03T09:52:25Z",
             "repo": "fpl",
             "stars": 0,
             "topics": [],
@@ -105,13 +105,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 99,
+                    "contributions": 101,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 23,
+                    "contributions": 24,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -122,7 +122,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-08-25T11:06:49Z",
+            "pushedAt": "2026-09-04T14:22:33Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -159,6 +159,26 @@
     },
     "recentCommits": [
         {
+            "additions": 79,
+            "committedAt": "2026-09-03T09:52:20Z",
+            "deletions": 3,
+            "message": "feat: hourly ingestion python",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "24f80e87c00f35bd76b1620df69f77acda634f2d",
+            "url": "https://github.com/giahuyyle/fpl/commit/24f80e87c00f35bd76b1620df69f77acda634f2d"
+        },
+        {
+            "additions": 112,
+            "committedAt": "2026-09-02T14:36:18Z",
+            "deletions": 60,
+            "message": "fix: preserve cached data for unavailable repos",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "94d5652d49e1c838cdc01e8dcafb3244b47b9813",
+            "url": "https://github.com/giahuyyle/portfolio/commit/94d5652d49e1c838cdc01e8dcafb3244b47b9813"
+        },
+        {
             "additions": 25,
             "committedAt": "2026-09-02T08:00:38Z",
             "deletions": 0,
@@ -179,16 +199,6 @@
             "url": "https://github.com/giahuyyle/fpl/commit/34a4cafab1499249059b0ae0a1929cbddfdb0ae6"
         },
         {
-            "additions": 886,
-            "committedAt": "2026-09-02T08:00:15Z",
-            "deletions": 0,
-            "message": "feat(squad-ui): assemble route-specific squad screens",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "c07d2a580ae9fc9a16a2f91f71e7fbdc6061bd22",
-            "url": "https://github.com/giahuyyle/fpl/commit/c07d2a580ae9fc9a16a2f91f71e7fbdc6061bd22"
-        },
-        {
             "additions": 9,
             "committedAt": "2026-08-25T11:06:44Z",
             "deletions": 0,
@@ -197,16 +207,6 @@
             "repo": "portfolio",
             "sha": "6b44add79b2875653d643a78515ce683522ef5e1",
             "url": "https://github.com/giahuyyle/portfolio/commit/6b44add79b2875653d643a78515ce683522ef5e1"
-        },
-        {
-            "additions": 70,
-            "committedAt": "2026-08-10T18:21:37Z",
-            "deletions": 94,
-            "message": "Replace default template workouts",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "830d974e98027bf3b1938f71f0209667b3bbce10",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/830d974e98027bf3b1938f71f0209667b3bbce10"
         }
     ]
 }
