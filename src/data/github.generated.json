@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-09-05T13:27:22.122Z",
+    "syncedAt": "2026-09-06T13:40:46.551Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "94d5652d49e1c838cdc01e8dcafb3244b47b9813",
-        "shortSha": "94d5652"
+        "sha": "7a55703e0788134c206def96eca900d35a016772",
+        "shortSha": "7a55703"
     },
     "projects": {
         "giahuyyle/cover-pilot": {
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 29,
+                    "contributions": 56,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -94,7 +94,7 @@
             "language": "Python",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-03T09:52:25Z",
+            "pushedAt": "2026-09-06T09:05:36Z",
             "repo": "fpl",
             "stars": 0,
             "topics": [],
@@ -105,13 +105,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 101,
+                    "contributions": 102,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 24,
+                    "contributions": 26,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -122,7 +122,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-04T14:22:33Z",
+            "pushedAt": "2026-09-06T09:11:13Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -159,54 +159,54 @@
     },
     "recentCommits": [
         {
-            "additions": 79,
-            "committedAt": "2026-09-03T09:52:20Z",
+            "additions": 28,
+            "committedAt": "2026-09-06T09:10:31Z",
+            "deletions": 28,
+            "message": "Merge remote-tracking branch 'origin'",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "7a55703e0788134c206def96eca900d35a016772",
+            "url": "https://github.com/giahuyyle/portfolio/commit/7a55703e0788134c206def96eca900d35a016772"
+        },
+        {
+            "additions": 0,
+            "committedAt": "2026-09-06T09:10:09Z",
+            "deletions": 0,
+            "message": "chore: change resume to latest",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "fbb9d603869247687c7b0fa402093d0c49aa2b64",
+            "url": "https://github.com/giahuyyle/portfolio/commit/fbb9d603869247687c7b0fa402093d0c49aa2b64"
+        },
+        {
+            "additions": 3,
+            "committedAt": "2026-09-06T09:05:28Z",
+            "deletions": 0,
+            "message": "chore: modify .gitignore",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "150de5b9e415fbf5d4c332870b858f169c51679a",
+            "url": "https://github.com/giahuyyle/fpl/commit/150de5b9e415fbf5d4c332870b858f169c51679a"
+        },
+        {
+            "additions": 362,
+            "committedAt": "2026-09-06T08:53:50Z",
+            "deletions": 26,
+            "message": "Add league navigation, matches, standings and paginated player directory",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "485aa232ff248469e654989e31c2a18ba9bc0ba6",
+            "url": "https://github.com/giahuyyle/fpl/commit/485aa232ff248469e654989e31c2a18ba9bc0ba6"
+        },
+        {
+            "additions": 37,
+            "committedAt": "2026-09-06T08:25:09Z",
             "deletions": 3,
-            "message": "feat: hourly ingestion python",
+            "message": "feat(squad): reset pending transfers with inline confirmation",
             "project": "FPL",
             "repo": "fpl",
-            "sha": "24f80e87c00f35bd76b1620df69f77acda634f2d",
-            "url": "https://github.com/giahuyyle/fpl/commit/24f80e87c00f35bd76b1620df69f77acda634f2d"
-        },
-        {
-            "additions": 112,
-            "committedAt": "2026-09-02T14:36:18Z",
-            "deletions": 60,
-            "message": "fix: preserve cached data for unavailable repos",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "94d5652d49e1c838cdc01e8dcafb3244b47b9813",
-            "url": "https://github.com/giahuyyle/portfolio/commit/94d5652d49e1c838cdc01e8dcafb3244b47b9813"
-        },
-        {
-            "additions": 25,
-            "committedAt": "2026-09-02T08:00:38Z",
-            "deletions": 0,
-            "message": "fix(server): support nested SPA routes",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "8acffa774f97b307847f171b3d615e7375bf123b",
-            "url": "https://github.com/giahuyyle/fpl/commit/8acffa774f97b307847f171b3d615e7375bf123b"
-        },
-        {
-            "additions": 93,
-            "committedAt": "2026-09-02T08:00:29Z",
-            "deletions": 64,
-            "message": "feat(routing): add squad routes and authenticated redirects",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "34a4cafab1499249059b0ae0a1929cbddfdb0ae6",
-            "url": "https://github.com/giahuyyle/fpl/commit/34a4cafab1499249059b0ae0a1929cbddfdb0ae6"
-        },
-        {
-            "additions": 9,
-            "committedAt": "2026-08-25T11:06:44Z",
-            "deletions": 0,
-            "message": "chore: add fpl tracking",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "6b44add79b2875653d643a78515ce683522ef5e1",
-            "url": "https://github.com/giahuyyle/portfolio/commit/6b44add79b2875653d643a78515ce683522ef5e1"
+            "sha": "6e7c0b813fe916094526f5959e7e0795316c9f03",
+            "url": "https://github.com/giahuyyle/fpl/commit/6e7c0b813fe916094526f5959e7e0795316c9f03"
         }
     ]
 }
