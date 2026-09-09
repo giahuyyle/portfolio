@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-08T14:32:45.592Z",
+    "syncedAt": "2026-09-09T14:36:40.433Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "7a55703e0788134c206def96eca900d35a016772",
@@ -83,7 +83,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 62,
+                    "contributions": 63,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -94,7 +94,7 @@
             "language": "Python",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-07T08:36:51Z",
+            "pushedAt": "2026-09-09T04:01:12Z",
             "repo": "fpl",
             "stars": 0,
             "topics": [],
@@ -105,7 +105,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 104,
+                    "contributions": 105,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -122,7 +122,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-07T15:51:58Z",
+            "pushedAt": "2026-09-08T14:32:55Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -133,7 +133,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 18,
+                    "contributions": 19,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 },
@@ -150,7 +150,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-08-25T10:38:26Z",
+            "pushedAt": "2026-09-09T11:39:31Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -158,6 +158,26 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 625,
+            "committedAt": "2026-09-09T11:39:26Z",
+            "deletions": 26,
+            "message": "commit",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "2b7aa25678d23492ad90e31c41b08549fe971913",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/2b7aa25678d23492ad90e31c41b08549fe971913"
+        },
+        {
+            "additions": 361,
+            "committedAt": "2026-09-09T03:28:03Z",
+            "deletions": 1,
+            "message": "feat(app): add custom 404 page",
+            "project": "FPL",
+            "repo": "fpl",
+            "sha": "54b1c02c43cb5e7542821f327775d2c67b6f258d",
+            "url": "https://github.com/giahuyyle/fpl/commit/54b1c02c43cb5e7542821f327775d2c67b6f258d"
+        },
         {
             "additions": 43,
             "committedAt": "2026-09-07T08:35:14Z",
@@ -179,16 +199,6 @@
             "url": "https://github.com/giahuyyle/fpl/commit/c9ddb6409978ad008a2cd2ff1135435605c0539f"
         },
         {
-            "additions": 293,
-            "committedAt": "2026-09-07T08:07:22Z",
-            "deletions": 46,
-            "message": "feat(squad): expand player details sidebar",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "885cb2c9f9b4cd801c60c9ed43bf86b5d8e20e8a",
-            "url": "https://github.com/giahuyyle/fpl/commit/885cb2c9f9b4cd801c60c9ed43bf86b5d8e20e8a"
-        },
-        {
             "additions": 28,
             "committedAt": "2026-09-06T09:10:31Z",
             "deletions": 28,
@@ -197,16 +207,6 @@
             "repo": "portfolio",
             "sha": "7a55703e0788134c206def96eca900d35a016772",
             "url": "https://github.com/giahuyyle/portfolio/commit/7a55703e0788134c206def96eca900d35a016772"
-        },
-        {
-            "additions": 0,
-            "committedAt": "2026-09-06T09:10:09Z",
-            "deletions": 0,
-            "message": "chore: change resume to latest",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "fbb9d603869247687c7b0fa402093d0c49aa2b64",
-            "url": "https://github.com/giahuyyle/portfolio/commit/fbb9d603869247687c7b0fa402093d0c49aa2b64"
         }
     ]
 }
