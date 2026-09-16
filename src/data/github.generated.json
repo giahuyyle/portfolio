@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-15T15:00:58.493Z",
+    "syncedAt": "2026-09-16T14:58:45.761Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "7a55703e0788134c206def96eca900d35a016772",
@@ -105,7 +105,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 111,
+                    "contributions": 112,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -122,7 +122,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-14T16:22:18Z",
+            "pushedAt": "2026-09-15T15:01:08Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -133,7 +133,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 19,
+                    "contributions": 29,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 },
@@ -150,7 +150,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-09-09T11:39:31Z",
+            "pushedAt": "2026-09-15T18:35:43Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -159,14 +159,34 @@
     },
     "recentCommits": [
         {
-            "additions": 625,
-            "committedAt": "2026-09-09T11:39:26Z",
-            "deletions": 26,
-            "message": "commit",
+            "additions": 2,
+            "committedAt": "2026-09-15T18:35:32Z",
+            "deletions": 2,
+            "message": "fix: match Dockerfile EXPOSE/PORT to Render's configured port 10000",
             "project": "Ascension App",
             "repo": "ascension-app",
-            "sha": "2b7aa25678d23492ad90e31c41b08549fe971913",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/2b7aa25678d23492ad90e31c41b08549fe971913"
+            "sha": "0acafecec6ff653efeca0a986f6085c567d3a793",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/0acafecec6ff653efeca0a986f6085c567d3a793"
+        },
+        {
+            "additions": 1,
+            "committedAt": "2026-09-15T18:22:12Z",
+            "deletions": 12,
+            "message": "fix: revert DB check in health endpoint, causing Render health-check restart loop",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "8031b20eaa4b1b633158a690c699d144df014d56",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/8031b20eaa4b1b633158a690c699d144df014d56"
+        },
+        {
+            "additions": 21,
+            "committedAt": "2026-09-15T17:52:04Z",
+            "deletions": 12,
+            "message": "fix: resolve eslint errors blocking next build",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "45e27e745903781b73e64d8803f592a4aca5f0ec",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/45e27e745903781b73e64d8803f592a4aca5f0ec"
         },
         {
             "additions": 361,
@@ -187,26 +207,6 @@
             "repo": "fpl",
             "sha": "bf69c84e2d420aa245c710e69e85a8a29916251c",
             "url": "https://github.com/giahuyyle/fpl/commit/bf69c84e2d420aa245c710e69e85a8a29916251c"
-        },
-        {
-            "additions": 375,
-            "committedAt": "2026-09-07T08:29:34Z",
-            "deletions": 37,
-            "message": "feat(squad): show gameweek points breakdown",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "c9ddb6409978ad008a2cd2ff1135435605c0539f",
-            "url": "https://github.com/giahuyyle/fpl/commit/c9ddb6409978ad008a2cd2ff1135435605c0539f"
-        },
-        {
-            "additions": 452,
-            "committedAt": "2026-08-25T10:38:22Z",
-            "deletions": 42,
-            "message": "Redesign dashboard",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "7b24366e0f558d4b18405611d9fc967ba55f7cb0",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/7b24366e0f558d4b18405611d9fc967ba55f7cb0"
         }
     ]
 }
