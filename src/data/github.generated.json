@@ -1,11 +1,55 @@
 {
-    "syncedAt": "2026-09-18T14:31:40.257Z",
+    "syncedAt": "2026-09-19T06:44:07.004Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "7a55703e0788134c206def96eca900d35a016772",
-        "shortSha": "7a55703"
+        "sha": "b427e58871c61bb33629c3006ea5b3426888f692",
+        "shortSha": "b427e58"
     },
     "projects": {
+        "giahuyyle/fpl": {
+            "contributorCount": 1,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 63,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                }
+            ],
+            "description": null,
+            "descriptionMarkdown": null,
+            "forks": 0,
+            "language": "Python",
+            "openIssues": 0,
+            "owner": "giahuyyle",
+            "pushedAt": "2026-09-09T04:01:12Z",
+            "repo": "fpl",
+            "stars": 0,
+            "topics": [],
+            "url": "https://github.com/giahuyyle/fpl"
+        },
+        "giahuyyle/job-pulse": {
+            "contributorCount": 1,
+            "contributors": [
+                {
+                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
+                    "contributions": 19,
+                    "login": "giahuyyle",
+                    "url": "https://github.com/giahuyyle"
+                }
+            ],
+            "description": null,
+            "descriptionMarkdown": null,
+            "forks": 0,
+            "language": "Java",
+            "openIssues": 0,
+            "owner": "giahuyyle",
+            "pushedAt": "2026-09-19T05:18:25Z",
+            "repo": "job-pulse",
+            "stars": 0,
+            "topics": [],
+            "url": "https://github.com/giahuyyle/job-pulse"
+        },
         "giahuyyle/cover-pilot": {
             "contributorCount": 2,
             "contributors": [
@@ -78,40 +122,18 @@
             "topics": [],
             "url": "https://github.com/giahuyyle/air-reg"
         },
-        "giahuyyle/fpl": {
-            "contributorCount": 1,
-            "contributors": [
-                {
-                    "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 63,
-                    "login": "giahuyyle",
-                    "url": "https://github.com/giahuyyle"
-                }
-            ],
-            "description": null,
-            "descriptionMarkdown": null,
-            "forks": 0,
-            "language": "Python",
-            "openIssues": 0,
-            "owner": "giahuyyle",
-            "pushedAt": "2026-09-09T04:01:12Z",
-            "repo": "fpl",
-            "stars": 0,
-            "topics": [],
-            "url": "https://github.com/giahuyyle/fpl"
-        },
         "giahuyyle/portfolio": {
             "contributorCount": 2,
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 114,
+                    "contributions": 115,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 26,
+                    "contributions": 27,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -122,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-17T15:00:18Z",
+            "pushedAt": "2026-09-19T06:40:42Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -159,6 +181,46 @@
     },
     "recentCommits": [
         {
+            "additions": 0,
+            "committedAt": "2026-09-19T06:40:35Z",
+            "deletions": 0,
+            "message": "resume: change resume",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "b427e58871c61bb33629c3006ea5b3426888f692",
+            "url": "https://github.com/giahuyyle/portfolio/commit/b427e58871c61bb33629c3006ea5b3426888f692"
+        },
+        {
+            "additions": 39,
+            "committedAt": "2026-09-19T05:16:50Z",
+            "deletions": 0,
+            "message": "docs: add local runbook and demo flow",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "65d994b58fceb9bc9d292a782db6e0eefc6b1b6a",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/65d994b58fceb9bc9d292a782db6e0eefc6b1b6a"
+        },
+        {
+            "additions": 1010,
+            "committedAt": "2026-09-19T05:16:38Z",
+            "deletions": 4,
+            "message": "perf(benchmarks): add search and ingestion evidence",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "e345e78e2d0c4468a0b8345a2375d3c33607984f",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/e345e78e2d0c4468a0b8345a2375d3c33607984f"
+        },
+        {
+            "additions": 4160,
+            "committedAt": "2026-09-19T05:16:29Z",
+            "deletions": 0,
+            "message": "feat(frontend): add job search and operations console",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "4c8e64c1b9f810450a44666077215de1a22c4dab",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/4c8e64c1b9f810450a44666077215de1a22c4dab"
+        },
+        {
             "additions": 2,
             "committedAt": "2026-09-15T18:35:32Z",
             "deletions": 2,
@@ -167,46 +229,6 @@
             "repo": "ascension-app",
             "sha": "0acafecec6ff653efeca0a986f6085c567d3a793",
             "url": "https://github.com/namhoangmai/ascension-app/commit/0acafecec6ff653efeca0a986f6085c567d3a793"
-        },
-        {
-            "additions": 1,
-            "committedAt": "2026-09-15T18:22:12Z",
-            "deletions": 12,
-            "message": "fix: revert DB check in health endpoint, causing Render health-check restart loop",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "8031b20eaa4b1b633158a690c699d144df014d56",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/8031b20eaa4b1b633158a690c699d144df014d56"
-        },
-        {
-            "additions": 21,
-            "committedAt": "2026-09-15T17:52:04Z",
-            "deletions": 12,
-            "message": "fix: resolve eslint errors blocking next build",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "45e27e745903781b73e64d8803f592a4aca5f0ec",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/45e27e745903781b73e64d8803f592a4aca5f0ec"
-        },
-        {
-            "additions": 361,
-            "committedAt": "2026-09-09T03:28:03Z",
-            "deletions": 1,
-            "message": "feat(app): add custom 404 page",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "54b1c02c43cb5e7542821f327775d2c67b6f258d",
-            "url": "https://github.com/giahuyyle/fpl/commit/54b1c02c43cb5e7542821f327775d2c67b6f258d"
-        },
-        {
-            "additions": 43,
-            "committedAt": "2026-09-07T08:35:14Z",
-            "deletions": 13,
-            "message": "fix(squad): preserve bench scores and zero non-players",
-            "project": "FPL",
-            "repo": "fpl",
-            "sha": "bf69c84e2d420aa245c710e69e85a8a29916251c",
-            "url": "https://github.com/giahuyyle/fpl/commit/bf69c84e2d420aa245c710e69e85a8a29916251c"
         }
     ]
 }

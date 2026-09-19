@@ -419,16 +419,16 @@ body {
     animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-::view-transition-group(project-cover-pilot),
-::view-transition-group(project-talkflow) {
+::view-transition-group(project-fpl),
+::view-transition-group(project-job-pulse) {
     animation-duration: 560ms;
     animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-::view-transition-old(project-cover-pilot),
-::view-transition-new(project-cover-pilot),
-::view-transition-old(project-talkflow),
-::view-transition-new(project-talkflow) {
+::view-transition-old(project-fpl),
+::view-transition-new(project-fpl),
+::view-transition-old(project-job-pulse),
+::view-transition-new(project-job-pulse) {
     height: 100%;
     overflow: clip;
 }

@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 import { featuredProjects } from "../data/projects";
 import type { NavigateTo } from "../utils/routing";
 
-const featuredProjectRepos = new Set(["cover-pilot", "talkflow"]);
+const featuredProjectRepos = new Set(["fpl", "job-pulse"]);
 
 type FeaturedProjectsProps = {
     navigateTo: NavigateTo;

@@ -2,6 +2,24 @@
     "featuredProjects": [
         {
             "contributors": "solo build",
+            "description": "A Fantasy Premier League project for tracking football data, team decisions, and season context.",
+            "detailDescription": "FPL is using placeholder detail copy until the repository has a dedicated description document. The final version can describe the Fantasy Premier League workflow, data sources, tracking model, technical stack, and lessons from the build.",
+            "owner": "giahuyyle",
+            "repo": "fpl",
+            "tags": ["fpl", "fantasy football", "tracking", "python"],
+            "title": "FPL"
+        },
+        {
+            "contributors": "solo build",
+            "description": "A job discovery platform that collects ATS listings, powers full-text search, and turns saved searches into alerts.",
+            "detailDescription": "Job Pulse brings job discovery, saved-search alerts, and ingestion monitoring into one focused system. Its React frontend connects to a Spring API backed by PostgreSQL, RabbitMQ workers, and a Kafka outbox for alerts and analytics.",
+            "owner": "giahuyyle",
+            "repo": "job-pulse",
+            "tags": ["react", "spring", "postgresql", "rabbitmq", "kafka"],
+            "title": "Job Pulse"
+        },
+        {
+            "contributors": "solo build",
             "description": "A focused workflow for drafting, refining, and exporting tailored cover letters with less manual repetition.",
             "detailDescription": "Cover Pilot is a placeholder detail page for now. This space will eventually pull a richer write-up from the repository, covering the problem, product decisions, implementation notes, and what changed over time. For the first version, it exists to prove the animated route flow and give the project room to expand beyond a compact card.",
             "owner": "giahuyyle",
@@ -26,15 +44,6 @@
             "repo": "air-reg",
             "tags": ["tracking", "registration", "workflow", "typescript"],
             "title": "Air Reg"
-        },
-        {
-            "contributors": "solo build",
-            "description": "A Fantasy Premier League project for tracking football data, team decisions, and season context.",
-            "detailDescription": "FPL is using placeholder detail copy until the repository has a dedicated description document. The final version can describe the Fantasy Premier League workflow, data sources, tracking model, technical stack, and lessons from the build.",
-            "owner": "giahuyyle",
-            "repo": "fpl",
-            "tags": ["fpl", "fantasy football", "tracking", "python"],
-            "title": "FPL"
         },
         {
             "contributors": "solo build",
