@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-09-19T06:44:07.004Z",
+    "syncedAt": "2026-09-19T13:55:34.624Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "b427e58871c61bb33629c3006ea5b3426888f692",
-        "shortSha": "b427e58"
+        "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
+        "shortSha": "3b68e5f"
     },
     "projects": {
         "giahuyyle/fpl": {
@@ -133,7 +133,7 @@
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 27,
+                    "contributions": 28,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-19T06:40:42Z",
+            "pushedAt": "2026-09-19T06:49:47Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -180,6 +180,16 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 115,
+            "committedAt": "2026-09-19T06:49:42Z",
+            "deletions": 84,
+            "message": "feat: add new projects",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
+            "url": "https://github.com/giahuyyle/portfolio/commit/3b68e5ffa1959f50ce77dba731c6b2c8872ca428"
+        },
         {
             "additions": 0,
             "committedAt": "2026-09-19T06:40:35Z",
@@ -219,16 +229,6 @@
             "repo": "job-pulse",
             "sha": "4c8e64c1b9f810450a44666077215de1a22c4dab",
             "url": "https://github.com/giahuyyle/job-pulse/commit/4c8e64c1b9f810450a44666077215de1a22c4dab"
-        },
-        {
-            "additions": 2,
-            "committedAt": "2026-09-15T18:35:32Z",
-            "deletions": 2,
-            "message": "fix: match Dockerfile EXPOSE/PORT to Render's configured port 10000",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "0acafecec6ff653efeca0a986f6085c567d3a793",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/0acafecec6ff653efeca0a986f6085c567d3a793"
         }
     ]
 }
