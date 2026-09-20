@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-19T13:55:34.624Z",
+    "syncedAt": "2026-09-20T14:14:16.965Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -33,7 +33,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 19,
+                    "contributions": 20,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -44,7 +44,7 @@
             "language": "Java",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-19T05:18:25Z",
+            "pushedAt": "2026-09-20T05:40:14Z",
             "repo": "job-pulse",
             "stars": 0,
             "topics": [],
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 115,
+                    "contributions": 116,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-19T06:49:47Z",
+            "pushedAt": "2026-09-19T13:55:41Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -180,6 +180,16 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 2937,
+            "committedAt": "2026-09-20T05:39:14Z",
+            "deletions": 96,
+            "message": "feat(admin): add operations dashboard for boards, ingestion runs, and events",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "2dadbefe68dfef71791b157417f5bcdeb493b41b",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/2dadbefe68dfef71791b157417f5bcdeb493b41b"
+        },
         {
             "additions": 115,
             "committedAt": "2026-09-19T06:49:42Z",
@@ -219,16 +229,6 @@
             "repo": "job-pulse",
             "sha": "e345e78e2d0c4468a0b8345a2375d3c33607984f",
             "url": "https://github.com/giahuyyle/job-pulse/commit/e345e78e2d0c4468a0b8345a2375d3c33607984f"
-        },
-        {
-            "additions": 4160,
-            "committedAt": "2026-09-19T05:16:29Z",
-            "deletions": 0,
-            "message": "feat(frontend): add job search and operations console",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "4c8e64c1b9f810450a44666077215de1a22c4dab",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/4c8e64c1b9f810450a44666077215de1a22c4dab"
         }
     ]
 }
