@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-20T14:14:16.965Z",
+    "syncedAt": "2026-09-21T16:28:29.214Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 116,
+                    "contributions": 117,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-19T13:55:41Z",
+            "pushedAt": "2026-09-20T14:14:24Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -155,7 +155,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 29,
+                    "contributions": 31,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 },
@@ -172,7 +172,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-09-15T18:35:43Z",
+            "pushedAt": "2026-09-21T02:07:11Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -180,6 +180,26 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 2351,
+            "committedAt": "2026-09-21T02:07:06Z",
+            "deletions": 158,
+            "message": "update gmail login",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "04e6b843e0896dbb703f82d58f40bdcd9bd2d9c9",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/04e6b843e0896dbb703f82d58f40bdcd9bd2d9c9"
+        },
+        {
+            "additions": 2183,
+            "committedAt": "2026-09-21T01:23:20Z",
+            "deletions": 1013,
+            "message": "big change",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "6c5943d46b35571cc5c42c6221b77dbbc4a16539",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/6c5943d46b35571cc5c42c6221b77dbbc4a16539"
+        },
         {
             "additions": 2937,
             "committedAt": "2026-09-20T05:39:14Z",
@@ -209,26 +229,6 @@
             "repo": "portfolio",
             "sha": "b427e58871c61bb33629c3006ea5b3426888f692",
             "url": "https://github.com/giahuyyle/portfolio/commit/b427e58871c61bb33629c3006ea5b3426888f692"
-        },
-        {
-            "additions": 39,
-            "committedAt": "2026-09-19T05:16:50Z",
-            "deletions": 0,
-            "message": "docs: add local runbook and demo flow",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "65d994b58fceb9bc9d292a782db6e0eefc6b1b6a",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/65d994b58fceb9bc9d292a782db6e0eefc6b1b6a"
-        },
-        {
-            "additions": 1010,
-            "committedAt": "2026-09-19T05:16:38Z",
-            "deletions": 4,
-            "message": "perf(benchmarks): add search and ingestion evidence",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "e345e78e2d0c4468a0b8345a2375d3c33607984f",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/e345e78e2d0c4468a0b8345a2375d3c33607984f"
         }
     ]
 }
