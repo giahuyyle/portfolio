@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-21T16:28:29.214Z",
+    "syncedAt": "2026-09-22T14:55:06.038Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 117,
+                    "contributions": 118,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-20T14:14:24Z",
+            "pushedAt": "2026-09-21T16:28:39Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -155,7 +155,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 31,
+                    "contributions": 33,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 },
@@ -172,7 +172,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-09-21T02:07:11Z",
+            "pushedAt": "2026-09-22T14:06:45Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -180,6 +180,26 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 780,
+            "committedAt": "2026-09-22T14:06:37Z",
+            "deletions": 48,
+            "message": "add sign-in by username or email, add change or set, and add google welcome email",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "24ba54b0cecf05cbd86b674619db86640f39a54e",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/24ba54b0cecf05cbd86b674619db86640f39a54e"
+        },
+        {
+            "additions": 2177,
+            "committedAt": "2026-09-22T12:16:35Z",
+            "deletions": 120,
+            "message": "fix the log workout session",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "57de3287da1afbbecb2a21c25c20c76fc09adbc0",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/57de3287da1afbbecb2a21c25c20c76fc09adbc0"
+        },
         {
             "additions": 2351,
             "committedAt": "2026-09-21T02:07:06Z",
@@ -189,16 +209,6 @@
             "repo": "ascension-app",
             "sha": "04e6b843e0896dbb703f82d58f40bdcd9bd2d9c9",
             "url": "https://github.com/namhoangmai/ascension-app/commit/04e6b843e0896dbb703f82d58f40bdcd9bd2d9c9"
-        },
-        {
-            "additions": 2183,
-            "committedAt": "2026-09-21T01:23:20Z",
-            "deletions": 1013,
-            "message": "big change",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "6c5943d46b35571cc5c42c6221b77dbbc4a16539",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/6c5943d46b35571cc5c42c6221b77dbbc4a16539"
         },
         {
             "additions": 2937,
@@ -219,16 +229,6 @@
             "repo": "portfolio",
             "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
             "url": "https://github.com/giahuyyle/portfolio/commit/3b68e5ffa1959f50ce77dba731c6b2c8872ca428"
-        },
-        {
-            "additions": 0,
-            "committedAt": "2026-09-19T06:40:35Z",
-            "deletions": 0,
-            "message": "resume: change resume",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "b427e58871c61bb33629c3006ea5b3426888f692",
-            "url": "https://github.com/giahuyyle/portfolio/commit/b427e58871c61bb33629c3006ea5b3426888f692"
         }
     ]
 }
