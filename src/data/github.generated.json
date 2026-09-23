@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-22T14:55:06.038Z",
+    "syncedAt": "2026-09-23T15:01:48.263Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -33,7 +33,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 20,
+                    "contributions": 22,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -44,7 +44,7 @@
             "language": "Java",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-20T05:40:14Z",
+            "pushedAt": "2026-09-23T10:02:19Z",
             "repo": "job-pulse",
             "stars": 0,
             "topics": [],
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 118,
+                    "contributions": 119,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-21T16:28:39Z",
+            "pushedAt": "2026-09-22T14:55:14Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -155,7 +155,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 33,
+                    "contributions": 34,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 },
@@ -172,7 +172,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-09-22T14:06:45Z",
+            "pushedAt": "2026-09-23T10:54:18Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -180,6 +180,36 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 117,
+            "committedAt": "2026-09-23T10:54:14Z",
+            "deletions": 54,
+            "message": "google auth",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "3a7fa3400ac9590ed2c6b7941fc3e0779e7da676",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/3a7fa3400ac9590ed2c6b7941fc3e0779e7da676"
+        },
+        {
+            "additions": 270,
+            "committedAt": "2026-09-23T09:55:15Z",
+            "deletions": 16,
+            "message": "feat(observability): propagate traces through async pipeline",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "0584558c0ba3011ad87c07e21a50631a7a6956e4",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/0584558c0ba3011ad87c07e21a50631a7a6956e4"
+        },
+        {
+            "additions": 889,
+            "committedAt": "2026-09-23T05:15:43Z",
+            "deletions": 102,
+            "message": "feat(observability): add metrics dashboards alerts and tracing",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "c0606fdab243c1cf3a6cb36ac47033b0162928dc",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/c0606fdab243c1cf3a6cb36ac47033b0162928dc"
+        },
         {
             "additions": 780,
             "committedAt": "2026-09-22T14:06:37Z",
@@ -199,36 +229,6 @@
             "repo": "ascension-app",
             "sha": "57de3287da1afbbecb2a21c25c20c76fc09adbc0",
             "url": "https://github.com/namhoangmai/ascension-app/commit/57de3287da1afbbecb2a21c25c20c76fc09adbc0"
-        },
-        {
-            "additions": 2351,
-            "committedAt": "2026-09-21T02:07:06Z",
-            "deletions": 158,
-            "message": "update gmail login",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "04e6b843e0896dbb703f82d58f40bdcd9bd2d9c9",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/04e6b843e0896dbb703f82d58f40bdcd9bd2d9c9"
-        },
-        {
-            "additions": 2937,
-            "committedAt": "2026-09-20T05:39:14Z",
-            "deletions": 96,
-            "message": "feat(admin): add operations dashboard for boards, ingestion runs, and events",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "2dadbefe68dfef71791b157417f5bcdeb493b41b",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/2dadbefe68dfef71791b157417f5bcdeb493b41b"
-        },
-        {
-            "additions": 115,
-            "committedAt": "2026-09-19T06:49:42Z",
-            "deletions": 84,
-            "message": "feat: add new projects",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
-            "url": "https://github.com/giahuyyle/portfolio/commit/3b68e5ffa1959f50ce77dba731c6b2c8872ca428"
         }
     ]
 }
