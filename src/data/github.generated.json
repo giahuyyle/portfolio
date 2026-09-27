@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-26T14:30:14.545Z",
+    "syncedAt": "2026-09-27T15:09:53.509Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -33,7 +33,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 22,
+                    "contributions": 47,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -44,7 +44,7 @@
             "language": "Java",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-23T10:02:19Z",
+            "pushedAt": "2026-09-27T08:17:00Z",
             "repo": "job-pulse",
             "stars": 0,
             "topics": [],
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 122,
+                    "contributions": 123,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-25T15:16:46Z",
+            "pushedAt": "2026-09-26T14:30:24Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -181,6 +181,36 @@
     },
     "recentCommits": [
         {
+            "additions": 8,
+            "committedAt": "2026-09-27T08:16:53Z",
+            "deletions": 6,
+            "message": "feat(frontend): logo and metadata",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "f4793661c63ae46d130bcbb16737b3f05c8e16a8",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/f4793661c63ae46d130bcbb16737b3f05c8e16a8"
+        },
+        {
+            "additions": 427,
+            "committedAt": "2026-09-27T07:18:56Z",
+            "deletions": 73,
+            "message": "feat(frontend): redesign jobpulse UI and refine copy",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "e453947308f666556e200285093899d6e96b0237",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/e453947308f666556e200285093899d6e96b0237"
+        },
+        {
+            "additions": 1,
+            "committedAt": "2026-09-27T05:41:56Z",
+            "deletions": 1,
+            "message": "fix(deploy): attach snapshot policy with zone flag",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "ce66750570392fa75568eb661c62beaa8a0d9649",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/ce66750570392fa75568eb661c62beaa8a0d9649"
+        },
+        {
             "additions": 117,
             "committedAt": "2026-09-23T10:54:14Z",
             "deletions": 54,
@@ -191,26 +221,6 @@
             "url": "https://github.com/namhoangmai/ascension-app/commit/3a7fa3400ac9590ed2c6b7941fc3e0779e7da676"
         },
         {
-            "additions": 270,
-            "committedAt": "2026-09-23T09:55:15Z",
-            "deletions": 16,
-            "message": "feat(observability): propagate traces through async pipeline",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "0584558c0ba3011ad87c07e21a50631a7a6956e4",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/0584558c0ba3011ad87c07e21a50631a7a6956e4"
-        },
-        {
-            "additions": 889,
-            "committedAt": "2026-09-23T05:15:43Z",
-            "deletions": 102,
-            "message": "feat(observability): add metrics dashboards alerts and tracing",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "c0606fdab243c1cf3a6cb36ac47033b0162928dc",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/c0606fdab243c1cf3a6cb36ac47033b0162928dc"
-        },
-        {
             "additions": 780,
             "committedAt": "2026-09-22T14:06:37Z",
             "deletions": 48,
@@ -219,16 +229,6 @@
             "repo": "ascension-app",
             "sha": "24ba54b0cecf05cbd86b674619db86640f39a54e",
             "url": "https://github.com/namhoangmai/ascension-app/commit/24ba54b0cecf05cbd86b674619db86640f39a54e"
-        },
-        {
-            "additions": 2177,
-            "committedAt": "2026-09-22T12:16:35Z",
-            "deletions": 120,
-            "message": "fix the log workout session",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "57de3287da1afbbecb2a21c25c20c76fc09adbc0",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/57de3287da1afbbecb2a21c25c20c76fc09adbc0"
         }
     ]
 }
