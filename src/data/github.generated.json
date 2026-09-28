@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-27T15:09:53.509Z",
+    "syncedAt": "2026-09-28T18:10:06.627Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -33,7 +33,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 47,
+                    "contributions": 53,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -44,7 +44,7 @@
             "language": "Java",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-27T08:17:00Z",
+            "pushedAt": "2026-09-28T11:35:13Z",
             "repo": "job-pulse",
             "stars": 0,
             "topics": [],
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 123,
+                    "contributions": 124,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-26T14:30:24Z",
+            "pushedAt": "2026-09-27T15:10:01Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -181,34 +181,34 @@
     },
     "recentCommits": [
         {
-            "additions": 8,
-            "committedAt": "2026-09-27T08:16:53Z",
-            "deletions": 6,
-            "message": "feat(frontend): logo and metadata",
+            "additions": 13,
+            "committedAt": "2026-09-28T11:34:48Z",
+            "deletions": 2,
+            "message": "test(email): generate webhook signing keys at runtime",
             "project": "Job Pulse",
             "repo": "job-pulse",
-            "sha": "f4793661c63ae46d130bcbb16737b3f05c8e16a8",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/f4793661c63ae46d130bcbb16737b3f05c8e16a8"
+            "sha": "7a93d24a4048641ecdc0d644ac5f8c07b10bcee3",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/7a93d24a4048641ecdc0d644ac5f8c07b10bcee3"
         },
         {
-            "additions": 427,
-            "committedAt": "2026-09-27T07:18:56Z",
-            "deletions": 73,
-            "message": "feat(frontend): redesign jobpulse UI and refine copy",
+            "additions": 143,
+            "committedAt": "2026-09-28T11:25:44Z",
+            "deletions": 0,
+            "message": "docs(email): document digest behavior and Resend rollout",
             "project": "Job Pulse",
             "repo": "job-pulse",
-            "sha": "e453947308f666556e200285093899d6e96b0237",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/e453947308f666556e200285093899d6e96b0237"
+            "sha": "875e62099e8242b3c7f3a8bc26803b12dc54cfed",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/875e62099e8242b3c7f3a8bc26803b12dc54cfed"
         },
         {
-            "additions": 1,
-            "committedAt": "2026-09-27T05:41:56Z",
-            "deletions": 1,
-            "message": "fix(deploy): attach snapshot policy with zone flag",
+            "additions": 70,
+            "committedAt": "2026-09-28T11:25:36Z",
+            "deletions": 2,
+            "message": "feat(deploy): configure Resend secrets and email monitoring",
             "project": "Job Pulse",
             "repo": "job-pulse",
-            "sha": "ce66750570392fa75568eb661c62beaa8a0d9649",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/ce66750570392fa75568eb661c62beaa8a0d9649"
+            "sha": "659e623c0c5371424f434c4cd53a7ec4caa182a5",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/659e623c0c5371424f434c4cd53a7ec4caa182a5"
         },
         {
             "additions": 117,
