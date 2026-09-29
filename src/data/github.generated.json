@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-09-28T18:10:06.627Z",
+    "syncedAt": "2026-09-29T16:31:06.953Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -33,7 +33,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 53,
+                    "contributions": 54,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -44,7 +44,7 @@
             "language": "Java",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-28T11:35:13Z",
+            "pushedAt": "2026-09-29T03:21:06Z",
             "repo": "job-pulse",
             "stars": 0,
             "topics": [],
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 124,
+                    "contributions": 125,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-09-27T15:10:01Z",
+            "pushedAt": "2026-09-28T18:10:17Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -181,6 +181,16 @@
     },
     "recentCommits": [
         {
+            "additions": 129,
+            "committedAt": "2026-09-29T03:20:53Z",
+            "deletions": 9,
+            "message": "fix(frontend): improve input contrast and add account dropdown",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "2eec1c8a782bb54d64986d8d0250cd69d7f0bfea",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/2eec1c8a782bb54d64986d8d0250cd69d7f0bfea"
+        },
+        {
             "additions": 13,
             "committedAt": "2026-09-28T11:34:48Z",
             "deletions": 2,
@@ -199,16 +209,6 @@
             "repo": "job-pulse",
             "sha": "875e62099e8242b3c7f3a8bc26803b12dc54cfed",
             "url": "https://github.com/giahuyyle/job-pulse/commit/875e62099e8242b3c7f3a8bc26803b12dc54cfed"
-        },
-        {
-            "additions": 70,
-            "committedAt": "2026-09-28T11:25:36Z",
-            "deletions": 2,
-            "message": "feat(deploy): configure Resend secrets and email monitoring",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "659e623c0c5371424f434c4cd53a7ec4caa182a5",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/659e623c0c5371424f434c4cd53a7ec4caa182a5"
         },
         {
             "additions": 117,
