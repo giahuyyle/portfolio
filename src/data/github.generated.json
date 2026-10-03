@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-10-02T16:16:24.278Z",
+    "syncedAt": "2026-10-03T14:43:18.674Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 128,
+                    "contributions": 129,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-10-01T17:02:09Z",
+            "pushedAt": "2026-10-02T16:16:32Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -155,7 +155,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/147515285?v=4",
-                    "contributions": 34,
+                    "contributions": 35,
                     "login": "namhoangmai",
                     "url": "https://github.com/namhoangmai"
                 },
@@ -172,7 +172,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "namhoangmai",
-            "pushedAt": "2026-09-23T10:54:18Z",
+            "pushedAt": "2026-10-03T00:07:20Z",
             "repo": "ascension-app",
             "stars": 0,
             "topics": [],
@@ -180,6 +180,16 @@
         }
     },
     "recentCommits": [
+        {
+            "additions": 5410,
+            "committedAt": "2026-10-03T00:07:15Z",
+            "deletions": 631,
+            "message": "big changes",
+            "project": "Ascension App",
+            "repo": "ascension-app",
+            "sha": "4da85dc53eef9f53e6cb9eb9298f57ee9dcad3b2",
+            "url": "https://github.com/namhoangmai/ascension-app/commit/4da85dc53eef9f53e6cb9eb9298f57ee9dcad3b2"
+        },
         {
             "additions": 129,
             "committedAt": "2026-09-29T03:20:53Z",
@@ -219,16 +229,6 @@
             "repo": "ascension-app",
             "sha": "3a7fa3400ac9590ed2c6b7941fc3e0779e7da676",
             "url": "https://github.com/namhoangmai/ascension-app/commit/3a7fa3400ac9590ed2c6b7941fc3e0779e7da676"
-        },
-        {
-            "additions": 780,
-            "committedAt": "2026-09-22T14:06:37Z",
-            "deletions": 48,
-            "message": "add sign-in by username or email, add change or set, and add google welcome email",
-            "project": "Ascension App",
-            "repo": "ascension-app",
-            "sha": "24ba54b0cecf05cbd86b674619db86640f39a54e",
-            "url": "https://github.com/namhoangmai/ascension-app/commit/24ba54b0cecf05cbd86b674619db86640f39a54e"
         }
     ]
 }
