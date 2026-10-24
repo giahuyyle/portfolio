@@ -1,20 +1,8 @@
 import { flushSync } from "react-dom";
-import {
-    useCallback,
-    useEffect,
-    useMemo,
-    useState,
-    type CSSProperties,
-} from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type MouseEvent } from "react";
 import Navbar from "./components/Navbar";
-import { moreLinks, navLinks } from "./data/navigation";
-import { featuredProjects } from "./data/projects";
-import {
-    defaultAccent,
-    swatches,
-    themes,
-    type ThemeName,
-} from "./data/theme";
+import { featuredProjects, type ProjectFilter } from "./data/projects";
+import { defaultAccent, getThemeStyle, swatches, themes, type ThemeName } from "./data/theme";
 import About from "./pages/About";
 import ProjectDetail from "./pages/ProjectDetail";
 import Projects from "./pages/Projects";
@@ -22,268 +10,119 @@ import Dashboard from "./sections/Dashboard";
 import FeaturedProjects from "./sections/FeaturedProjects";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
-import {
-    normalizeRoute,
-    runRouteTransition,
-    type NavigateOptions,
-} from "./utils/routing";
+import { decodeProjectRepo, internalAnchor, normalizeRoute, runRouteTransition, type NavigateOptions, type RouteHistoryState } from "./utils/routing";
 
-const defaultThemeName: ThemeName = "Latte";
-const themeStorageKey = "portfolio-theme";
-const accentStorageKey = "portfolio-accent";
+import { readPreference as storedValue, writePreference } from "./utils/preferences";
 
-function isThemeName(value: string | null): value is ThemeName {
-    return Boolean(value && value in themes);
+function storedTheme(): ThemeName {
+    const name = storedValue("portfolio-theme", "Latte");
+    return Object.hasOwn(themes, name) ? name as ThemeName : "Latte";
+}
+function storedAccent() {
+    const accent = storedValue("portfolio-accent", defaultAccent);
+    return swatches.includes(accent) ? accent : defaultAccent;
+}
+function historyState(): RouteHistoryState | undefined {
+    const state = window.history.state;
+    return state && typeof state.portfolioKey === "string" ? state : undefined;
 }
 
-function getStoredThemeName() {
-    if (typeof window === "undefined") {
-        return defaultThemeName;
-    }
+export default function App() {
+    const [themeName, setThemeName] = useState<ThemeName>(storedTheme);
+    const [accent, setAccent] = useState(storedAccent);
+    const [pathname, setPathname] = useState(window.location.pathname);
+    const [filter, setFilter] = useState<ProjectFilter>("all");
+    const entries = useRef(new Map<string, { y: number; focusId?: string; }>());
+    const currentKey = useRef("");
+    const route = normalizeRoute(pathname) ?? "/";
 
-    try {
-        const storedTheme = window.localStorage.getItem(themeStorageKey);
+    useLayoutEffect(() => {
+        const style = getThemeStyle(themeName, accent) as Record<string, string>;
+        for (const [key, value] of Object.entries(style)) document.documentElement.style.setProperty(key, value);
+        document.documentElement.dataset.theme = themeName;
+        writePreference("portfolio-theme", themeName);
+        writePreference("portfolio-accent", accent);
+    }, [themeName, accent]);
 
-        if (isThemeName(storedTheme)) {
-            return storedTheme;
-        }
-    } catch {
-        return defaultThemeName;
-    }
+    useEffect(() => {
+        const previousRestoration = window.history.scrollRestoration;
+        window.history.scrollRestoration = "manual";
+        const initial = historyState() ?? { portfolioKey: crypto.randomUUID() };
+        window.history.replaceState(initial, "");
+        currentKey.current = initial.portfolioKey;
+        const onPopState = () => {
+            const previous = entries.current.get(currentKey.current);
+            entries.current.set(currentKey.current, { ...previous, y: window.scrollY });
+            const next = historyState() ?? { portfolioKey: crypto.randomUUID() };
+            window.history.replaceState(next, "");
+            currentKey.current = next.portfolioKey;
+            const saved = entries.current.get(next.portfolioKey);
+            runRouteTransition(() => {
+                flushSync(() => setPathname(window.location.pathname));
+                const focus = (saved?.focusId ? document.getElementById(saved.focusId) : null) ?? document.querySelector<HTMLElement>("h1");
+                focus?.focus({ preventScroll: true });
+                window.scrollTo({ top: saved?.y ?? 0, behavior: "instant" });
+            });
+        };
+        window.addEventListener("popstate", onPopState);
+        return () => {
+            window.removeEventListener("popstate", onPopState);
+            window.history.scrollRestoration = previousRestoration;
+        };
+    }, []);
 
-    return defaultThemeName;
-}
+    const navigateTo = useCallback((path: string, options: NavigateOptions = {}) => {
+        const next = normalizeRoute(path);
+        const current = normalizeRoute(window.location.pathname);
+        if (!next || next === current) return;
+        const active = document.activeElement;
+        const anchor = active instanceof HTMLAnchorElement ? active : null;
+        entries.current.set(currentKey.current, { y: window.scrollY, focusId: anchor?.id });
+        const state: RouteHistoryState = { portfolioKey: crypto.randomUUID(), from: current ?? undefined };
+        runRouteTransition(() => {
+            if (options.replace) window.history.replaceState(state, "", next);
+            else window.history.pushState(state, "", next);
+            currentKey.current = state.portfolioKey;
+            flushSync(() => setPathname(window.location.pathname));
+            document.querySelector<HTMLElement>("h1")?.focus({ preventScroll: true });
+            if (options.scroll !== false) window.scrollTo({ top: 0, behavior: "instant" });
+        });
+    }, []);
 
-function getStoredAccent() {
-    if (typeof window === "undefined") {
-        return defaultAccent;
-    }
+    const handleLink = (event: MouseEvent<HTMLDivElement>) => {
+        const anchor = internalAnchor(event);
+        if (!anchor) return;
+        event.preventDefault();
+        anchor.focus({ preventScroll: true });
+        const state = historyState();
+        if (anchor.dataset.projectReturn && (state?.from === "/projects" || state?.from === "/")) window.history.back();
+        else navigateTo(anchor.pathname);
+    };
 
-    try {
-        const storedAccent = window.localStorage.getItem(accentStorageKey);
+    const match = route.match(/^\/projects\/([^/]+)$/);
+    const project = match ? featuredProjects.find((item) => item.repo === decodeProjectRepo(match[1])) : undefined;
+    const from = historyState()?.from;
+    const returnPath = from === "/" ? "/" : "/projects";
+    useEffect(() => {
+        document.title = `${route === "/" ? "Home" : route === "/about" ? "About" : route === "/projects" ? "Projects" : project?.title ?? "Page not found"} · Huy Le`;
+    }, [route, project]);
 
-        if (storedAccent && swatches.includes(storedAccent)) {
-            return storedAccent;
-        }
-    } catch {
-        return defaultAccent;
-    }
-
-    return defaultAccent;
-}
-
-function BackButton({
-    href,
-    label,
-    onNavigate,
-}: {
-    href: string;
-    label: string;
-    onNavigate: (path: string) => void;
-}) {
     return (
-        <div className="pointer-events-none fixed inset-x-0 top-20 z-30 px-6 font-mono">
-            <div className="mx-auto w-full max-w-6xl">
-                <a
-                    className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/25 px-4 py-2 text-sm font-medium tracking-[0.04em] text-(--hero-text) shadow-lg shadow-slate-900/5 backdrop-blur-xl transition hover:border-(--hero-accent) hover:text-(--hero-accent)"
-                    href={href}
-                    onClick={(event) => {
-                        event.preventDefault();
-                        onNavigate(href);
-                    }}
-                    aria-label={label}
-                >
-                    <span aria-hidden="true">{"<-"}</span>
-                    {label}
-                </a>
-            </div>
+        <div onClick={handleLink}>
+            <a className="skip" href="#content">Skip to content</a>
+            <Navbar pathname={route} accent={accent} activeTheme={themeName} onAccentChange={setAccent} onThemeChange={setThemeName} />
+            <main id="content" tabIndex={-1} key={route}>
+                {route === "/" ? <>
+                    <Hero />
+                    <FeaturedProjects />
+                    <Dashboard activeTheme={themeName} onThemeChange={setThemeName} />
+                </> : route === "/about" ? <About /> : route === "/projects" ? <Projects filter={filter} onFilterChange={setFilter} /> : match ? <ProjectDetail project={project} returnPath={returnPath} /> : <section className="wrap page-section">
+                    <a className="back-link" href="/">← Home</a>
+                    <h1 tabIndex={-1}>Page not found</h1>
+                    <p className="page-lead muted">This page is not in the current portfolio.</p>
+                </section>}
+            </main>
+            <Footer />
         </div>
     );
 }
-
-function App() {
-    const [themeName, setThemeName] = useState<ThemeName>(getStoredThemeName);
-    const [accent, setAccent] = useState(getStoredAccent);
-    const [pathname, setPathname] = useState(window.location.pathname);
-
-    const theme = themes[themeName];
-    const themeStyle = useMemo(
-        () =>
-            ({
-                "--hero-bg": theme.bg,
-                "--hero-text": theme.text,
-                "--hero-muted": theme.muted,
-                "--hero-soft": theme.soft,
-                "--hero-accent": accent,
-                "--hero-panel": theme.panel,
-            }) as CSSProperties,
-        [accent, theme],
-    );
-
-    const handleThemeChange = (name: string) => {
-        const nextTheme = name as ThemeName;
-
-        setThemeName(nextTheme);
-    };
-
-    useEffect(() => {
-        try {
-            window.localStorage.setItem(themeStorageKey, themeName);
-        } catch {
-            return;
-        }
-    }, [themeName]);
-
-    useEffect(() => {
-        try {
-            window.localStorage.setItem(accentStorageKey, accent);
-        } catch {
-            return;
-        }
-    }, [accent]);
-
-    const commitRoute = useCallback(
-        (path: string, options: NavigateOptions = {}) => {
-            const nextRoute = normalizeRoute(path);
-            const currentRoute = normalizeRoute(window.location.pathname);
-
-            if (nextRoute === currentRoute) {
-                return;
-            }
-
-            const state = options.state ?? { from: currentRoute };
-
-            if (options.replace) {
-                window.history.replaceState(state, "", nextRoute);
-            } else {
-                window.history.pushState(state, "", nextRoute);
-            }
-
-            flushSync(() => setPathname(window.location.pathname));
-
-            if (options.scroll !== false) {
-                window.scrollTo({ top: 0 });
-            }
-        },
-        [],
-    );
-
-    const navigateTo = useCallback(
-        (path: string, options?: NavigateOptions) => {
-            runRouteTransition(() => commitRoute(path, options));
-        },
-        [commitRoute],
-    );
-
-    const closeProject = useCallback(() => {
-        const routeState = window.history.state as
-            | { from?: string }
-            | null
-            | undefined;
-
-        if (routeState?.from) {
-            window.history.back();
-            return;
-        }
-
-        navigateTo("/projects", { replace: true });
-    }, [navigateTo]);
-
-    useEffect(() => {
-        const handleRouteChange = () => {
-            runRouteTransition(() => {
-                flushSync(() => setPathname(window.location.pathname));
-                window.scrollTo({ top: 0 });
-            });
-        };
-
-        window.addEventListener("popstate", handleRouteChange);
-
-        return () => window.removeEventListener("popstate", handleRouteChange);
-    }, []);
-
-    const route = pathname.replace(/\/$/, "") || "/";
-    const isHome = route === "/";
-    const projectRouteMatch = route.match(/^\/projects\/([^/]+)$/);
-    const selectedProject = projectRouteMatch
-        ? featuredProjects.find(
-              (project) =>
-                  project.repo === decodeURIComponent(projectRouteMatch[1]),
-          )
-        : undefined;
-    const isProjectDetail = Boolean(projectRouteMatch);
-    const isProjectsRoute = route === "/projects" || isProjectDetail;
-    return (
-        <main
-            className={`hero-flat min-h-screen text-(--hero-text) ${
-                isProjectsRoute ? "projects-route-surface" : ""
-            }`}
-            style={themeStyle}
-        >
-            <Navbar
-                accent={accent}
-                activeTheme={themeName}
-                moreLinks={moreLinks}
-                navLinks={navLinks}
-                pathname={pathname}
-                swatches={swatches}
-                themeNames={Object.keys(themes)}
-                onAccentChange={setAccent}
-                onNavigate={navigateTo}
-                onThemeChange={handleThemeChange}
-            />
-
-            {!isHome && !isProjectDetail && (
-                <BackButton
-                    href="/"
-                    label="Back"
-                    onNavigate={(path) => navigateTo(path)}
-                />
-            )}
-
-            <div className="route-shell" key={route}>
-                {isHome ? (
-                    <>
-                        <Hero />
-
-                        <FeaturedProjects navigateTo={navigateTo} />
-
-                        <Dashboard
-                            accent={accent}
-                            activeTheme={themeName}
-                            swatches={swatches}
-                            themeNames={Object.keys(themes)}
-                            onAccentChange={setAccent}
-                            onThemeChange={handleThemeChange}
-                        />
-                    </>
-                ) : route === "/about" ? (
-                    <About />
-                ) : route === "/projects" ? (
-                    <Projects navigateTo={navigateTo} />
-                ) : isProjectDetail ? (
-                    <ProjectDetail
-                        closeProject={closeProject}
-                        navigateTo={navigateTo}
-                        project={selectedProject}
-                    />
-                ) : (
-                    <section className="px-6 pt-32 pb-20 font-mono">
-                        <div className="mx-auto w-full max-w-6xl">
-                            <h1 className="text-5xl font-semibold capitalize tracking-tight text-(--hero-text)">
-                                {route.slice(1).replaceAll("-", " ")}
-                            </h1>
-                            <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-(--hero-muted)">
-                                This page is a placeholder for now.
-                            </p>
-                        </div>
-                    </section>
-                )}
-            </div>
-
-            <Footer />
-        </main>
-    );
-}
-
-export default App;

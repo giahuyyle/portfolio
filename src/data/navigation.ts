@@ -1,8 +1,6 @@
 export const resumeHref = "/resume/Huy-Le-Resume.pdf";
 
-export const moreLinks = ["Tutorials", "Notes", "Terminal"];
-
-export const navLinks = ["About", "Posts", "Projects", "Resume"];
+export const navLinks = ["About", "Projects", "Resume"];
 
 export const socialLinks = [
     { label: "GitHub", href: "https://github.com/giahuyyle", icon: "github" },

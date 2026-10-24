@@ -1,27 +1,21 @@
-import ProjectCard from "../components/ProjectCard";
-import type { FeaturedProject } from "../data/projects";
-import type { NavigateTo } from "../utils/routing";
-
-type ProjectDetailProps = {
-    closeProject: () => void;
-    navigateTo: NavigateTo;
-    project: FeaturedProject | undefined;
-};
+import { ProjectTags, ProjectTerminal } from "../components/ProjectCard";
+import { featuredProjects, type FeaturedProject } from "../data/projects";
+import { getProjectPath } from "../utils/routing";
 
 type MarkdownBlock =
     | {
-          level: number;
-          text: string;
-          type: "heading";
-      }
+        level: number;
+        text: string;
+        type: "heading";
+    }
     | {
-          text: string;
-          type: "paragraph";
-      }
+        text: string;
+        type: "paragraph";
+    }
     | {
-          items: string[];
-          type: "list";
-      };
+        items: string[];
+        type: "list";
+    };
 
 function stripMatchingTitle(markdown: string, title: string) {
     const lines = markdown.trim().split("\n");
@@ -122,7 +116,7 @@ function renderInlineMarkdown(text: string) {
         if (part.startsWith("`") && part.endsWith("`")) {
             return (
                 <code
-                    className="rounded bg-slate-900/10 px-1.5 py-0.5 text-base text-(--hero-text)"
+
                     key={index}
                 >
                     {part.slice(1, -1)}
@@ -154,14 +148,14 @@ function ProjectDescription({
     }
 
     return (
-        <div className="mt-6 space-y-6 text-lg font-medium leading-8 text-(--hero-muted)">
+        <div className="detail-copy">
             {blocks.map((block, index) => {
                 if (block.type === "heading") {
                     const HeadingTag = block.level <= 2 ? "h2" : "h3";
 
                     return (
                         <HeadingTag
-                            className="pt-2 text-2xl font-semibold leading-tight tracking-tight text-(--hero-text)"
+
                             key={`${block.type}-${index}`}
                         >
                             {renderInlineMarkdown(block.text)}
@@ -192,73 +186,59 @@ function ProjectDescription({
     );
 }
 
-function ProjectDetail({
-    closeProject,
-    navigateTo,
-    project,
-}: ProjectDetailProps) {
+export default function ProjectDetail({ project, returnPath }: { project: FeaturedProject | undefined; returnPath: string; }) {
     if (!project) {
-        return (
-            <section className="project-detail-page px-6 pt-32 pb-24 font-mono">
-                <div className="mx-auto w-full max-w-4xl">
-                    <h1 className="text-5xl font-semibold tracking-tight text-(--hero-text)">
-                        Project not found
-                    </h1>
-                    <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-(--hero-muted)">
-                        That project is not in the current featured list.
-                    </p>
-                    <button
-                        className="mt-8 inline-flex cursor-pointer rounded-full border border-white/40 bg-white/25 px-4 py-2 text-sm font-bold text-(--hero-text) shadow-lg shadow-slate-900/5 backdrop-blur-xl transition hover:border-(--hero-accent) hover:text-(--hero-accent)"
-                        onClick={() => navigateTo("/projects")}
-                        type="button"
-                    >
-                        Back to projects
-                    </button>
-                </div>
-            </section>
-        );
+        return <section className="wrap page-section">
+            <a className="back-link" href="/projects">← All projects</a>
+            <h1 tabIndex={-1}>Project not found</h1>
+            <p className="page-lead muted">That project is not in the current portfolio.</p>
+        </section>;
     }
-
+    const next = featuredProjects[(featuredProjects.indexOf(project) + 1) % featuredProjects.length];
     return (
-        <section className="project-detail-page px-6 pt-32 pb-24 font-mono">
-            <div className="mx-auto w-full max-w-6xl">
-                <div className="mb-8 flex justify-end">
-                    <button
-                        className="inline-flex cursor-pointer rounded-full border border-white/40 bg-white/25 px-4 py-2 text-sm font-bold text-(--hero-text) shadow-lg shadow-slate-900/5 backdrop-blur-xl transition hover:border-(--hero-accent) hover:text-(--hero-accent)"
-                        onClick={closeProject}
-                        type="button"
-                    >
-                        Close
-                    </button>
+        <section className="wrap page-section">
+            <a className="back-link" href={returnPath} data-project-return="true">← {returnPath === "/" ? "Home" : "All projects"}</a>
+            <header className="detail-header">
+                <p className="section-path">~/projects/{project.repo}/</p>
+                <h1 tabIndex={-1}>{project.title}</h1>
+                <p className="detail-lead muted">{project.description}</p>
+                <div className="detail-meta">
+                    <span>{project.contributorLabel}</span>
+                    <a className="inline-link" href={project.href} target="_blank" rel="noreferrer">Source on GitHub ↗</a>
                 </div>
-
-                <div className="mx-auto max-w-3xl">
-                    <ProjectCard project={project} variant="hero" />
+            </header>
+            <div className="detail-layout">
+                <div>
+                    <ProjectTerminal project={project} detail />
+                    <ProjectDescription fallback={project.description} markdown={project.detailDescription ?? ""} title={project.title} />
                 </div>
-
-                <div className="project-detail-copy mx-auto mt-10 max-w-3xl rounded-xl border border-slate-900/10 bg-white/30 p-7 shadow-2xl shadow-slate-900/10 backdrop-blur-xl sm:p-9">
-                    <h1 className="text-4xl font-semibold tracking-tight text-(--hero-text)">
-                        {project.title}
-                    </h1>
-                    <ProjectDescription
-                        fallback={project.description}
-                        markdown={project.detailDescription ?? ""}
-                        title={project.title}
-                    />
-                    <div className="mt-8 flex flex-wrap gap-3">
-                        {project.tags.map((tag) => (
-                            <span
-                                className="rounded-md bg-slate-900/10 px-3 py-1.5 text-sm font-semibold text-(--hero-accent)"
-                                key={tag}
-                            >
-                                {tag}
-                            </span>
-                        ))}
+                <aside className="project-sidebar" aria-label="Project details">
+                    <p className="small-label">Project details</p>
+                    <div className="sidebar-field od-field">
+                        <b>Built with</b>
+                        <ProjectTags tags={project.tags} />
                     </div>
-                </div>
+                    <div className="sidebar-field od-field">
+                        <b>Contribution</b>
+                        <span>{project.contributorLabel}</span>
+                    </div>
+                    <div className="sidebar-field od-field">
+                        <b>Repository</b>
+                        <span>Updated {project.lastPushed}</span>
+                        <span>{project.stars} stars / {project.forks} forks</span>
+                        <span>{project.openIssues} open issues</span>
+                    </div>
+                    <div className="sidebar-field od-field">
+                        <b>Links</b>
+                        <a className="text-link" href={project.href} target="_blank" rel="noreferrer">Repository ↗</a>
+                    </div>
+                    <a className="pill-button" href="mailto:huyyyylegia@gmail.com">Ask me about it →</a>
+                </aside>
+            </div>
+            <div className="detail-next">
+                <p className="small muted">More things I&apos;ve built</p>
+                <a href={getProjectPath(next.repo)}>{next.title} →</a>
             </div>
         </section>
     );
 }
-
-export default ProjectDetail;
