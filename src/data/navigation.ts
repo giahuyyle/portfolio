@@ -1,4 +1,4 @@
-export const resumeHref = "/resume/Huy-Le-resume.pdf";
+export const resumeHref = "/resume/Huy-Le-Resume.pdf";
 
 export const moreLinks = ["Tutorials", "Notes", "Terminal"];
 
