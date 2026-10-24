@@ -33,7 +33,9 @@ export const experienceItems: ExperienceItem[] = [
         logoSrc: "/image/FPT_Software_Logo.png",
         websiteUrl: "https://www.fpt-software.com/",
         achievements: [
-            "Built production AI infrastructure for OpenAI-powered chatbots: a streamable HTTP MCP server cutting RAG response latency by 35%, an optimized LangChain + ChromaDB vector pipeline lifting query throughput 42%, and a GraphRAG-based retrieval system improving answer precision 18% over standard RAG.",
+            "Built a streamable HTTP MCP server for OpenAI-powered chatbots, cutting RAG response latency by 35%.",
+            "Optimized a LangChain + ChromaDB vector pipeline, lifting query throughput by 42%.",
+            "Built a GraphRAG-based retrieval system, improving answer precision by 18% over standard RAG.",
         ],
     },
     {
@@ -46,7 +48,9 @@ export const experienceItems: ExperienceItem[] = [
         logoSrc: "/image/codedream-logo.png",
         websiteUrl: "https://codedream.edu.vn/",
         achievements: [
-            "Shipped three systems for a 400+ student programming education platform: a React + FastAPI admin dashboard streamlining operations across 4+ centers, a refactored PHP online judge (CDOJ) with pytest-based test coverage cutting submission and grading latency by 20%, and a fine-tuned CodeLlama classifier detecting AI-generated submissions served behind a Flask REST endpoint.",
+            "Built a React + FastAPI admin dashboard, streamlining operations across 4+ centers for a programming education platform serving 400+ students.",
+            "Refactored the PHP online judge (CDOJ) with pytest-based test coverage, cutting submission and grading latency by 20%.",
+            "Fine-tuned a CodeLlama classifier to detect AI-generated submissions and served it behind a Flask REST endpoint.",
         ],
     },
     {
@@ -59,7 +63,9 @@ export const experienceItems: ExperienceItem[] = [
         logoSrc: "/image/dibiz-logo.png",
         websiteUrl: "https://www.dibiz.com/",
         achievements: [
-            "Built data infrastructure for a customer engagement platform: redesigned batch consumer logic for a daily RabbitMQ stream serving 500,000 customers (cutting processing time 15%), and shipped 10+ RESTful API endpoints plus an embedding-based user preference scoring pipeline powering personalized promotions for daily active users.",
+            "Redesigned batch consumer logic for a daily RabbitMQ stream serving 500,000 customers, cutting processing time by 15%.",
+            "Shipped 10+ RESTful API endpoints for a customer engagement platform.",
+            "Built an embedding-based user preference scoring pipeline, powering personalized promotions for daily active users.",
         ],
     },
 ];
