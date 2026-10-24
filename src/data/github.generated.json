@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-10-23T15:04:32.955Z",
+    "syncedAt": "2026-10-24T14:00:42.855Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "3b68e5ffa1959f50ce77dba731c6b2c8872ca428",
-        "shortSha": "3b68e5f"
+        "sha": "ac0928f3c0b0cb047844108044701c33fb036c0f",
+        "shortSha": "ac0928f"
     },
     "projects": {
         "giahuyyle/fpl": {
@@ -127,13 +127,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 149,
+                    "contributions": 150,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 28,
+                    "contributions": 39,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-10-22T15:17:37Z",
+            "pushedAt": "2026-10-24T08:14:33Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -181,6 +181,36 @@
     },
     "recentCommits": [
         {
+            "additions": 1,
+            "committedAt": "2026-10-24T08:14:23Z",
+            "deletions": 1,
+            "message": "fix: fix dibiz website link",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "ac0928f3c0b0cb047844108044701c33fb036c0f",
+            "url": "https://github.com/giahuyyle/portfolio/commit/ac0928f3c0b0cb047844108044701c33fb036c0f"
+        },
+        {
+            "additions": 9,
+            "committedAt": "2026-10-24T08:04:18Z",
+            "deletions": 3,
+            "message": "feat(exp): fix bullet texts",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "aa1158f18574dddab3868ffae7a00b07e6250739",
+            "url": "https://github.com/giahuyyle/portfolio/commit/aa1158f18574dddab3868ffae7a00b07e6250739"
+        },
+        {
+            "additions": 2,
+            "committedAt": "2026-10-24T07:52:06Z",
+            "deletions": 2,
+            "message": "style(about): use lowercase page headings",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "47ec8aa372fd66eeeed8c78cd39d893d2279cffc",
+            "url": "https://github.com/giahuyyle/portfolio/commit/47ec8aa372fd66eeeed8c78cd39d893d2279cffc"
+        },
+        {
             "additions": 677,
             "committedAt": "2026-10-03T17:43:15Z",
             "deletions": 32,
@@ -199,36 +229,6 @@
             "repo": "ascension-app",
             "sha": "4da85dc53eef9f53e6cb9eb9298f57ee9dcad3b2",
             "url": "https://github.com/namhoangmai/ascension-app/commit/4da85dc53eef9f53e6cb9eb9298f57ee9dcad3b2"
-        },
-        {
-            "additions": 129,
-            "committedAt": "2026-09-29T03:20:53Z",
-            "deletions": 9,
-            "message": "fix(frontend): improve input contrast and add account dropdown",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "2eec1c8a782bb54d64986d8d0250cd69d7f0bfea",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/2eec1c8a782bb54d64986d8d0250cd69d7f0bfea"
-        },
-        {
-            "additions": 13,
-            "committedAt": "2026-09-28T11:34:48Z",
-            "deletions": 2,
-            "message": "test(email): generate webhook signing keys at runtime",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "7a93d24a4048641ecdc0d644ac5f8c07b10bcee3",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/7a93d24a4048641ecdc0d644ac5f8c07b10bcee3"
-        },
-        {
-            "additions": 143,
-            "committedAt": "2026-09-28T11:25:44Z",
-            "deletions": 0,
-            "message": "docs(email): document digest behavior and Resend rollout",
-            "project": "Job Pulse",
-            "repo": "job-pulse",
-            "sha": "875e62099e8242b3c7f3a8bc26803b12dc54cfed",
-            "url": "https://github.com/giahuyyle/job-pulse/commit/875e62099e8242b3c7f3a8bc26803b12dc54cfed"
         }
     ]
 }
