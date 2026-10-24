@@ -5,7 +5,11 @@ import {
 } from "./github";
 import projectConfig from "./projectConfig.json";
 
+export type ProjectCategory = "web" | "data";
+export type ProjectFilter = "all" | ProjectCategory;
+
 type CuratedProject = {
+    category: ProjectCategory;
     contributors: string;
     description: string;
     detailDescription?: string;
