@@ -8,7 +8,7 @@ export default function About() {
         <section className="wrap page-section">
             <a className="back-link" href="/">← Home</a>
             <p className="section-path">~/about/</p>
-            <h1 tabIndex={-1}>About <span className="accent">Me</span>
+            <h1 tabIndex={-1}>about <span className="accent">me</span>
             </h1>
             <div className="about-grid">
                 <figure className="portrait">
@@ -16,7 +16,7 @@ export default function About() {
                     <figcaption>Huy Le / Edmonton, Alberta</figcaption>
                 </figure>
                 <div className="about-copy od-stack">
-                    <h2>A little more than<br />what&apos;s on my resume.</h2>
+                    <h2>a little more than<br />what&apos;s on my resume.</h2>
                     <p>Hey! I&apos;m Huy Le, a computer science student with a minor in mathematics based in Edmonton, Alberta. I enjoy building polished interfaces, practical tools, and systems that feel fast, readable, and calm to use.</p>
                     <p>Most of my work sits around full-stack web development, applied AI/ML, and product-minded engineering. I like turning rough ideas into clean, useful software.</p>
                     <p>Outside of school and coding, I like football, I follow Chelsea FC, and I enjoy spending time in the gym.</p>
