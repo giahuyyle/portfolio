@@ -1,5 +1,6 @@
 import ExperiencePreview from "../components/ExperiencePreview";
 import SocialLinks from "../components/SocialLinks";
+import { educationItems } from "../data/education";
 import { resumeHref } from "../data/navigation";
 
 export default function About() {
@@ -16,7 +17,7 @@ export default function About() {
                 </figure>
                 <div className="about-copy od-stack">
                     <h2>A little more than<br />what&apos;s on my resume.</h2>
-                    <p>Hey! I&apos;m Huy Le, a computing science and mathematics student based in Edmonton, Alberta. I enjoy building polished interfaces, practical tools, and systems that feel fast, readable, and calm to use.</p>
+                    <p>Hey! I&apos;m Huy Le, a computer science student with a minor in mathematics based in Edmonton, Alberta. I enjoy building polished interfaces, practical tools, and systems that feel fast, readable, and calm to use.</p>
                     <p>Most of my work sits around full-stack web development, applied AI/ML, and product-minded engineering. I like turning rough ideas into clean, useful software.</p>
                     <p>Outside of school and coding, I like football, I follow Chelsea FC, and I enjoy spending time in the gym.</p>
                     <SocialLinks />
@@ -25,9 +26,18 @@ export default function About() {
             <div className="about-bottom">
                 <div>
                     <p className="section-path">01 / Education</p>
-                    <h2>University of Alberta</h2>
-                    <p>B.Sc. Computing Science + Mathematics</p>
-                    <p className="small muted">September 2023 - Present</p>
+                    <div className="education-history">
+                        {educationItems.map((education) => (
+                            <div key={education.id}>
+                                <h2>{education.institution}</h2>
+                                {education.program && <p>{education.program}</p>}
+                                <p className="small muted">{education.dates}</p>
+                                {education.expectedGraduation && (
+                                    <p className="small muted">Expected graduation: {education.expectedGraduation}</p>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div>
                     <p className="section-path">02 / Outside the editor</p>
