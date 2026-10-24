@@ -7,7 +7,7 @@ export default function Hero() {
         <section className="wrap hero">
             <p className="small-label">
                 <span className="peach-dot" /> Full-stack development / Applied AI</p>
-            <h1 tabIndex={-1}>Hey! I&apos;m <span className="accent">Huy Le</span>
+            <h1 tabIndex={-1}>hey, i&apos;m <span className="accent">Huy Le</span>
                 <span className="hero-period">.</span>
             </h1>
             <p className="hero-copy">I&apos;m a computing science and mathematics student at <a className="inline-link" href="https://www.ualberta.ca/" target="_blank" rel="noreferrer">UAlberta</a>, based in Edmonton, AB. I build full-stack applications with React, JS/TS, and Python, and enjoy working on applied AI and the systems behind it.</p>
