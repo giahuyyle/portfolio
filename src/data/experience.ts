@@ -61,7 +61,7 @@ export const experienceItems: ExperienceItem[] = [
         location: "Hanoi, Vietnam",
         logoLabel: "DB",
         logoSrc: "/image/dibiz-logo.png",
-        websiteUrl: "https://www.dibiz.com/",
+        websiteUrl: "https://www.dibiz.vn/",
         achievements: [
             "Redesigned batch consumer logic for a daily RabbitMQ stream serving 500,000 customers, cutting processing time by 15%.",
             "Shipped 10+ RESTful API endpoints for a customer engagement platform.",
