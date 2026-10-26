@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-10-25T14:23:03.865Z",
+    "syncedAt": "2026-10-26T16:47:27.388Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "ac0928f3c0b0cb047844108044701c33fb036c0f",
-        "shortSha": "ac0928f"
+        "sha": "01b0beb4d9e82cbfe66ed7f61b169d535750be64",
+        "shortSha": "01b0beb"
     },
     "projects": {
         "giahuyyle/fpl": {
@@ -127,13 +127,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 151,
+                    "contributions": 152,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 39,
+                    "contributions": 40,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-10-24T14:00:52Z",
+            "pushedAt": "2026-10-26T12:47:39Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -181,6 +181,16 @@
     },
     "recentCommits": [
         {
+            "additions": 10,
+            "committedAt": "2026-10-26T12:47:26Z",
+            "deletions": 2,
+            "message": "feat(branding): use transparent signature as favicon",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "01b0beb4d9e82cbfe66ed7f61b169d535750be64",
+            "url": "https://github.com/giahuyyle/portfolio/commit/01b0beb4d9e82cbfe66ed7f61b169d535750be64"
+        },
+        {
             "additions": 1,
             "committedAt": "2026-10-24T08:14:23Z",
             "deletions": 1,
@@ -199,16 +209,6 @@
             "repo": "portfolio",
             "sha": "aa1158f18574dddab3868ffae7a00b07e6250739",
             "url": "https://github.com/giahuyyle/portfolio/commit/aa1158f18574dddab3868ffae7a00b07e6250739"
-        },
-        {
-            "additions": 2,
-            "committedAt": "2026-10-24T07:52:06Z",
-            "deletions": 2,
-            "message": "style(about): use lowercase page headings",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "47ec8aa372fd66eeeed8c78cd39d893d2279cffc",
-            "url": "https://github.com/giahuyyle/portfolio/commit/47ec8aa372fd66eeeed8c78cd39d893d2279cffc"
         },
         {
             "additions": 677,
