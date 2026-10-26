@@ -13,7 +13,7 @@ export default function About() {
             <div className="about-grid">
                 <figure className="portrait">
                     <img src="/image/about-me.jpeg" alt="Huy Le" width="1024" height="768" />
-                    <figcaption>Huy Le / Edmonton, Alberta</figcaption>
+                    <figcaption>this is a picture of me in my favorite city, Hanoi</figcaption>
                 </figure>
                 <div className="about-copy od-stack">
                     <h2>a little more than<br />what&apos;s on my resume.</h2>
