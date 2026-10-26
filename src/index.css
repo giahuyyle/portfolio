@@ -1286,6 +1286,25 @@ body:has(dialog[open]) { overflow: hidden; }
     display: grid;
     gap: 24px;
 }
+.blog-empty {
+    margin-top:36px;
+    padding:clamp(24px,5vw,56px);
+    border:1px solid var(--hero-border);
+    border-radius:var(--hero-radius);
+    background:var(--hero-glass);
+    box-shadow:var(--hero-shadow)
+}
+.blog-empty h2 {
+    margin-top:20px
+}
+.blog-empty p {
+    max-width:520px;
+    margin-top:12px;
+    font-size:13px
+}
+.blog-empty .text-link {
+    margin-top:20px
+}
 .education-history p {
     font-size: 12px;
     overflow-wrap: anywhere;

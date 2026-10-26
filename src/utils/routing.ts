@@ -29,7 +29,7 @@ export function internalAnchor(event: MouseEvent<HTMLElement>) {
     const url = new URL(anchor.href);
     if (url.origin !== window.location.origin || url.hash || url.search || !["http:", "https:"].includes(url.protocol)) return null;
     const path = normalizeRoute(url.pathname);
-    if (!path || !(path === "/" || path === "/about" || path === "/projects" || path.startsWith("/projects/"))) return null;
+    if (!path || !(path === "/" || path === "/about" || path === "/blogs" || path === "/projects" || path.startsWith("/projects/"))) return null;
     return anchor;
 }
 
