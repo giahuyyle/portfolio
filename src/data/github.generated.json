@@ -1,9 +1,9 @@
 {
-    "syncedAt": "2026-10-26T16:47:27.388Z",
+    "syncedAt": "2026-10-27T15:52:57.563Z",
     "build": {
         "repository": "giahuyyle/portfolio",
-        "sha": "01b0beb4d9e82cbfe66ed7f61b169d535750be64",
-        "shortSha": "01b0beb"
+        "sha": "7f06b04ebe50b30b773c661431ee29fdd0abb2a9",
+        "shortSha": "7f06b04"
     },
     "projects": {
         "giahuyyle/fpl": {
@@ -127,13 +127,13 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 152,
+                    "contributions": 153,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/u/169901081?v=4",
-                    "contributions": 40,
+                    "contributions": 43,
                     "login": "giahuyyle",
                     "url": "https://github.com/giahuyyle"
                 }
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-10-26T12:47:39Z",
+            "pushedAt": "2026-10-26T17:41:21Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -181,34 +181,34 @@
     },
     "recentCommits": [
         {
-            "additions": 10,
-            "committedAt": "2026-10-26T12:47:26Z",
-            "deletions": 2,
-            "message": "feat(branding): use transparent signature as favicon",
+            "additions": 248,
+            "committedAt": "2026-10-26T17:41:16Z",
+            "deletions": 60,
+            "message": "feat(blogs): init blogs page",
             "project": "Portfolio",
             "repo": "portfolio",
-            "sha": "01b0beb4d9e82cbfe66ed7f61b169d535750be64",
-            "url": "https://github.com/giahuyyle/portfolio/commit/01b0beb4d9e82cbfe66ed7f61b169d535750be64"
+            "sha": "7f06b04ebe50b30b773c661431ee29fdd0abb2a9",
+            "url": "https://github.com/giahuyyle/portfolio/commit/7f06b04ebe50b30b773c661431ee29fdd0abb2a9"
+        },
+        {
+            "additions": 16,
+            "committedAt": "2026-10-26T17:34:06Z",
+            "deletions": 16,
+            "message": "merge with main",
+            "project": "Portfolio",
+            "repo": "portfolio",
+            "sha": "47a6fb04dc84530b9947222d0317553f5e93b19e",
+            "url": "https://github.com/giahuyyle/portfolio/commit/47a6fb04dc84530b9947222d0317553f5e93b19e"
         },
         {
             "additions": 1,
-            "committedAt": "2026-10-24T08:14:23Z",
+            "committedAt": "2026-10-26T17:33:15Z",
             "deletions": 1,
-            "message": "fix: fix dibiz website link",
+            "message": "small change to about section",
             "project": "Portfolio",
             "repo": "portfolio",
-            "sha": "ac0928f3c0b0cb047844108044701c33fb036c0f",
-            "url": "https://github.com/giahuyyle/portfolio/commit/ac0928f3c0b0cb047844108044701c33fb036c0f"
-        },
-        {
-            "additions": 9,
-            "committedAt": "2026-10-24T08:04:18Z",
-            "deletions": 3,
-            "message": "feat(exp): fix bullet texts",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "aa1158f18574dddab3868ffae7a00b07e6250739",
-            "url": "https://github.com/giahuyyle/portfolio/commit/aa1158f18574dddab3868ffae7a00b07e6250739"
+            "sha": "cef2d8be528fb9f093424e715882b198eaef67e0",
+            "url": "https://github.com/giahuyyle/portfolio/commit/cef2d8be528fb9f093424e715882b198eaef67e0"
         },
         {
             "additions": 677,
