@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-10-29T16:56:02.125Z",
+    "syncedAt": "2026-10-30T16:42:23.774Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "7f06b04ebe50b30b773c661431ee29fdd0abb2a9",
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 155,
+                    "contributions": 156,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-10-28T16:38:08Z",
+            "pushedAt": "2026-10-29T16:56:10Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -201,16 +201,6 @@
             "url": "https://github.com/giahuyyle/portfolio/commit/47a6fb04dc84530b9947222d0317553f5e93b19e"
         },
         {
-            "additions": 1,
-            "committedAt": "2026-10-26T17:33:15Z",
-            "deletions": 1,
-            "message": "small change to about section",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "cef2d8be528fb9f093424e715882b198eaef67e0",
-            "url": "https://github.com/giahuyyle/portfolio/commit/cef2d8be528fb9f093424e715882b198eaef67e0"
-        },
-        {
             "additions": 677,
             "committedAt": "2026-10-03T17:43:15Z",
             "deletions": 32,
@@ -229,6 +219,16 @@
             "repo": "ascension-app",
             "sha": "4da85dc53eef9f53e6cb9eb9298f57ee9dcad3b2",
             "url": "https://github.com/namhoangmai/ascension-app/commit/4da85dc53eef9f53e6cb9eb9298f57ee9dcad3b2"
+        },
+        {
+            "additions": 129,
+            "committedAt": "2026-09-29T03:20:53Z",
+            "deletions": 9,
+            "message": "fix(frontend): improve input contrast and add account dropdown",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "2eec1c8a782bb54d64986d8d0250cd69d7f0bfea",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/2eec1c8a782bb54d64986d8d0250cd69d7f0bfea"
         }
     ]
 }
