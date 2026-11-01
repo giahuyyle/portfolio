@@ -1,5 +1,5 @@
 {
-    "syncedAt": "2026-10-31T15:44:52.243Z",
+    "syncedAt": "2026-11-01T16:49:09.794Z",
     "build": {
         "repository": "giahuyyle/portfolio",
         "sha": "7f06b04ebe50b30b773c661431ee29fdd0abb2a9",
@@ -127,7 +127,7 @@
             "contributors": [
                 {
                     "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
-                    "contributions": 157,
+                    "contributions": 158,
                     "login": "github-actions[bot]",
                     "url": "https://github.com/apps/github-actions"
                 },
@@ -144,7 +144,7 @@
             "language": "TypeScript",
             "openIssues": 0,
             "owner": "giahuyyle",
-            "pushedAt": "2026-10-30T16:42:33Z",
+            "pushedAt": "2026-10-31T15:45:01Z",
             "repo": "portfolio",
             "stars": 0,
             "topics": [],
@@ -180,16 +180,6 @@
         }
     },
     "recentCommits": [
-        {
-            "additions": 248,
-            "committedAt": "2026-10-26T17:41:16Z",
-            "deletions": 60,
-            "message": "feat(blogs): init blogs page",
-            "project": "Portfolio",
-            "repo": "portfolio",
-            "sha": "7f06b04ebe50b30b773c661431ee29fdd0abb2a9",
-            "url": "https://github.com/giahuyyle/portfolio/commit/7f06b04ebe50b30b773c661431ee29fdd0abb2a9"
-        },
         {
             "additions": 677,
             "committedAt": "2026-10-03T17:43:15Z",
@@ -229,6 +219,16 @@
             "repo": "job-pulse",
             "sha": "7a93d24a4048641ecdc0d644ac5f8c07b10bcee3",
             "url": "https://github.com/giahuyyle/job-pulse/commit/7a93d24a4048641ecdc0d644ac5f8c07b10bcee3"
+        },
+        {
+            "additions": 143,
+            "committedAt": "2026-09-28T11:25:44Z",
+            "deletions": 0,
+            "message": "docs(email): document digest behavior and Resend rollout",
+            "project": "Job Pulse",
+            "repo": "job-pulse",
+            "sha": "875e62099e8242b3c7f3a8bc26803b12dc54cfed",
+            "url": "https://github.com/giahuyyle/job-pulse/commit/875e62099e8242b3c7f3a8bc26803b12dc54cfed"
         }
     ]
 }
